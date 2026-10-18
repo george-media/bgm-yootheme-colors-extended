@@ -1,0 +1,28 @@
+{
+  "version": "0.1.1-beta2",
+  "releasePrerelease": true,
+  "tagSourceCommit": "06dc0640222b8ee07bf58b230caaadafb2165fab",
+  "assets": [
+    {
+      "url": "https://github.com/george-media/bgm-yootheme-colors-extended/releases/download/v0.1.1-beta2/bgm-yootheme-colors-extended-0.1.1-beta2.zip",
+      "status": 200,
+      "anonymous": true,
+      "authorizationHeaderSent": false,
+      "bytes": 19587,
+      "sha256": "f30693f6b270a4c1c58255cb46225d78932e8793b3e5d84181a0ab5f03c368c4",
+      "matchesLocal": true
+    },
+    {
+      "url": "https://github.com/george-media/bgm-yootheme-colors-extended/releases/download/v0.1.1-beta2/bgm-yootheme-colors-extended-0.1.1-beta2.zip.sha256",
+      "status": 200,
+      "anonymous": true,
+      "authorizationHeaderSent": false,
+      "bytes": 111,
+      "sha256": "12d2d549187728288d797c614b701c3b65c133cacf35e3000f6a1f96f1930dd3",
+      "matchesLocal": true
+    }
+  ],
+  "generatedFeedVersion": "0.1.1-beta2",
+  "generatedFeedStability": "beta",
+  "nativeUpdateResult": "pending"
+}

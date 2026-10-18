@@ -1,3 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Release entries are added only after their native installer assets are public and verified. -->
-<updates />
+<?xml version='1.0' encoding='utf-8'?>
+<updates>
+    <update>
+        <name>BGM YOOTheme Colors Extended</name>
+        <element>bgm-yootheme-colors-extended</element>
+        <type>plugin</type>
+        <folder>system</folder>
+        <client>site</client>
+        <version>0.1.1-beta2</version>
+        <downloads>
+            <downloadurl type="full" format="zip">https://github.com/george-media/bgm-yootheme-colors-extended/releases/download/v0.1.1-beta2/bgm-yootheme-colors-extended-0.1.1-beta2.zip</downloadurl>
+        </downloads>
+        <tags>
+            <tag>beta</tag>
+        </tags>
+        <targetplatform name="joomla" version="6\.2\.0$" />
+        <php_minimum>8.3.0</php_minimum>
+        <sha256>f30693f6b270a4c1c58255cb46225d78932e8793b3e5d84181a0ab5f03c368c4</sha256>
+    </update>
+</updates>
