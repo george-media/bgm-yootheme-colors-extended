@@ -2,7 +2,7 @@
 
 An original Joomla system plugin adding **Tertiary, Quaternary, Quinary and Senary** colour families to YOOtheme Pro's native style editor and applicable Builder controls.
 
-**Status: 0.1.0 prototype implemented, with native installation and a minimal save/reopen/compiled-frontend slice verified. Goal 002 remains open because the required final Claude review returned no usable result after three bounded attempts. Full qualification and stable GitHub delivery remain goal 003.**
+**Status: goal 002 implementation and final review complete. The 0.1.0 prototype has native installation and a minimal save/reopen/compiled-frontend slice verified. Full qualification and stable GitHub delivery remain goal 003, active in chat 003.**
 
 The plugin uses BGM-prefixed options/classes/LESS, a finite native schema map, Joomla dependency injection and an original scoped rendering adapter. It preserves native structural classes, inverse modes and card hover. It includes no legacy plugin implementation, vendor templates, registration API or telemetry.
 
@@ -11,7 +11,7 @@ The plugin uses BGM-prefixed options/classes/LESS, a finite native schema map, J
 - Native Joomla **6.2.0**, PHP **8.4.17**, YOOtheme **5.0.52** staging, with synthetic content and a new isolated database.
 - Exact deterministic installer ZIP passed native browser upload/enable and all 14 installed member hashes matched.
 - Native style saving/reopening and a saved Builder section produced the configured frontend background through actual generated CSS.
-- **189** focused vendor API/lifecycle checks pass on PHP **8.3.30** and **8.4.17**. These do not substitute for the pending native PHP 8.3 lane.
+- **191** focused vendor API/lifecycle checks pass on PHP **8.3.30** and **8.4.17**. These do not substitute for the pending native PHP 8.3 lane.
 - **62** actual UIkit LESS checks pass, covering families, states, inverse selectors and overrides.
 
 YOOtheme staging used reconstructed manifest-listed installed source, with generated/customer assets excluded. It was not compared to a pristine vendor distribution. Full component/state, responsive, child-theme, cache, version-upgrade and removal qualification remains open. See [goal 002 evidence](docs/002-implementation.md) and [the review record](docs/bgm-review-record.md).
@@ -35,4 +35,4 @@ The [source repository](https://github.com/george-media/bgm-yootheme-colors-exte
 
 ## Next steps
 
-Resolve the final Claude reviewer-output blocker and close goal 002, then complete goal 003 qualification, publish the qualified installer/checksum, and verify a real anonymous native Joomla update before stable delivery.
+Complete goal 003 qualification, publish the qualified installer/checksum, and verify a real anonymous native Joomla update before stable delivery. The final Claude assessment was recovered through the supported native review route and independently adjudicated against actual vendor source.

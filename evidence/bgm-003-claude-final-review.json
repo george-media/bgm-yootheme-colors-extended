@@ -1,0 +1,86 @@
+{
+  "jobId": "review-mvdeq8kb-rbuoxr",
+  "status": "completed",
+  "resultSource": "provider-json",
+  "canonicalSessionId": "8321c3fd-acbc-44b3-92cf-91a1e368a38c",
+  "packageSha256": "0785c6dd02056e4ed5ce674508ae637e24618efa58e0f419c4538d94aacfe6ea",
+  "snapshotHead": "c295340bdc5775972d6cc4beae0d51709279b0b2",
+  "snapshotBase": "9a07faeac608a1a1c1b78f7182b1d39da2b3db5b",
+  "diffBytes": 134195,
+  "beforeAfterSnapshotClean": true,
+  "matchingPackageSourceSnapshotMembers": 14,
+  "result": {
+    "findings": [
+      {
+        "severity": "MAJOR",
+        "title": "BgmView::render() can substitute globals for a legitimate empty inherited frame",
+        "fact": "bgm-plugin/src/Integration/BgmView.php:24 computes `$inherited = end($this->parameters) ?: $this->getGlobals();`. `end()` on an empty stack returns `false` (correctly falling back to globals), but if the top-of-stack frame is itself a legitimate empty array `[]` (a valid 'no parameters yet' state), the `?:` operator cannot distinguish that from an empty stack and silently substitutes `getGlobals()` instead of the real (empty) inherited frame. This merged result is what gets passed into `parent::render()` via `guard()`, so a wrong substitution here changes the effective parameter set for that render call, not just a local variable.",
+        "recommendation": "Replace the `?:` fallback with an explicit stack-emptiness check, e.g. `$top = end($this->parameters); $inherited = $top === false ? $this->getGlobals() : $top;`, so a genuinely empty inherited frame is preserved rather than conflated with 'no frame'."
+      },
+      {
+        "severity": "MINOR",
+        "title": "BgmModule::resolved() has a side effect disguised as a query",
+        "fact": "bgm-plugin/src/Integration/BgmModule.php:39 implements the resolution check as `$app->extend($id, static function () use (&$resolved): void { $resolved = true; });`. Per the comment on line 18, `extend()` only fires immediately if the service was already resolved; otherwise it silently registers a new, permanent extender on the container that will later fire for no purpose other than setting an already-out-of-scope local variable. Calling `resolved()` therefore always leaves an inert extra extender registered on `View::class`/`StylerConfig::class`, even in the common case where the service was not yet resolved.",
+        "recommendation": "If the container doesn't expose a non-mutating 'is resolved' query, document this side effect explicitly in `resolved()`'s docblock, or guard against repeated registration if `BgmModule::load()` could ever run more than once per request."
+      },
+      {
+        "severity": "MINOR",
+        "title": "knownTags() gate is scoped to the whole invocation, not the specific field being substituted",
+        "fact": "bgm-plugin/src/Integration/BgmRenderAdapter.php:65 calls `$this->knownTags($parameters)` once per `load()` invocation; the implementation at lines 117-128 scans ALL of `html_element`, `item_element`, and `title_element` across both `props` and `element`. An unrecognised value in any one of these three fields (e.g. an unusual `title_element`) disables substitution for every other field processed in the same invocation (e.g. `panel_style`), even though that field's rendering doesn't depend on the unrelated tag choice.",
+        "recommendation": "Scope the tag-validity check to the specific field/template branch it protects (e.g. only check `title_element` before colouring title-related output) instead of gating the entire invocation on all three tag fields at once."
+      },
+      {
+        "severity": "MINOR",
+        "title": "Hardcoded TAGS whitelist is a point-in-time snapshot, not derived from the vendor schema",
+        "fact": "bgm-plugin/src/Integration/BgmRenderAdapter.php:19 defines `TAGS` as a fixed list of 35 HTML tag names, used both to register HtmlHelper transforms in `register()` (lines 34-41) and to fail-closed in `knownTags()` (line 122). The native API test confirms every *currently offered* `html_element`/`item_element`/`title_element` dropdown option is covered by this list for 5.0.52, but any future vendor element exposing a new selectable tag not in this constant will silently fall back to unstyled native rendering (no error, just lost BGM colouring) until the constant is manually updated.",
+        "recommendation": "Track this constant against vendor upgrades explicitly (e.g. in the staging/upgrade checklist), or derive it dynamically from the actual schema's `html_element`/`item_element`/`title_element` option lists at registration time instead of a hand-maintained literal."
+      },
+      {
+        "severity": "MINOR",
+        "title": "Downstream transform replay reads HtmlHelper's internal $transforms property directly",
+        "fact": "bgm-plugin/src/Integration/BgmRenderAdapter.php:168 reads `$html->transforms[$tag] ?? []` directly to manually re-invoke callbacks registered after BGM's own transform. This is direct access to what is documented in docs/bgm-integration-contract.md as an internal implementation detail (HtmlHelper's transform storage), not a published API like `addTransform()`/`HtmlElement::expr()`. The current behaviour is empirically verified against 5.0.52, but any future change to how HtmlHelper stores or keys its transforms (property name, structure, or visibility) will break this replay logic silently rather than through a documented contract violation.",
+        "recommendation": "Flag this specific line for re-verification on every YOOtheme upgrade, or request/await a supported way to continue a transform chain (e.g. a 'call next transform' primitive) rather than reading the internal array directly."
+      }
+    ]
+  },
+  "supportedResultReadbackMatches": true,
+  "adjudication": [
+    {
+      "finding": 1,
+      "decision": "Rejected as a BGM defect",
+      "basis": "Actual YOOtheme5.0.52 View.php:231-235 uses identical fallback. Independent native/BGM probes and new full-suite regression preserve empty-frame behaviour."
+    },
+    {
+      "finding": 2,
+      "decision": "Accepted documentation clarification",
+      "basis": "Unresolved services retain inert probe closure; resolved services invoke immediately; extension per-request guard bounds registration."
+    },
+    {
+      "finding": 3,
+      "decision": "Deliberate fail-closed limitation retained",
+      "basis": "Unsupported tag disables complete evaluation invocation; all pinned native configurable tag choices are covered."
+    },
+    {
+      "finding": 4,
+      "decision": "Accepted vendor-upgrade gate",
+      "basis": "Requalify full offered configurable tag set against fixed allowlist before supporting another YOOtheme version."
+    },
+    {
+      "finding": 5,
+      "decision": "Accepted version-specific integration risk and upgrade gate",
+      "basis": "Public transform storage shape/visibility, ordering and truthy callback semantics qualify only current5.0.52."
+    }
+  ],
+  "controllerJudgement": "No unresolved source blocker for goal002 after independent adjudication. Neither a zero-findings Claude verdict nor full native compatibility certification.",
+  "supplementalRegression": {
+    "file": "bgm-tests/bgm-native-api.php",
+    "sha256": "68365432e41e706899ad047ec20f3f1776d1435ae9e9e8564dcef845c875e915",
+    "checks": 191,
+    "phpVersions": [
+      "8.3.30",
+      "8.4.17"
+    ],
+    "engineerAndControllerRuns": "pass",
+    "runtimeMembersChanged": false
+  }
+}

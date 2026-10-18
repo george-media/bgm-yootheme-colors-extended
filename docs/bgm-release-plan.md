@@ -1,8 +1,8 @@
 # Distribution and Joomla updates
 
-## Verified repository state
+## Historical repository state at goal 001
 
-On 18 October 2026, `gh repo view` and the repository API identified `george-media/bgm-yootheme-colors-extended` as **private**, empty, unarchived and writable by the current account. Keep that visibility. The user's upload/download and commit/push authority does not require exposing a private source repository.
+At the initial 18 October 2026 discovery, `gh repo view` and the repository API identified `george-media/bgm-yootheme-colors-extended` as **private**, empty, unarchived and writable. That historical restriction was superseded by the user's public-repository decision below.
 
 Joomla's standard updater fetches an extension XML feed and a downloadable package. A signed-in developer's ability to download a GitHub asset does not establish access from a Joomla server. Private GitHub content needs authentication. Do not put a GitHub token into extension source, a public URL, update metadata, logs or package settings as a shortcut.
 

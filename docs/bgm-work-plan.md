@@ -31,7 +31,7 @@ Acceptance:
 
 ### Goal 002 checkpoint
 
-The 0.1.0 source/package and minimal native staging path pass their recorded checks. The independent adversarial final review passed. The required final Claude assessment is unavailable after three changed execution attempts, despite readiness probes passing. Goal 002 remains open at that gate. A progress commit preserves the tested work without claiming goal completion or starting goal 003 prematurely.
+The 0.1.0 source/package and minimal native staging path pass their recorded checks. The independent adversarial final review passed. Chat 003 diagnosed the two background final-review failures as exhausted tool-turn budgets and recovered an authoritative native review. Its findings were independently adjudicated with no unresolved source blocker. The original fourteen runtime/package members remain unchanged, with two additional native parity regressions bringing the API checks to 191 on both PHP lanes. Goal 002 is complete at this bounded prototype gate. Goal 003 continues in the same explicitly authorised chat.
 
 ## 003 Qualification and delivery
 

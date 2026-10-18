@@ -61,3 +61,23 @@ The separate staging operator accepted the exact final ZIP through native browse
 ## Next steps
 
 Goal 002 remains open at the final Claude review gate. Preserve the verified work, resolve reviewer-result execution, then complete the review before starting goal 003. Full component/state/lifecycle qualification and real public GitHub update delivery belong to goal 003.
+
+## Goal 002 final review recovered in chat 003
+
+Native review `review-mvdeq8kb-rbuoxr` completed with authoritative provider JSON and canonical session `8321c3fd-acbc-44b3-92cf-91a1e368a38c`. Supported status/result readback agreed with the original result. Its immutable 134,195-byte snapshot diff included every exact member of package `0785c6dd02056e4ed5ce674508ae637e24618efa58e0f419c4538d94aacfe6ea`. All fourteen package/source/snapshot members and the clean snapshot HEAD matched before and after review. This supersedes the earlier execution blocker, without relabelling the failed attempts as assessments.
+
+Claude returned one MAJOR and four MINOR findings. The controller, engineer and independent adversarial reviewer adjudicated them against actual 5.0.52 source:
+
+| Finding | Disposition and evidence |
+| --- | --- |
+| Empty inherited parameter frame falls back to globals. | **Rejected as a BGM defect.** Native `View::render()` at `packages/view/src/View.php:231-235` uses the identical `end($this->parameters) ?: $this->globals` fallback. Normal native render frames include `_root`; direct empty evaluation frames also preserve native fallback behaviour. Independent native/BGM probes produced identical output for empty stacks, empty frames and non-empty frames. Applying the proposed change would diverge from the native boundary. |
+| `resolved()` uses a service extender as a probe. | **Accepted documentation clarification.** An unresolved service retains a harmless closure until resolution. An already resolved service invokes it immediately. The extension's per-request `bgmLoaded` guard bounds registration. No eager service resolution or replacement of a resolved native service is introduced. |
+| Unknown tag checks disable all adaptation in that invocation. | **Accepted limitation, proposed broadening deferred.** This is the deliberate fail-closed boundary. A non-native tag in any inspected field suppresses BGM adaptation for the complete invocation. The pinned native dropdown choices are covered. |
+| Fixed tag allowlist requires maintenance. | **Accepted upgrade gate.** Recheck every native configurable tag against the allowlist before supporting another YOOtheme version. No claim is made for future vendor schemas. |
+| Downstream replay reads HtmlHelper transform storage. | **Accepted version-specific integration risk.** The public storage and callback semantics are tested on 5.0.52, including later callbacks and short-circuit behaviour. Requalify storage shape/visibility and transform ordering before another YOOtheme version. |
+
+The resulting judgement is **no unresolved source blocker for goal 002 after independent adjudication**, not a zero-findings Claude verdict or full compatibility approval. [The complete findings](../evidence/bgm-003-claude-final-review.json) and [execution diagnosis](../evidence/bgm-003-claude-diagnosis.json) remain inspectable. No companion implementation or permission change was necessary.
+
+## Next steps
+
+Close the reviewed goal 002 checkpoint with commit/push readback and hindsight, then complete goal 003's native matrix and real GitHub updater qualification in this chat.

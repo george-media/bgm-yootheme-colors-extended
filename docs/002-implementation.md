@@ -20,7 +20,7 @@ Native staging also caught a real bootstrap error: setting root `config.theme` e
 - **62** LESS checks pass with Less **4.4.2** and actual 5.0.52 UIkit input. The isolated compilation is **625,764 bytes** and verifies four families, button states, native inverse descendants, preserve-colour/media exclusions and variable overrides. This is separate from the actual browser style compilation below.
 - The engineer linted all ten runtime/test PHP files on both PHP executables.
 
-[Source/package verification](../evidence/bgm-002-source-verification.json) binds these checks to the exact archive. Independent adversarial review passed this final source/hash. Claude's final review is blocked after three changed attempts returned no authoritative assessment. This keeps goal 002 open despite the passing implementation/native slice.
+[Source/package verification](../evidence/bgm-002-source-verification.json) binds these checks to the exact archive. Independent adversarial review passed this final source/hash. Chat 003 recovered the final authoritative Claude assessment through the supported native review route. Independent adjudication rejected its MAJOR parameter-inheritance claim because the implementation matches the actual native fallback, and documented four bounded integration points. Two additional native parity regressions pass on both PHP runtimes, bringing the current API checks to **191**. The runtime/package bytes remain unchanged. See the final section of [the review record](bgm-review-record.md).
 
 ## Isolated native staging
 
@@ -42,4 +42,4 @@ This is a prototype acceptance slice. It does not certify the full responsive/in
 
 ## Next steps
 
-Preserve this independently reviewed implementation and native evidence in a progress commit, with remote readback and the requested hindsight pass. Resolve the final Claude review-output blocker before closing goal 002 or starting goal 003. Goal 003 should then complete qualification and the real GitHub installer/update feed before stable delivery.
+Record the recovered final review and unchanged package with commit/push readback and hindsight. Goal 002 is complete at this prototype gate. Continue goal 003 in chat 003 to qualify the full native matrix and real GitHub installer/update feed before stable delivery.

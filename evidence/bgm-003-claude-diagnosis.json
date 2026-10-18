@@ -1,0 +1,65 @@
+{
+  "dateSydney": "2026-10-18",
+  "sourceHead": "71c7e1f1394adf9c9ca7bcefbe5bd13efb177128",
+  "installedVersion": "0.1.18",
+  "runtimeHashes": {
+    "scripts/claude-companion.mjs": {
+      "installedSha256": "5d01f26b66a31ff6f24a1b1723fde53f8263b6f923a852e45dc5e4080d066ace",
+      "canonicalSha256": "5d01f26b66a31ff6f24a1b1723fde53f8263b6f923a852e45dc5e4080d066ace",
+      "match": true
+    },
+    "scripts/lib/runtime.mjs": {
+      "installedSha256": "e1bfe7b9c474814f2aa3faaed694834c69f27546a0112ca864d916be6654459b",
+      "canonicalSha256": "e1bfe7b9c474814f2aa3faaed694834c69f27546a0112ca864d916be6654459b",
+      "match": true
+    },
+    "scripts/claude-supervisor.mjs": {
+      "installedSha256": "056e384c8f72995bac20708c435aa5986ae2785ac6f17d9f71168049065df495",
+      "canonicalSha256": "056e384c8f72995bac20708c435aa5986ae2785ac6f17d9f71168049065df495",
+      "match": true
+    }
+  },
+  "independentDiagnosis": true,
+  "failedJobs": [
+    {
+      "jobId": "do-mvddub7u-vxhrd5",
+      "configuredMaxTurns": 20,
+      "diagnosticTurnCount": 21,
+      "localToolCalls": 50,
+      "diagnosticMarker": "max_turns_reached",
+      "markerTimeUtc": "2026-10-18T05:30:46.027Z",
+      "cause": "Configured tool-turn budget exhausted",
+      "authoritativeReviewAvailable": false
+    },
+    {
+      "jobId": "advise-mvde2kta-h3zfkk",
+      "configuredMaxTurns": 12,
+      "diagnosticTurnCount": 13,
+      "localToolCalls": 29,
+      "diagnosticMarker": "max_turns_reached",
+      "markerTimeUtc": "2026-10-18T05:37:10.847Z",
+      "cause": "Configured tool-turn budget exhausted",
+      "authoritativeReviewAvailable": false
+    },
+    {
+      "jobId": "advise-mvdeba0z-jum5zp",
+      "configuredTimeoutMs": 120000,
+      "elapsedSeconds": 122.90379635,
+      "cause": "Unproven. Elapsed time fits timeout, but generic metadata lost exact classification.",
+      "authoritativeReviewAvailable": false
+    }
+  ],
+  "repair": {
+    "type": "Use existing supported native review route with full immutable diff and ample timeout",
+    "implementationChanged": false,
+    "reason": "No demonstrated installed-runtime corruption or result-validator defect. Native no-tool review route already exists.",
+    "mode": "review",
+    "maxTurns": 1,
+    "timeoutMs": 600000,
+    "effort": "xhigh",
+    "model": "configured-default",
+    "permissions": "default; no built-in tools; strict empty MCP; no Chrome",
+    "resultValidation": "Unchanged strict successful-provider-envelope and findings schema"
+  },
+  "boundary": "Native diagnostic markers explain failure only. They are not review output, authentication evidence or resumable session authority."
+}

@@ -45,5 +45,15 @@
     }
   ],
   "readiness": "Two setup probes reported ready/auth available/print passed. Those probes are not completed source reviews.",
-  "decision": "Stopped after three materially changed final-review attempts. Goal002 remains open at final Claude review; no root cause inferred and no stable release/update feed published."
+  "decision": "Final authoritative review recovered in chat003 through supported native no-tool review. Background failures were tool-turn exhaustion. Full qualification remains goal003.",
+  "recoveredFinalReview": {
+    "jobId": "review-mvdeq8kb-rbuoxr",
+    "status": "completed",
+    "resultSource": "provider-json",
+    "canonicalSessionId": "8321c3fd-acbc-44b3-92cf-91a1e368a38c",
+    "supportedReadbackMatches": true,
+    "findingCount": 5,
+    "adjudication": "No unresolved goal002 source blocker after independent native-source adjudication. This is not a zero-findings result.",
+    "evidence": "bgm-003-claude-final-review.json"
+  }
 }

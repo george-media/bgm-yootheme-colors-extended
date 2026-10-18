@@ -38,6 +38,10 @@ Configurable native tags, including `hgroup`, are registered before element crea
 
 The transform compatibility claim is bounded to ordinary per-render callbacks. Callbacks expecting their mutations to persist on the original reusable HtmlElement, changing the callback list during dispatch, or substituting a custom View factory are not advertised as transparently compatible. No raw HTML search/replace, saved-node mutation or vendor-template copy is used.
 
+The parameter inheritance fallback deliberately matches native 5.0.52, including a direct empty evaluation frame falling back to globals. The service-resolution probe uses native `extend()`: an unresolved service retains an inert probe closure until it resolves. The extension's per-request load guard bounds registration. An unknown configurable tag suppresses adaptation for the complete evaluation invocation, including otherwise valid colour fields.
+
+Every proposed YOOtheme upgrade must requalify all offered configurable tags against the fixed tag allowlist and recheck HtmlHelper's public `transforms` storage shape/visibility plus callback ordering, truthy short-circuit and replay semantics. These are version-specific integration contracts, not promises about future vendor internals.
+
 ## Styling and cache lifecycle
 
 Register original `bgm-*` LESS components and style-editor configuration through YOOtheme's supported module APIs. Write original styles from required properties and states. Do not copy the old plugin's component files or UIkit/YOOtheme component bodies. Integrate native style variables by reference where appropriate, while BGM-owned variables begin `@bgm-`.

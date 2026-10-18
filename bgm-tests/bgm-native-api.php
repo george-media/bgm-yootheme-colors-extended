@@ -59,6 +59,25 @@ function bgmProps(string $type): array {
     return $props;
 }
 
+// Public evaluate() can create an empty parameter frame. Native render() deliberately
+// falls back to globals for that frame, so the BGM guard must preserve the same rule.
+$emptyFrameTemplate = tempnam(sys_get_temp_dir(), 'bgm-empty-frame-');
+$emptyFrameOutputs = [];
+try {
+    file_put_contents($emptyFrameTemplate, '<?php echo $this->render("/bgm-synthetic/empty-child.php", ["explicit" => "wins"]);');
+    foreach ([false, true] as $enabled) {
+        $emptyFrameView = bgmView($emptyFrameAdapter, $enabled);
+        $emptyFrameView->addGlobal('marker', 'native-global-fallback');
+        $emptyFrameView->addGlobal('explicit', 'global');
+        $emptyFrameView->addLoader(static fn($name, $params) => json_encode($params), '/bgm-synthetic/empty-child.php');
+        $emptyFrameOutputs[] = $emptyFrameView->evaluate($emptyFrameTemplate, []);
+    }
+} finally {
+    unlink($emptyFrameTemplate);
+}
+bgmAssert($emptyFrameOutputs[0] === $emptyFrameOutputs[1], 'Direct evaluation with empty inherited frame matches native View');
+bgmAssert(json_decode($emptyFrameOutputs[0], true) === ['marker' => 'native-global-fallback', 'explicit' => 'wins', '_root' => false], 'Actual native empty-frame fallback inherits globals and preserves explicit parameters and nested root');
+
 $view = bgmView($adapter);
 $html = $view['html'];
 $section = $bgmVendor . '/packages/builder/elements/section/templates/template.php';
