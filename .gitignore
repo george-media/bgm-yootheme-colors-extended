@@ -1,0 +1,15 @@
+.DS_Store
+.env
+.env.*
+!.env.example
+/.bgm-private/
+/.bgm-staging/
+/dist/
+/vendor/
+/node_modules/
+*.log
+*.zip
+*.sql
+*.sqlite*
+*storage-state*.json
+*cookies*.json

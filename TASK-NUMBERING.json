@@ -1,0 +1,23 @@
+{
+  "project": "BGM YOOTHEME COLORS EXTENDED",
+  "repository": "/Users/damian/Sites/localhost/bgm-yootheme-colors-extended",
+  "projectContext": "/Users/damian/Documents/Codex/PROJECTS/BGM YOOTHEME COLORS EXTENDED",
+  "rule": "Assign a unique chronological three-digit title prefix when each top-level chat is created. Preserve archived numbers. Workers do not consume numbers.",
+  "tasks": [
+    {
+      "number": "001",
+      "threadId": "01a14d5e-189a-7d22-ae0f-202b04966c6d",
+      "title": "001 Discover and design BGM YOOTheme Colors Extended",
+      "goal": "Legacy behaviour, current integration contracts, original architecture and reviewed project foundation",
+      "status": "reviewed-foundation"
+    },
+    {
+      "number": "002",
+      "threadId": null,
+      "title": "002 Build the original BGM colour extension",
+      "goal": "Original plugin implementation, installer ZIP and early native staging prototype",
+      "status": "reserved-for-authorised-successor"
+    }
+  ],
+  "nextNumber": "003"
+}

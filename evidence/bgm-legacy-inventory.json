@@ -1,0 +1,1092 @@
+{
+  "evidence_id": "ev_178f0200b085b5867c711a17cf5a838360380f72723c6f8fa840bbedbadcdab7",
+  "subject": {
+    "name": "plg_system_kickyoocolors_1.2.2.zip",
+    "digest": {
+      "sha256": "966885e6edd5a3f76ab298e0532d341e31c0cce9b33b2b78524e3514afce6f35"
+    },
+    "format": "zip",
+    "architecture": null,
+    "local_path": "/Users/damian/Downloads/plg_system_kickyoocolors_1.2.2.zip"
+  },
+  "provider": {
+    "id": "rea-artifact-graph",
+    "name": "REA safe artifact graph provider",
+    "version": "1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_artifact",
+  "parameters": {
+    "integrity_policy": "fail"
+  },
+  "raw_result": null,
+  "normalized_result": {
+    "inspection_id": "ai_d624bfd8dadc4026b6429948cbc831fa1d4f9c0e0fc21547e696b0aba57a6a18",
+    "subject": {
+      "manifest_id": "agm_2736b0087836bfc16c28ba5863467c02552f7f7967da02e2522bdf96e39c6cc8",
+      "root_artifact_id": "art_55117847bc44be93fd625e8a2b1b6451ea4927408555381f3960e477603f5948",
+      "root_sha256": "966885e6edd5a3f76ab298e0532d341e31c0cce9b33b2b78524e3514afce6f35",
+      "root_format": "zip"
+    },
+    "substeps": [
+      {
+        "substep_id": "ais_37651fa4d4de75e271fbbf8b60e107538cdf138a978a1b48c526f0f7d934c4ce",
+        "operation": "inventory_artifact",
+        "status": "completed",
+        "evidence_id": "ev_208e69e700819bc084544d71dc11b57c48533e4d0dda59e011ccb4d19e5a56e9",
+        "evidence": {
+          "evidence_id": "ev_208e69e700819bc084544d71dc11b57c48533e4d0dda59e011ccb4d19e5a56e9",
+          "subject": {
+            "name": "plg_system_kickyoocolors_1.2.2.zip",
+            "digest": {
+              "sha256": "966885e6edd5a3f76ab298e0532d341e31c0cce9b33b2b78524e3514afce6f35"
+            },
+            "format": "zip",
+            "architecture": null,
+            "local_path": "/Users/damian/Downloads/plg_system_kickyoocolors_1.2.2.zip"
+          },
+          "provider": {
+            "id": "rea-artifact-graph",
+            "name": "REA safe artifact graph provider",
+            "version": "1"
+          },
+          "analysis_profile": null,
+          "predicate_type": "rea.analysis",
+          "operation": "inventory_artifact",
+          "parameters": {
+            "integrity_policy": "fail"
+          },
+          "raw_result": null,
+          "normalized_result": {
+            "manifest": {
+              "manifest_id": "agm_2736b0087836bfc16c28ba5863467c02552f7f7967da02e2522bdf96e39c6cc8",
+              "root_artifact_id": "art_55117847bc44be93fd625e8a2b1b6451ea4927408555381f3960e477603f5948",
+              "root_sha256": "966885e6edd5a3f76ab298e0532d341e31c0cce9b33b2b78524e3514afce6f35",
+              "root_format": "zip",
+              "graph_sha256": "4fd44e99e98d58d813733cbaa529beb43ccdcb2e3cb7d75879d9b7936bb9dd6a",
+              "node_count": 28,
+              "occurrence_count": 28,
+              "edge_count": 27
+            },
+            "nodes": [
+              {
+                "artifact_id": "art_016f9ccbb68c934c0b46aa1c923b3b45b77cb1d4fbed67f25f5c0395b6c5f667",
+                "format": "file",
+                "sha256": "ab6a4a2acfa2882ef4bfe632f2b079602b636ec44d83f475deaae98f2965883f",
+                "size": 2063,
+                "media_type": null,
+                "architecture": null,
+                "content_state": "embedded",
+                "limitations": []
+              },
+              {
+                "artifact_id": "art_0b0008fe1fb46dc40f2db31202bc05553ced707c62ce4f590674efa21c81dffd",
+                "format": "file",
+                "sha256": "550b37ccfffb6c5e5f74be0a3d9458c2e9900259d975c63a31e9c291d4aab681",
+                "size": 4333,
+                "media_type": null,
+                "architecture": null,
+                "content_state": "embedded",
+                "limitations": []
+              },
+              {
+                "artifact_id": "art_21fd087c396a46a7ee45ae0bf64d00c9a8d07a55cf51c68b8c2fcb8646efcb2f",
+                "format": "file",
+                "sha256": "daaf9f9c7eef0c88558c4cd4fddc0b002d88cc1ca6ab650ae856357189626e50",
+                "size": 173,
+                "media_type": null,
+                "architecture": null,
+                "content_state": "embedded",
+                "limitations": []
+              },
+              {
+                "artifact_id": "art_2652639d5c58407c587137da1134a9b1ea5c12ee9e0676ef2aa9fe09dc7474d8",
+                "format": "directory",
+                "sha256": "08ba1a54f66e8bc2f765a6bffe128cf0c9f17d9c3fcb9088d7591043be78b440",
+                "size": 0,
+                "media_type": null,
+                "architecture": null,
+                "content_state": "virtual",
+                "limitations": []
+              },
+              {
+                "artifact_id": "art_36f22e19a611d5b44c9140ae8f85a4c8c8c5f2203f180bc3d95224ce0fee1174",
+                "format": "file",
+                "sha256": "592dba3877044dbde3462b7683ebc76e7485ed467a2826b83864502133772566",
+                "size": 2913,
+                "media_type": null,
+                "architecture": null,
+                "content_state": "embedded",
+                "limitations": []
+              },
+              {
+                "artifact_id": "art_4fd817d7e939a6d0567ffbe398c5a78f6a003f38624566ce73eb872621e765cd",
+                "format": "directory",
+                "sha256": "2cda8fcddca701b1da0bb317105d534d7dd3d1d96e13c2114827e26c2669fd51",
+                "size": 0,
+                "media_type": null,
+                "architecture": null,
+                "content_state": "virtual",
+                "limitations": []
+              },
+              {
+                "artifact_id": "art_50ad4ccb42313b55674abe341d77dad3b77f03460b277687a22d56d19b592b63",
+                "format": "directory",
+                "sha256": "559770c572d942f22bccb5110eae1251f8f4b6ce205673f23f568ef1c3290498",
+                "size": 0,
+                "media_type": null,
+                "architecture": null,
+                "content_state": "virtual",
+                "limitations": []
+              },
+              {
+                "artifact_id": "art_53022deb920dbe9b3fdca441dde320986484c13039a9708a2195fff48a30da43",
+                "format": "directory",
+                "sha256": "1e05f0c690491dc3221a859e591143ebca73d23c277f5d2edda4235171d5df99",
+                "size": 0,
+                "media_type": null,
+                "architecture": null,
+                "content_state": "virtual",
+                "limitations": []
+              },
+              {
+                "artifact_id": "art_55117847bc44be93fd625e8a2b1b6451ea4927408555381f3960e477603f5948",
+                "format": "zip",
+                "sha256": "966885e6edd5a3f76ab298e0532d341e31c0cce9b33b2b78524e3514afce6f35",
+                "size": 17444,
+                "media_type": null,
+                "architecture": null,
+                "content_state": "materialized",
+                "limitations": []
+              },
+              {
+                "artifact_id": "art_57670b06f6031e5647dcdc20683f9d0f5ffb7a07b4b6f1c246a283748cb37419",
+                "format": "directory",
+                "sha256": "a924b5aa5000e9274881da069ac13bdcb0fd267d4556ccf31b03aa7370cf8253",
+                "size": 0,
+                "media_type": null,
+                "architecture": null,
+                "content_state": "virtual",
+                "limitations": []
+              },
+              {
+                "artifact_id": "art_6325c7991c42cadb80527b34a67a86ea1f60838edb5f43e3e3ce020c7be7cf65",
+                "format": "file",
+                "sha256": "60332ca0a6e668584674a826f50f8c563abc4a3a3489d8797123181bfb2ddd1f",
+                "size": 900,
+                "media_type": null,
+                "architecture": null,
+                "content_state": "embedded",
+                "limitations": []
+              },
+              {
+                "artifact_id": "art_638fdc5c82179ab403517414e9657d757a700211889ddedc84720602b1ed9382",
+                "format": "file",
+                "sha256": "bf9d96bd5ebf71663ee032f8f1c6567c30c60ef83af2be7a76cc1bee3d9c1771",
+                "size": 5722,
+                "media_type": null,
+                "architecture": null,
+                "content_state": "embedded",
+                "limitations": []
+              },
+              {
+                "artifact_id": "art_63d2b269039f6aed3b45d82c430c0bea0492989bc1b5fd24a03b56b5949ca94e",
+                "format": "file",
+                "sha256": "937c831309b25a300126cc4b8f0aabc87befff8de9def626727a407cec38be66",
+                "size": 526,
+                "media_type": null,
+                "architecture": null,
+                "content_state": "embedded",
+                "limitations": []
+              },
+              {
+                "artifact_id": "art_78b8a5d981361fbeb6dcec7fec220019beceba30bd9c6c10c86702569750a9eb",
+                "format": "file",
+                "sha256": "225ff0b551ce8167871e179598176403399f89f678b654ee2cd36f340b337cfe",
+                "size": 1792,
+                "media_type": null,
+                "architecture": null,
+                "content_state": "embedded",
+                "limitations": []
+              },
+              {
+                "artifact_id": "art_7e0bae946c9cd9a66e4927f382a11a70ba05d9bef99b2d31cc41d1b4de2d934c",
+                "format": "directory",
+                "sha256": "b8eb840a70699ce3c22e393fa924f06a59711ebf0a3054706a3b133c56f4c27e",
+                "size": 0,
+                "media_type": null,
+                "architecture": null,
+                "content_state": "virtual",
+                "limitations": []
+              },
+              {
+                "artifact_id": "art_81da70c9fed4bdc7e755fd2f74498ab811c449dfd43f508c285c0ed5a8631c29",
+                "format": "file",
+                "sha256": "2a0f80d597a028bc597856c194a9342ca2e2dc17f341bab1194542d0226f73a8",
+                "size": 3111,
+                "media_type": null,
+                "architecture": null,
+                "content_state": "embedded",
+                "limitations": []
+              },
+              {
+                "artifact_id": "art_829c9fd1d400039dbbf0c39ca3e582acb4b8ee6bb374e9dfcd9700eb29ed56ca",
+                "format": "file",
+                "sha256": "98cf5652c68d762f6b4b2acb88a5144fdb71dfb99d17aebe829c8e6a9aca76f2",
+                "size": 1060,
+                "media_type": null,
+                "architecture": null,
+                "content_state": "embedded",
+                "limitations": []
+              },
+              {
+                "artifact_id": "art_82bf1eed7a28821179d8162ecabd2e34bc08e5a27f716e7011a2c04ffb0069a1",
+                "format": "file",
+                "sha256": "afcabc7495922848eca0eba679ebf1b1697aeff6a9e265a6fa56168b0fa4b290",
+                "size": 10436,
+                "media_type": null,
+                "architecture": null,
+                "content_state": "embedded",
+                "limitations": []
+              },
+              {
+                "artifact_id": "art_8e0f37db8b51a42b5a3b707228c2459a4c8dcfc37d519cd8ad27f719be3b2137",
+                "format": "file",
+                "sha256": "d42e161a7f2aa0c9ce70ded2c97bd650827c23914713c98496f92b3dd76baaa6",
+                "size": 172,
+                "media_type": null,
+                "architecture": null,
+                "content_state": "embedded",
+                "limitations": []
+              },
+              {
+                "artifact_id": "art_9775b9cd5be836ad0f18aa096d89f188c420052bdcd3cf099b6fd0e74868dc3b",
+                "format": "file",
+                "sha256": "61821b7b58275574bc7cb81f0d97cfd2dca23352be580ce54a786d6e65a2f3c2",
+                "size": 3996,
+                "media_type": null,
+                "architecture": null,
+                "content_state": "embedded",
+                "limitations": []
+              },
+              {
+                "artifact_id": "art_ac452cd1a7153d7d6e46b2f8d85d31e8e097f10aabf8640f9ac4589255606192",
+                "format": "file",
+                "sha256": "20b3515206e0f0f2562852f2e49a9aedbfa730de8fafba4e99f355765f52ebb9",
+                "size": 2598,
+                "media_type": null,
+                "architecture": null,
+                "content_state": "embedded",
+                "limitations": []
+              },
+              {
+                "artifact_id": "art_afed81adeccb39217fcc179dc6fe7a493645ef74149b6208206c45c95b483f2f",
+                "format": "file",
+                "sha256": "4492dc43a54775095d19ac8a6a0c6d4a72bf6c224257779234ed61e2c69414ae",
+                "size": 1827,
+                "media_type": null,
+                "architecture": null,
+                "content_state": "embedded",
+                "limitations": []
+              },
+              {
+                "artifact_id": "art_c7a1d0cb0ee9b2ca430b6f0a0b7b7b5afab44596123613c7776f3f10f3392e85",
+                "format": "file",
+                "sha256": "be68c6334c3466e75f7ef30b07bfab055cb6d8a016a7b53ea51207d4d4b2c7fb",
+                "size": 2379,
+                "media_type": null,
+                "architecture": null,
+                "content_state": "embedded",
+                "limitations": []
+              },
+              {
+                "artifact_id": "art_dd87bd7e7fe4dff1f1af8c12029c2fde5626c9a4ce7ba07436116288f7c06550",
+                "format": "file",
+                "sha256": "12948b3d235d5bdbbe503e2aa139ec9c044ca31c7c71d2c5c5011c2d7fa2123f",
+                "size": 2370,
+                "media_type": null,
+                "architecture": null,
+                "content_state": "embedded",
+                "limitations": []
+              },
+              {
+                "artifact_id": "art_e7b7f6bba38f8b75b335dd6a8d45172061b3fbeb424adcef7e74c2a4f6f36129",
+                "format": "file",
+                "sha256": "5368e01255e908f30becc33e680ba120b2ebc1d59b438dca1325da28e8504e26",
+                "size": 594,
+                "media_type": null,
+                "architecture": null,
+                "content_state": "embedded",
+                "limitations": []
+              },
+              {
+                "artifact_id": "art_ede2d479a190d4550731054495e5a69b91c797f8b412c58b593203ace95aa75e",
+                "format": "directory",
+                "sha256": "4edf505d087c812c43c3e91fe0240a6f2835c7b3f369e1922a5a4469154a7afa",
+                "size": 0,
+                "media_type": null,
+                "architecture": null,
+                "content_state": "virtual",
+                "limitations": []
+              },
+              {
+                "artifact_id": "art_ef50868258e909106fae34a5ab41e724f5998038ffb032be173ee2b9b72419d8",
+                "format": "file",
+                "sha256": "4de3036359c4f5e930a40a9de7e440bb004b54a065682ff502fdb18eff5f7b63",
+                "size": 6007,
+                "media_type": null,
+                "architecture": null,
+                "content_state": "embedded",
+                "limitations": []
+              },
+              {
+                "artifact_id": "art_f205cee858600f18a02f15b3cf10de93459c6991f3346dfd2e969b7a5c705a68",
+                "format": "directory",
+                "sha256": "ca0dfafc3df2c239785482a555c626ef8a14a5a179c02dbd40cba895893f5ebd",
+                "size": 0,
+                "media_type": null,
+                "architecture": null,
+                "content_state": "virtual",
+                "limitations": []
+              }
+            ],
+            "occurrences": [
+              {
+                "occurrence_id": "occ_cb79b510cb6881f80e637020e10c7687a7e71c4bf6564780a5f31125b3f9ac1e",
+                "artifact_id": "art_55117847bc44be93fd625e8a2b1b6451ea4927408555381f3960e477603f5948",
+                "parent_occurrence_id": null,
+                "logical_path": ".",
+                "entry_kind": "file",
+                "artifact_kind": "container",
+                "artifact_format": "zip",
+                "declared_size": 17444,
+                "compressed_size": null,
+                "executable": false,
+                "encrypted": false,
+                "hash_status": "verified",
+                "source_location": null,
+                "limitations": []
+              },
+              {
+                "occurrence_id": "occ_c2d8b6fac3bdfdae1379ca8922efb73b0982d39551ee59d04edcf75592c8e20e",
+                "artifact_id": "art_f205cee858600f18a02f15b3cf10de93459c6991f3346dfd2e969b7a5c705a68",
+                "parent_occurrence_id": "occ_cb79b510cb6881f80e637020e10c7687a7e71c4bf6564780a5f31125b3f9ac1e",
+                "logical_path": "assets",
+                "entry_kind": "directory",
+                "artifact_kind": "container",
+                "artifact_format": "directory",
+                "declared_size": null,
+                "compressed_size": null,
+                "executable": true,
+                "encrypted": false,
+                "hash_status": "verified",
+                "source_location": null,
+                "limitations": []
+              },
+              {
+                "occurrence_id": "occ_ceebd1b460dc062226c3fd6b6863a23a60cff8181590ddd0d282d2da4e48f92f",
+                "artifact_id": "art_50ad4ccb42313b55674abe341d77dad3b77f03460b277687a22d56d19b592b63",
+                "parent_occurrence_id": "occ_c2d8b6fac3bdfdae1379ca8922efb73b0982d39551ee59d04edcf75592c8e20e",
+                "logical_path": "assets/less",
+                "entry_kind": "directory",
+                "artifact_kind": "container",
+                "artifact_format": "directory",
+                "declared_size": null,
+                "compressed_size": null,
+                "executable": true,
+                "encrypted": false,
+                "hash_status": "verified",
+                "source_location": null,
+                "limitations": []
+              },
+              {
+                "occurrence_id": "occ_dfc7acd4a33b73c1270d8763e27ae666fa15b1bb3c2efd9c0d225344a5c98b27",
+                "artifact_id": "art_82bf1eed7a28821179d8162ecabd2e34bc08e5a27f716e7011a2c04ffb0069a1",
+                "parent_occurrence_id": "occ_ceebd1b460dc062226c3fd6b6863a23a60cff8181590ddd0d282d2da4e48f92f",
+                "logical_path": "assets/less/button.less",
+                "entry_kind": "file",
+                "artifact_kind": "resource",
+                "artifact_format": "file",
+                "declared_size": 10436,
+                "compressed_size": 1213,
+                "executable": false,
+                "encrypted": false,
+                "hash_status": "verified",
+                "source_location": null,
+                "limitations": []
+              },
+              {
+                "occurrence_id": "occ_416bbc1299aa7522e55690881f1c3b9a9871e578a4eec15baaaff56cfc87aa33",
+                "artifact_id": "art_638fdc5c82179ab403517414e9657d757a700211889ddedc84720602b1ed9382",
+                "parent_occurrence_id": "occ_ceebd1b460dc062226c3fd6b6863a23a60cff8181590ddd0d282d2da4e48f92f",
+                "logical_path": "assets/less/card.less",
+                "entry_kind": "file",
+                "artifact_kind": "resource",
+                "artifact_format": "file",
+                "declared_size": 5722,
+                "compressed_size": 812,
+                "executable": false,
+                "encrypted": false,
+                "hash_status": "verified",
+                "source_location": null,
+                "limitations": []
+              },
+              {
+                "occurrence_id": "occ_9bf912054db5d2804379d0de8b2c67a9ffb3297b06cf177ab60bc81765bab473",
+                "artifact_id": "art_e7b7f6bba38f8b75b335dd6a8d45172061b3fbeb424adcef7e74c2a4f6f36129",
+                "parent_occurrence_id": "occ_ceebd1b460dc062226c3fd6b6863a23a60cff8181590ddd0d282d2da4e48f92f",
+                "logical_path": "assets/less/inverse.less",
+                "entry_kind": "file",
+                "artifact_kind": "resource",
+                "artifact_format": "file",
+                "declared_size": 594,
+                "compressed_size": 177,
+                "executable": false,
+                "encrypted": false,
+                "hash_status": "verified",
+                "source_location": null,
+                "limitations": []
+              },
+              {
+                "occurrence_id": "occ_5a07055a6c8e46d0ec6f956cf1b2551727ee4c902ffc602f2fda809c2eba148b",
+                "artifact_id": "art_36f22e19a611d5b44c9140ae8f85a4c8c8c5f2203f180bc3d95224ce0fee1174",
+                "parent_occurrence_id": "occ_ceebd1b460dc062226c3fd6b6863a23a60cff8181590ddd0d282d2da4e48f92f",
+                "logical_path": "assets/less/section.less",
+                "entry_kind": "file",
+                "artifact_kind": "resource",
+                "artifact_format": "file",
+                "declared_size": 2913,
+                "compressed_size": 484,
+                "executable": false,
+                "encrypted": false,
+                "hash_status": "verified",
+                "source_location": null,
+                "limitations": []
+              },
+              {
+                "occurrence_id": "occ_08ea94663aec111f4da1efc600984dd6b845263d8e58b0bd0041ae5755a6c370",
+                "artifact_id": "art_6325c7991c42cadb80527b34a67a86ea1f60838edb5f43e3e3ce020c7be7cf65",
+                "parent_occurrence_id": "occ_ceebd1b460dc062226c3fd6b6863a23a60cff8181590ddd0d282d2da4e48f92f",
+                "logical_path": "assets/less/text.less",
+                "entry_kind": "file",
+                "artifact_kind": "resource",
+                "artifact_format": "file",
+                "declared_size": 900,
+                "compressed_size": 223,
+                "executable": false,
+                "encrypted": false,
+                "hash_status": "verified",
+                "source_location": null,
+                "limitations": []
+              },
+              {
+                "occurrence_id": "occ_eb6cdeb326fe4317a4855bf12b630dc47b3afc7c79ecdbd0c4d6a04c4ef806df",
+                "artifact_id": "art_9775b9cd5be836ad0f18aa096d89f188c420052bdcd3cf099b6fd0e74868dc3b",
+                "parent_occurrence_id": "occ_ceebd1b460dc062226c3fd6b6863a23a60cff8181590ddd0d282d2da4e48f92f",
+                "logical_path": "assets/less/tile.less",
+                "entry_kind": "file",
+                "artifact_kind": "resource",
+                "artifact_format": "file",
+                "declared_size": 3996,
+                "compressed_size": 649,
+                "executable": false,
+                "encrypted": false,
+                "hash_status": "verified",
+                "source_location": null,
+                "limitations": []
+              },
+              {
+                "occurrence_id": "occ_1ee4a60770e54bdf71a0e94f2906c600f466a6efb6a3667fab5f992e548a9934",
+                "artifact_id": "art_63d2b269039f6aed3b45d82c430c0bea0492989bc1b5fd24a03b56b5949ca94e",
+                "parent_occurrence_id": "occ_ceebd1b460dc062226c3fd6b6863a23a60cff8181590ddd0d282d2da4e48f92f",
+                "logical_path": "assets/less/variables.less",
+                "entry_kind": "file",
+                "artifact_kind": "resource",
+                "artifact_format": "file",
+                "declared_size": 526,
+                "compressed_size": 184,
+                "executable": false,
+                "encrypted": false,
+                "hash_status": "verified",
+                "source_location": null,
+                "limitations": []
+              },
+              {
+                "occurrence_id": "occ_63bcf8172938b1cfdc0285c7fa491efebdbbe46de0304f135c90891c58ef3036",
+                "artifact_id": "art_829c9fd1d400039dbbf0c39ca3e582acb4b8ee6bb374e9dfcd9700eb29ed56ca",
+                "parent_occurrence_id": "occ_cb79b510cb6881f80e637020e10c7687a7e71c4bf6564780a5f31125b3f9ac1e",
+                "logical_path": "bootstrap.php",
+                "entry_kind": "file",
+                "artifact_kind": "resource",
+                "artifact_format": "file",
+                "declared_size": 1060,
+                "compressed_size": 475,
+                "executable": false,
+                "encrypted": false,
+                "hash_status": "verified",
+                "source_location": null,
+                "limitations": []
+              },
+              {
+                "occurrence_id": "occ_b0d39e7694e382a4e84099ade922f0b2d94d289ee367229852d560f26f02efcc",
+                "artifact_id": "art_4fd817d7e939a6d0567ffbe398c5a78f6a003f38624566ce73eb872621e765cd",
+                "parent_occurrence_id": "occ_cb79b510cb6881f80e637020e10c7687a7e71c4bf6564780a5f31125b3f9ac1e",
+                "logical_path": "config",
+                "entry_kind": "directory",
+                "artifact_kind": "container",
+                "artifact_format": "directory",
+                "declared_size": null,
+                "compressed_size": null,
+                "executable": true,
+                "encrypted": false,
+                "hash_status": "verified",
+                "source_location": null,
+                "limitations": []
+              },
+              {
+                "occurrence_id": "occ_6a54d6c67694047c9fc0bddabd952438bd7a441dc73ffdc8cae13e05faa27b6e",
+                "artifact_id": "art_78b8a5d981361fbeb6dcec7fec220019beceba30bd9c6c10c86702569750a9eb",
+                "parent_occurrence_id": "occ_b0d39e7694e382a4e84099ade922f0b2d94d289ee367229852d560f26f02efcc",
+                "logical_path": "config/styler.json",
+                "entry_kind": "file",
+                "artifact_kind": "resource",
+                "artifact_format": "file",
+                "declared_size": 1792,
+                "compressed_size": 359,
+                "executable": false,
+                "encrypted": false,
+                "hash_status": "verified",
+                "source_location": null,
+                "limitations": []
+              },
+              {
+                "occurrence_id": "occ_27d4983b6f9b27df1e3fe1964290388c5925ade76eea0d896229e7c81263a792",
+                "artifact_id": "art_ede2d479a190d4550731054495e5a69b91c797f8b412c58b593203ace95aa75e",
+                "parent_occurrence_id": "occ_cb79b510cb6881f80e637020e10c7687a7e71c4bf6564780a5f31125b3f9ac1e",
+                "logical_path": "fields",
+                "entry_kind": "directory",
+                "artifact_kind": "container",
+                "artifact_format": "directory",
+                "declared_size": null,
+                "compressed_size": null,
+                "executable": true,
+                "encrypted": false,
+                "hash_status": "verified",
+                "source_location": null,
+                "limitations": []
+              },
+              {
+                "occurrence_id": "occ_7798935afbef3a93963e18ee4867a8c06752b73e2cb7b51b26de83122203d6cb",
+                "artifact_id": "art_016f9ccbb68c934c0b46aa1c923b3b45b77cb1d4fbed67f25f5c0395b6c5f667",
+                "parent_occurrence_id": "occ_27d4983b6f9b27df1e3fe1964290388c5925ade76eea0d896229e7c81263a792",
+                "logical_path": "fields/registerwebsite.php",
+                "entry_kind": "file",
+                "artifact_kind": "resource",
+                "artifact_format": "file",
+                "declared_size": 2063,
+                "compressed_size": 991,
+                "executable": false,
+                "encrypted": false,
+                "hash_status": "verified",
+                "source_location": null,
+                "limitations": []
+              },
+              {
+                "occurrence_id": "occ_7c2db2c4320611c637e4a7a1383d805cf603aaa31a58f339447a738e12b4294d",
+                "artifact_id": "art_81da70c9fed4bdc7e755fd2f74498ab811c449dfd43f508c285c0ed5a8631c29",
+                "parent_occurrence_id": "occ_cb79b510cb6881f80e637020e10c7687a7e71c4bf6564780a5f31125b3f9ac1e",
+                "logical_path": "helper.php",
+                "entry_kind": "file",
+                "artifact_kind": "resource",
+                "artifact_format": "file",
+                "declared_size": 3111,
+                "compressed_size": 958,
+                "executable": false,
+                "encrypted": false,
+                "hash_status": "verified",
+                "source_location": null,
+                "limitations": []
+              },
+              {
+                "occurrence_id": "occ_f142beb80c9fde0726ab5b3c2099eba61968316af030f30bf828cbde1d79ff66",
+                "artifact_id": "art_ef50868258e909106fae34a5ab41e724f5998038ffb032be173ee2b9b72419d8",
+                "parent_occurrence_id": "occ_cb79b510cb6881f80e637020e10c7687a7e71c4bf6564780a5f31125b3f9ac1e",
+                "logical_path": "kickyoocolors.php",
+                "entry_kind": "file",
+                "artifact_kind": "resource",
+                "artifact_format": "file",
+                "declared_size": 6007,
+                "compressed_size": 2387,
+                "executable": false,
+                "encrypted": false,
+                "hash_status": "verified",
+                "source_location": null,
+                "limitations": []
+              },
+              {
+                "occurrence_id": "occ_f6fefab0035838c123dfad56c6ce074b204ca7e4e8c92937f142e38a3adeea13",
+                "artifact_id": "art_dd87bd7e7fe4dff1f1af8c12029c2fde5626c9a4ce7ba07436116288f7c06550",
+                "parent_occurrence_id": "occ_cb79b510cb6881f80e637020e10c7687a7e71c4bf6564780a5f31125b3f9ac1e",
+                "logical_path": "kickyoocolors.xml",
+                "entry_kind": "file",
+                "artifact_kind": "resource",
+                "artifact_format": "file",
+                "declared_size": 2370,
+                "compressed_size": 893,
+                "executable": false,
+                "encrypted": false,
+                "hash_status": "verified",
+                "source_location": null,
+                "limitations": []
+              },
+              {
+                "occurrence_id": "occ_7f6d13d57c2d0854dc2127e9496456cc2681f2c776ea3eb53afda5763a41458b",
+                "artifact_id": "art_7e0bae946c9cd9a66e4927f382a11a70ba05d9bef99b2d31cc41d1b4de2d934c",
+                "parent_occurrence_id": "occ_cb79b510cb6881f80e637020e10c7687a7e71c4bf6564780a5f31125b3f9ac1e",
+                "logical_path": "language",
+                "entry_kind": "directory",
+                "artifact_kind": "container",
+                "artifact_format": "directory",
+                "declared_size": null,
+                "compressed_size": null,
+                "executable": true,
+                "encrypted": false,
+                "hash_status": "verified",
+                "source_location": null,
+                "limitations": []
+              },
+              {
+                "occurrence_id": "occ_fd9ac046ef913941ee5595b7052a340189d69c1643f43c7548748fc9c0c02c14",
+                "artifact_id": "art_2652639d5c58407c587137da1134a9b1ea5c12ee9e0676ef2aa9fe09dc7474d8",
+                "parent_occurrence_id": "occ_7f6d13d57c2d0854dc2127e9496456cc2681f2c776ea3eb53afda5763a41458b",
+                "logical_path": "language/de-DE",
+                "entry_kind": "directory",
+                "artifact_kind": "container",
+                "artifact_format": "directory",
+                "declared_size": null,
+                "compressed_size": null,
+                "executable": true,
+                "encrypted": false,
+                "hash_status": "verified",
+                "source_location": null,
+                "limitations": []
+              },
+              {
+                "occurrence_id": "occ_4b3f2cd7855244ea93b7771d6fe0e3c5e90a1dbd5e95747b00704c90cafcc123",
+                "artifact_id": "art_ac452cd1a7153d7d6e46b2f8d85d31e8e097f10aabf8640f9ac4589255606192",
+                "parent_occurrence_id": "occ_fd9ac046ef913941ee5595b7052a340189d69c1643f43c7548748fc9c0c02c14",
+                "logical_path": "language/de-DE/plg_system_kickyoocolors.ini",
+                "entry_kind": "file",
+                "artifact_kind": "resource",
+                "artifact_format": "file",
+                "declared_size": 2598,
+                "compressed_size": 1105,
+                "executable": false,
+                "encrypted": false,
+                "hash_status": "verified",
+                "source_location": null,
+                "limitations": []
+              },
+              {
+                "occurrence_id": "occ_a034e545f2c539038f25ea26df31cdc549813e42d17de3a7a1c12530d8f78e68",
+                "artifact_id": "art_8e0f37db8b51a42b5a3b707228c2459a4c8dcfc37d519cd8ad27f719be3b2137",
+                "parent_occurrence_id": "occ_fd9ac046ef913941ee5595b7052a340189d69c1643f43c7548748fc9c0c02c14",
+                "logical_path": "language/de-DE/plg_system_kickyoocolors.sys.ini",
+                "entry_kind": "file",
+                "artifact_kind": "resource",
+                "artifact_format": "file",
+                "declared_size": 172,
+                "compressed_size": 132,
+                "executable": false,
+                "encrypted": false,
+                "hash_status": "verified",
+                "source_location": null,
+                "limitations": []
+              },
+              {
+                "occurrence_id": "occ_4c5633c1609d1b1860e4d3a51e46b78752410f83dc8f9d34d423630225693e6f",
+                "artifact_id": "art_57670b06f6031e5647dcdc20683f9d0f5ffb7a07b4b6f1c246a283748cb37419",
+                "parent_occurrence_id": "occ_7f6d13d57c2d0854dc2127e9496456cc2681f2c776ea3eb53afda5763a41458b",
+                "logical_path": "language/en-GB",
+                "entry_kind": "directory",
+                "artifact_kind": "container",
+                "artifact_format": "directory",
+                "declared_size": null,
+                "compressed_size": null,
+                "executable": true,
+                "encrypted": false,
+                "hash_status": "verified",
+                "source_location": null,
+                "limitations": []
+              },
+              {
+                "occurrence_id": "occ_790b86857a9d4dd223e2511712330b044b836579c1825e8b6b1fbcdf07470458",
+                "artifact_id": "art_c7a1d0cb0ee9b2ca430b6f0a0b7b7b5afab44596123613c7776f3f10f3392e85",
+                "parent_occurrence_id": "occ_4c5633c1609d1b1860e4d3a51e46b78752410f83dc8f9d34d423630225693e6f",
+                "logical_path": "language/en-GB/plg_system_kickyoocolors.ini",
+                "entry_kind": "file",
+                "artifact_kind": "resource",
+                "artifact_format": "file",
+                "declared_size": 2379,
+                "compressed_size": 1033,
+                "executable": false,
+                "encrypted": false,
+                "hash_status": "verified",
+                "source_location": null,
+                "limitations": []
+              },
+              {
+                "occurrence_id": "occ_5cd10d1f96e7460609b3687d98307cfeda31a241171db1467e59e2387d091b42",
+                "artifact_id": "art_21fd087c396a46a7ee45ae0bf64d00c9a8d07a55cf51c68b8c2fcb8646efcb2f",
+                "parent_occurrence_id": "occ_4c5633c1609d1b1860e4d3a51e46b78752410f83dc8f9d34d423630225693e6f",
+                "logical_path": "language/en-GB/plg_system_kickyoocolors.sys.ini",
+                "entry_kind": "file",
+                "artifact_kind": "resource",
+                "artifact_format": "file",
+                "declared_size": 173,
+                "compressed_size": 133,
+                "executable": false,
+                "encrypted": false,
+                "hash_status": "verified",
+                "source_location": null,
+                "limitations": []
+              },
+              {
+                "occurrence_id": "occ_09d5b7d0f38c5acb907baa50c712a2cde3bc51966a8fe5f27c497080b5a17d84",
+                "artifact_id": "art_afed81adeccb39217fcc179dc6fe7a493645ef74149b6208206c45c95b483f2f",
+                "parent_occurrence_id": "occ_cb79b510cb6881f80e637020e10c7687a7e71c4bf6564780a5f31125b3f9ac1e",
+                "logical_path": "script.php",
+                "entry_kind": "file",
+                "artifact_kind": "resource",
+                "artifact_format": "file",
+                "declared_size": 1827,
+                "compressed_size": 885,
+                "executable": false,
+                "encrypted": false,
+                "hash_status": "verified",
+                "source_location": null,
+                "limitations": []
+              },
+              {
+                "occurrence_id": "occ_4890e49a8c1115e95badd54add337e48303406cd5b27a50cfd7b2aa9f54778c3",
+                "artifact_id": "art_53022deb920dbe9b3fdca441dde320986484c13039a9708a2195fff48a30da43",
+                "parent_occurrence_id": "occ_cb79b510cb6881f80e637020e10c7687a7e71c4bf6564780a5f31125b3f9ac1e",
+                "logical_path": "src",
+                "entry_kind": "directory",
+                "artifact_kind": "container",
+                "artifact_format": "directory",
+                "declared_size": null,
+                "compressed_size": null,
+                "executable": true,
+                "encrypted": false,
+                "hash_status": "verified",
+                "source_location": null,
+                "limitations": []
+              },
+              {
+                "occurrence_id": "occ_d6d7c8feb7dbd74bdadcf71194c180745ee46ef1e6c331d79fef6e05e99d8a36",
+                "artifact_id": "art_0b0008fe1fb46dc40f2db31202bc05553ced707c62ce4f590674efa21c81dffd",
+                "parent_occurrence_id": "occ_4890e49a8c1115e95badd54add337e48303406cd5b27a50cfd7b2aa9f54778c3",
+                "logical_path": "src/FormListener.php",
+                "entry_kind": "file",
+                "artifact_kind": "resource",
+                "artifact_format": "file",
+                "declared_size": 4333,
+                "compressed_size": 879,
+                "executable": false,
+                "encrypted": false,
+                "hash_status": "verified",
+                "source_location": null,
+                "limitations": []
+              }
+            ],
+            "edges": [
+              {
+                "edge_id": "edge_15e27e0619710f3775a1a1a8dada5fb7fcebe2987f5d59a2b5611a5c22cee373",
+                "ordinal": 0,
+                "parent_artifact_id": "art_55117847bc44be93fd625e8a2b1b6451ea4927408555381f3960e477603f5948",
+                "relation": "contains",
+                "occurrence_id": "occ_c2d8b6fac3bdfdae1379ca8922efb73b0982d39551ee59d04edcf75592c8e20e",
+                "producer": null
+              },
+              {
+                "edge_id": "edge_1a93f2ea4e9d5f6d1cbfa968a547e3a90882b63afdd04053bb4767d91fb42403",
+                "ordinal": 1,
+                "parent_artifact_id": "art_55117847bc44be93fd625e8a2b1b6451ea4927408555381f3960e477603f5948",
+                "relation": "contains",
+                "occurrence_id": "occ_4890e49a8c1115e95badd54add337e48303406cd5b27a50cfd7b2aa9f54778c3",
+                "producer": null
+              },
+              {
+                "edge_id": "edge_2004f8b2e66c7f93d56cfd5504caaa7bc7d9fa7c2afdd1f54264d5850240614f",
+                "ordinal": 2,
+                "parent_artifact_id": "art_50ad4ccb42313b55674abe341d77dad3b77f03460b277687a22d56d19b592b63",
+                "relation": "contains",
+                "occurrence_id": "occ_1ee4a60770e54bdf71a0e94f2906c600f466a6efb6a3667fab5f992e548a9934",
+                "producer": null
+              },
+              {
+                "edge_id": "edge_28345cab503df10ca9db884671da149d460021816b19c55af128a8f71d40b38e",
+                "ordinal": 3,
+                "parent_artifact_id": "art_55117847bc44be93fd625e8a2b1b6451ea4927408555381f3960e477603f5948",
+                "relation": "contains",
+                "occurrence_id": "occ_09d5b7d0f38c5acb907baa50c712a2cde3bc51966a8fe5f27c497080b5a17d84",
+                "producer": null
+              },
+              {
+                "edge_id": "edge_352190364ae081a7b7be04221f66a084e7bb333705a666602639c3452e93b808",
+                "ordinal": 4,
+                "parent_artifact_id": "art_53022deb920dbe9b3fdca441dde320986484c13039a9708a2195fff48a30da43",
+                "relation": "contains",
+                "occurrence_id": "occ_d6d7c8feb7dbd74bdadcf71194c180745ee46ef1e6c331d79fef6e05e99d8a36",
+                "producer": null
+              },
+              {
+                "edge_id": "edge_3768b89c71031c430cc0af042f5a033650338d10541c450aa999608c75a4e2d8",
+                "ordinal": 5,
+                "parent_artifact_id": "art_55117847bc44be93fd625e8a2b1b6451ea4927408555381f3960e477603f5948",
+                "relation": "contains",
+                "occurrence_id": "occ_b0d39e7694e382a4e84099ade922f0b2d94d289ee367229852d560f26f02efcc",
+                "producer": null
+              },
+              {
+                "edge_id": "edge_390bb5fca89369b0e2781e093b14c404264c56891c11b642aedcad0de76dc71d",
+                "ordinal": 6,
+                "parent_artifact_id": "art_50ad4ccb42313b55674abe341d77dad3b77f03460b277687a22d56d19b592b63",
+                "relation": "contains",
+                "occurrence_id": "occ_eb6cdeb326fe4317a4855bf12b630dc47b3afc7c79ecdbd0c4d6a04c4ef806df",
+                "producer": null
+              },
+              {
+                "edge_id": "edge_3b3f5e8b305d3985db9fd193f928f4098577c6b654e4a7596e3d9f81c01fa040",
+                "ordinal": 7,
+                "parent_artifact_id": "art_2652639d5c58407c587137da1134a9b1ea5c12ee9e0676ef2aa9fe09dc7474d8",
+                "relation": "contains",
+                "occurrence_id": "occ_a034e545f2c539038f25ea26df31cdc549813e42d17de3a7a1c12530d8f78e68",
+                "producer": null
+              },
+              {
+                "edge_id": "edge_42cd27eda89873ca6e63b2633a17f74f7db99abf7c3c1709aa8735f7b0a373dc",
+                "ordinal": 8,
+                "parent_artifact_id": "art_55117847bc44be93fd625e8a2b1b6451ea4927408555381f3960e477603f5948",
+                "relation": "contains",
+                "occurrence_id": "occ_f6fefab0035838c123dfad56c6ce074b204ca7e4e8c92937f142e38a3adeea13",
+                "producer": null
+              },
+              {
+                "edge_id": "edge_6a56d44bfd900e2a7647ed9af7b48203e13ffc42fcc60af7877c9a8e1997dcb7",
+                "ordinal": 9,
+                "parent_artifact_id": "art_ede2d479a190d4550731054495e5a69b91c797f8b412c58b593203ace95aa75e",
+                "relation": "contains",
+                "occurrence_id": "occ_7798935afbef3a93963e18ee4867a8c06752b73e2cb7b51b26de83122203d6cb",
+                "producer": null
+              },
+              {
+                "edge_id": "edge_6ee5cddeeb2452406465e5d24df02497738135ecfa00ab69ff78d1d09ca82caa",
+                "ordinal": 10,
+                "parent_artifact_id": "art_50ad4ccb42313b55674abe341d77dad3b77f03460b277687a22d56d19b592b63",
+                "relation": "contains",
+                "occurrence_id": "occ_dfc7acd4a33b73c1270d8763e27ae666fa15b1bb3c2efd9c0d225344a5c98b27",
+                "producer": null
+              },
+              {
+                "edge_id": "edge_7a2a948b0852303b5e07f3af83bb1c8a0096e6c14266678c67746555e3613b4a",
+                "ordinal": 11,
+                "parent_artifact_id": "art_50ad4ccb42313b55674abe341d77dad3b77f03460b277687a22d56d19b592b63",
+                "relation": "contains",
+                "occurrence_id": "occ_9bf912054db5d2804379d0de8b2c67a9ffb3297b06cf177ab60bc81765bab473",
+                "producer": null
+              },
+              {
+                "edge_id": "edge_980d2dfc0ebde85661470b781597551ad45272b7a1b1d89219bce0050bdfc808",
+                "ordinal": 12,
+                "parent_artifact_id": "art_57670b06f6031e5647dcdc20683f9d0f5ffb7a07b4b6f1c246a283748cb37419",
+                "relation": "contains",
+                "occurrence_id": "occ_790b86857a9d4dd223e2511712330b044b836579c1825e8b6b1fbcdf07470458",
+                "producer": null
+              },
+              {
+                "edge_id": "edge_b215784cc135da2cc81b41ad6796a4b397b2180c0bf9fdfab2e8b75b92a0364b",
+                "ordinal": 13,
+                "parent_artifact_id": "art_7e0bae946c9cd9a66e4927f382a11a70ba05d9bef99b2d31cc41d1b4de2d934c",
+                "relation": "contains",
+                "occurrence_id": "occ_4c5633c1609d1b1860e4d3a51e46b78752410f83dc8f9d34d423630225693e6f",
+                "producer": null
+              },
+              {
+                "edge_id": "edge_b705ccfe9251d3c0b6fb7e5f66616e6c5cc447f417de19c1ebd84223e0a05f4a",
+                "ordinal": 14,
+                "parent_artifact_id": "art_4fd817d7e939a6d0567ffbe398c5a78f6a003f38624566ce73eb872621e765cd",
+                "relation": "contains",
+                "occurrence_id": "occ_6a54d6c67694047c9fc0bddabd952438bd7a441dc73ffdc8cae13e05faa27b6e",
+                "producer": null
+              },
+              {
+                "edge_id": "edge_bfb433e5d8212b46812db274882b20c6678c21c1a601c3319e1b844b7205d6df",
+                "ordinal": 15,
+                "parent_artifact_id": "art_55117847bc44be93fd625e8a2b1b6451ea4927408555381f3960e477603f5948",
+                "relation": "contains",
+                "occurrence_id": "occ_7c2db2c4320611c637e4a7a1383d805cf603aaa31a58f339447a738e12b4294d",
+                "producer": null
+              },
+              {
+                "edge_id": "edge_c02379a001d6067c39cd99b75ec8d8d571e6d33f303807f1d3aac25757852349",
+                "ordinal": 16,
+                "parent_artifact_id": "art_7e0bae946c9cd9a66e4927f382a11a70ba05d9bef99b2d31cc41d1b4de2d934c",
+                "relation": "contains",
+                "occurrence_id": "occ_fd9ac046ef913941ee5595b7052a340189d69c1643f43c7548748fc9c0c02c14",
+                "producer": null
+              },
+              {
+                "edge_id": "edge_cb7ada7e799001e490c491046da1b8b4e5b4e3b3b75db21c3c1b4ccb10b6f393",
+                "ordinal": 17,
+                "parent_artifact_id": "art_50ad4ccb42313b55674abe341d77dad3b77f03460b277687a22d56d19b592b63",
+                "relation": "contains",
+                "occurrence_id": "occ_08ea94663aec111f4da1efc600984dd6b845263d8e58b0bd0041ae5755a6c370",
+                "producer": null
+              },
+              {
+                "edge_id": "edge_ce127c7c682cfc82f37ebf441e56bdaea054c9e29fe30dd5fc951e23cff15c1e",
+                "ordinal": 18,
+                "parent_artifact_id": "art_55117847bc44be93fd625e8a2b1b6451ea4927408555381f3960e477603f5948",
+                "relation": "contains",
+                "occurrence_id": "occ_7f6d13d57c2d0854dc2127e9496456cc2681f2c776ea3eb53afda5763a41458b",
+                "producer": null
+              },
+              {
+                "edge_id": "edge_d1e89a487f900cfc783b9f83cd20e45e629c0edb51d5e40ea30542970d7908dc",
+                "ordinal": 19,
+                "parent_artifact_id": "art_2652639d5c58407c587137da1134a9b1ea5c12ee9e0676ef2aa9fe09dc7474d8",
+                "relation": "contains",
+                "occurrence_id": "occ_4b3f2cd7855244ea93b7771d6fe0e3c5e90a1dbd5e95747b00704c90cafcc123",
+                "producer": null
+              },
+              {
+                "edge_id": "edge_dafd681203be112ec27ea552c866d44ef804f06ad19dd403089004001b9be088",
+                "ordinal": 20,
+                "parent_artifact_id": "art_f205cee858600f18a02f15b3cf10de93459c6991f3346dfd2e969b7a5c705a68",
+                "relation": "contains",
+                "occurrence_id": "occ_ceebd1b460dc062226c3fd6b6863a23a60cff8181590ddd0d282d2da4e48f92f",
+                "producer": null
+              },
+              {
+                "edge_id": "edge_f0af33be9425e281755d48ee90ef9705da5e3bf27b9e37f988beea3e514690e3",
+                "ordinal": 21,
+                "parent_artifact_id": "art_55117847bc44be93fd625e8a2b1b6451ea4927408555381f3960e477603f5948",
+                "relation": "contains",
+                "occurrence_id": "occ_f142beb80c9fde0726ab5b3c2099eba61968316af030f30bf828cbde1d79ff66",
+                "producer": null
+              },
+              {
+                "edge_id": "edge_f99b5ce9a383f490a37334e14366fd0d21b4466958ec71aefbf7f2684caad371",
+                "ordinal": 22,
+                "parent_artifact_id": "art_57670b06f6031e5647dcdc20683f9d0f5ffb7a07b4b6f1c246a283748cb37419",
+                "relation": "contains",
+                "occurrence_id": "occ_5cd10d1f96e7460609b3687d98307cfeda31a241171db1467e59e2387d091b42",
+                "producer": null
+              },
+              {
+                "edge_id": "edge_fbfd37c234ae85adbd84aa0d4c249ed2cff6a64a5b44d9050760170d75e6fb33",
+                "ordinal": 23,
+                "parent_artifact_id": "art_50ad4ccb42313b55674abe341d77dad3b77f03460b277687a22d56d19b592b63",
+                "relation": "contains",
+                "occurrence_id": "occ_416bbc1299aa7522e55690881f1c3b9a9871e578a4eec15baaaff56cfc87aa33",
+                "producer": null
+              },
+              {
+                "edge_id": "edge_fc5b631fd579ff5857237d606737925e1541219185f5712f485fc4006d0d9262",
+                "ordinal": 24,
+                "parent_artifact_id": "art_50ad4ccb42313b55674abe341d77dad3b77f03460b277687a22d56d19b592b63",
+                "relation": "contains",
+                "occurrence_id": "occ_5a07055a6c8e46d0ec6f956cf1b2551727ee4c902ffc602f2fda809c2eba148b",
+                "producer": null
+              },
+              {
+                "edge_id": "edge_ff41cb6794846b87f32c9f803558ffd1d5348ab132a2381dcdf510b110fc47a4",
+                "ordinal": 25,
+                "parent_artifact_id": "art_55117847bc44be93fd625e8a2b1b6451ea4927408555381f3960e477603f5948",
+                "relation": "contains",
+                "occurrence_id": "occ_63bcf8172938b1cfdc0285c7fa491efebdbbe46de0304f135c90891c58ef3036",
+                "producer": null
+              },
+              {
+                "edge_id": "edge_ffb5fc4cd461cb76c0f8c12230251e8b1c084e1060c11fd3c11236f84b34d080",
+                "ordinal": 26,
+                "parent_artifact_id": "art_55117847bc44be93fd625e8a2b1b6451ea4927408555381f3960e477603f5948",
+                "relation": "contains",
+                "occurrence_id": "occ_27d4983b6f9b27df1e3fe1964290388c5925ade76eea0d896229e7c81263a792",
+                "producer": null
+              }
+            ],
+            "provenance": [],
+            "integrity_contradictions": [],
+            "limitations": [
+              "ZIP inventory lists central-directory entries only. Bytes after the central directory, including an APK Signing Block or a ZIP comment, are not occurrences."
+            ]
+          },
+          "confidence": "observed",
+          "authority": "shipped-artifact",
+          "environment": null,
+          "limitations": [
+            "ZIP inventory lists central-directory entries only. Bytes after the central directory, including an APK Signing Block or a ZIP comment, are not occurrences."
+          ],
+          "locations": [],
+          "evidence_links": []
+        }
+      }
+    ],
+    "observations": [
+      {
+        "observation_id": "aio_813145e7cd9f9796676e18411051f2efea02dd7d16bb9e8888c805ecbbdf2534",
+        "kind": "root-manifest",
+        "subject": "art_55117847bc44be93fd625e8a2b1b6451ea4927408555381f3960e477603f5948",
+        "value": {
+          "manifest_id": "agm_2736b0087836bfc16c28ba5863467c02552f7f7967da02e2522bdf96e39c6cc8",
+          "root_artifact_id": "art_55117847bc44be93fd625e8a2b1b6451ea4927408555381f3960e477603f5948",
+          "root_sha256": "966885e6edd5a3f76ab298e0532d341e31c0cce9b33b2b78524e3514afce6f35",
+          "root_format": "zip",
+          "graph_sha256": "4fd44e99e98d58d813733cbaa529beb43ccdcb2e3cb7d75879d9b7936bb9dd6a",
+          "node_count": 28,
+          "occurrence_count": 28,
+          "edge_count": 27
+        },
+        "evidence_id": "ev_208e69e700819bc084544d71dc11b57c48533e4d0dda59e011ccb4d19e5a56e9"
+      }
+    ],
+    "hypotheses": [],
+    "contradictions": [],
+    "unexplored_branches": [],
+    "next_probes": [],
+    "coverage": {
+      "status": "complete-within-substeps",
+      "substeps_completed": 1,
+      "observations_retained": 1,
+      "observations_omitted": 0,
+      "hypotheses_retained": 0,
+      "hypotheses_omitted": 0,
+      "unexplored_branches_retained": 0,
+      "unexplored_branches_omitted": 0,
+      "next_probes_retained": 0,
+      "next_probes_omitted": 0
+    },
+    "evidence_links": [
+      "ev_208e69e700819bc084544d71dc11b57c48533e4d0dda59e011ccb4d19e5a56e9"
+    ],
+    "limitations": [
+      "Inspection derives bounded static hypotheses and next probes; it does not execute the artifact or claim format-specific semantics.",
+      "ZIP inventory lists central-directory entries only. Bytes after the central directory, including an APK Signing Block or a ZIP comment, are not occurrences."
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Inspection derives bounded static hypotheses and next probes; it does not execute the artifact or claim format-specific semantics.",
+    "ZIP inventory lists central-directory entries only. Bytes after the central directory, including an APK Signing Block or a ZIP comment, are not occurrences."
+  ],
+  "locations": [],
+  "evidence_links": [
+    "ev_208e69e700819bc084544d71dc11b57c48533e4d0dda59e011ccb4d19e5a56e9"
+  ]
+}
