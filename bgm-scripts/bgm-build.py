@@ -13,6 +13,9 @@ BGM_MANIFEST = 'bgm-yootheme-colors-extended.xml'
 BGM_FEED_URL = 'https://raw.githubusercontent.com/george-media/bgm-yootheme-colors-extended/main/bgm-updates/bgm-update.xml'
 BGM_REPOSITORY_URL = 'https://github.com/george-media/bgm-yootheme-colors-extended'
 BGM_MAX_PACKAGE_BYTES = 8 * 1024 * 1024
+# Fixed reproducibility epoch, retained from the original prototype. This is not
+# a claim about the build/release date and must not change existing ZIP bytes.
+BGM_ZIP_EPOCH = (2026, 10, 18, 0, 0, 0)
 BGM_ALLOWED_FILES = {
     BGM_MANIFEST, 'bgm-bootstrap.php', 'bgm-styler.php', 'bgm-licence.txt',
     'services/provider.php',
@@ -46,12 +49,13 @@ def bgm_manifest_details(data):
             or len(manifest.findall('namespace')) != 1
             or manifest.attrib != {'type': 'plugin', 'group': 'system', 'method': 'upgrade'}
             or manifest.findtext('namespace') != 'Bgm\\Plugin\\System\\BgmYoothemeColorsExtended'
-            or manifest.find('namespace').attrib != {'path': 'src'}
-            or manifest.find('files/folder') is None
-            or manifest.find('files/folder').attrib != {'plugin': 'bgm-yootheme-colors-extended'}):
+            or manifest.find('namespace').attrib != {'path': 'src'}):
         raise ValueError('Native plugin manifest identity mismatch.')
+    bgm_validate_install_declarations(manifest)
     servers = manifest.findall('updateservers/server')
     if version == '0.1.0':
+        # Also validate archived prototype receipts without rewriting their bytes
+        # or retroactively registering an update server in that historical build.
         if manifest.findall('updateservers'):
             raise ValueError('The preserved 0.1.0 prototype must not register an update server.')
         feed = None
@@ -62,6 +66,38 @@ def bgm_manifest_details(data):
             raise ValueError('Release manifest must register the verified canonical update feed.')
         feed = BGM_FEED_URL
     return {'version': version, 'stability': stability, 'update_server': feed}
+
+
+def bgm_validate_install_declarations(manifest):
+    """Require the exact native install declarations and their full ZIP coverage."""
+    files = manifest.findall('files')
+    languages = manifest.findall('languages')
+    if (len(files) != 1 or files[0].attrib or len(languages) != 1
+            or languages[0].attrib != {'folder': 'language'}):
+        raise ValueError('Manifest install declarations do not match the package contract.')
+    records = lambda block: [(node.tag, node.attrib, (node.text or '').strip()) for node in block]
+    if (any(len(node) for block in [files[0], languages[0]] for node in block)
+            or records(files[0]) != [
+                ('folder', {'plugin': 'bgm-yootheme-colors-extended'}, 'services'),
+                ('folder', {}, 'src'), ('folder', {}, 'bgm-assets'),
+                ('filename', {}, 'bgm-bootstrap.php'), ('filename', {}, 'bgm-styler.php'),
+                ('filename', {}, 'bgm-licence.txt'),
+            ]
+            or records(languages[0]) != [
+                ('language', {'tag': 'en-GB'}, 'en-GB/plg_system_bgm-yootheme-colors-extended.ini'),
+                ('language', {'tag': 'en-GB'}, 'en-GB/plg_system_bgm-yootheme-colors-extended.sys.ini'),
+            ]):
+        raise ValueError('Manifest install declarations do not match the package contract.')
+    declared = {BGM_MANIFEST}
+    for node in files[0]:
+        name = node.text.strip()
+        if node.tag == 'folder':
+            declared.update(path for path in BGM_ALLOWED_FILES if path.startswith(name + '/'))
+        else:
+            declared.add(name)
+    declared.update('language/' + node.text.strip() for node in languages[0])
+    if declared != BGM_ALLOWED_FILES:
+        raise ValueError('Manifest install declarations do not cover the complete package allowlist.')
 
 
 def bgm_archive_name(version):
@@ -109,7 +145,7 @@ def bgm_build(root, expected_version=None):
     data = io.BytesIO()
     with zipfile.ZipFile(data, 'w', compression=zipfile.ZIP_DEFLATED, compresslevel=9) as archive:
         for path in files:
-            info = zipfile.ZipInfo(path.relative_to(source).as_posix(), (2026, 10, 18, 0, 0, 0))
+            info = zipfile.ZipInfo(path.relative_to(source).as_posix(), BGM_ZIP_EPOCH)
             info.compress_type = zipfile.ZIP_DEFLATED
             info.create_system = 3
             info.external_attr = 0o100644 << 16

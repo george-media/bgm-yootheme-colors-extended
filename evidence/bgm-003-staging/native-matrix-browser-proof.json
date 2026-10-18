@@ -1,0 +1,84 @@
+{
+  "package_sha256": "0785c6dd02056e4ed5ce674508ae637e24618efa58e0f419c4538d94aacfe6ea",
+  "native_route": "POST YOOtheme page using CSRF/authenticated administrator session",
+  "runtime_rows": 100,
+  "native_schema_choices": 100,
+  "saved_choices": 100,
+  "rendered_classes": 100,
+  "browser_computed_colours": 100,
+  "map_popup_cases": [
+    81,
+    82,
+    83,
+    84
+  ],
+  "style_save": "Actual browser native Style > BGM Colours > colour picker > Save, awaited asynchronous compile",
+  "served_css": {
+    "url": "http://127.0.0.1:18762/templates/yootheme/css/theme.13.css",
+    "http": 200,
+    "bytes": 746476,
+    "sha256": "4028ad4dcea05fd788e5a4ec04209d3a32f99ce5996757c019362585caf72f6a"
+  },
+  "backgrounds": {
+    "tertiary": "rgb(36, 90, 129)",
+    "quaternary": "rgb(128, 58, 36)",
+    "quinary": "rgb(47, 107, 69)",
+    "senary": "rgb(101, 66, 139)"
+  },
+  "text_colours": {
+    "tertiary": "rgb(17, 51, 85)",
+    "quaternary": "rgb(102, 51, 0)",
+    "quinary": "rgb(34, 85, 34)",
+    "senary": "rgb(85, 34, 119)"
+  },
+  "responsive": [
+    {
+      "viewport": 390,
+      "client_width": 375,
+      "scroll_width": 375
+    },
+    {
+      "viewport": 768,
+      "client_width": 753,
+      "scroll_width": 753
+    },
+    {
+      "viewport": 1440,
+      "client_width": 1425,
+      "scroll_width": 1425
+    }
+  ],
+  "console_warning_errors": [],
+  "inverse": {
+    "tertiary": "dark",
+    "quaternary": "light",
+    "quinary": "light",
+    "senary": "light"
+  },
+  "preserve_colour": "native uk-preserve-color retains ordinary dark headings and stock controls; inverse family headings light when not preserved",
+  "forced_modes": "Native background-image prerequisite checked, uk-light/uk-dark plus preserve class and corresponding white/dark headings pass",
+  "state_fixture": "Native Builder Text HTML contains synthetic button controls for CSS state qualification, separately from native Builder button_item cases",
+  "hover_backgrounds": {
+    "tertiary": "rgb(30, 76, 109)",
+    "quaternary": "rgb(108, 49, 30)",
+    "quinary": "rgb(39, 89, 58)",
+    "senary": "rgb(88, 58, 122)"
+  },
+  "active_backgrounds": {
+    "tertiary": "rgb(25, 62, 89)",
+    "quaternary": "rgb(88, 40, 25)",
+    "quinary": "rgb(31, 72, 46)",
+    "senary": "rgb(76, 50, 104)"
+  },
+  "disabled_and_aria_disabled": {
+    "background": "rgb(247, 247, 247)",
+    "text": "rgb(180, 181, 186)",
+    "families": 4
+  },
+  "keyboard_focus_visible": "All four synthetic normal controls, native Tab interaction, hover declarations active; intermediate transitions excluded from exact-colour assertions",
+  "limits": [
+    "100 choice matrix bulk saved via actual native YOOtheme endpoint, not 100 individual browser clicks",
+    "Staging YOOtheme is manifest-reconstructed installed-source provenance, not pristine distribution",
+    "Only Joomla6.2.0, current lane PHP8.4.17, YOOtheme5.0.52 at this checkpoint"
+  ]
+}

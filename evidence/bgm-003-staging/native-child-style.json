@@ -1,0 +1,22 @@
+{
+  "native_child_method": "Native Joomla child command exposed retained fixed parent element in reconstructed vendor manifest. Restored parent using preserved native archive, then installed corrected minimal original synthetic child ZIP through native Joomla installer. Separate child extension/files verified.",
+  "native_child_package_sha256": "e28bee43b7032148af83380a074f8a0fc924c5e547f0e2c4f18bc59e30df27f6",
+  "parent_restored_package_sha256": "d714a809d3c3d4c4b36adb11468018b79e628fce0f92b5be856e437ff3d2ba23",
+  "child_template": "yootheme_bgm_qualification",
+  "native_name_exception": "Joomla requires parent prefix with letters/numbers/underscores for child names",
+  "nondefault_style_id": 14,
+  "home": false,
+  "native_style_save_reopen_value": "#245A82",
+  "frontend_style_override": "Native Joomla templateStyle=14 query",
+  "computed_tertiary_background": "rgb(36, 90, 130)",
+  "child_custom_css_marker": "bgm-native-child",
+  "served_css_bytes": 746752,
+  "served_css_sha256": "005e9c1192261903da2ef21414eefc194dc306e7220f7e49b8aca4c1ad04d04f",
+  "card_media_exclusion": {
+    "media_colour": "rgb(108, 109, 116)",
+    "body_colour": "rgba(255, 255, 255, 0.7)",
+    "title_colour": "rgb(255, 255, 255)",
+    "native_card_hover_preserved": true
+  },
+  "source_defect": false
+}

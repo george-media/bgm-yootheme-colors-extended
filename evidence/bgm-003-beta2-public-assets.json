@@ -24,5 +24,6 @@
   ],
   "generatedFeedVersion": "0.1.1-beta2",
   "generatedFeedStability": "beta",
-  "nativeUpdateResult": "pending"
+  "nativeUpdateAtFixturePublication": "pending",
+  "laterNativeUpdateEvidence": "bgm-003-staging/native-beta1-to-beta2-update.json"
 }

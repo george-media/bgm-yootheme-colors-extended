@@ -29,5 +29,6 @@
   ],
   "allMembersMatchSource": true,
   "broaderToolingUnchangedFromReviewSnapshot": true,
-  "nativeUpdaterQualification": "pending"
+  "nativeUpdaterAtBuildCheckpoint": "pending",
+  "laterNativeUpdateEvidence": "bgm-003-staging/native-beta1-to-beta2-update.json"
 }

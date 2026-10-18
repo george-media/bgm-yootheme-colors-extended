@@ -1,0 +1,8 @@
+{
+  "native_browser_actions": "Pages > BGM Synthetic Palette Fixture > first section Edit > Settings > Style BGM Senary > Save Layout",
+  "persisted_style": "bgm-senary",
+  "sentinel_absent": true,
+  "independent_native_db_readback": true,
+  "reopened_native_builder_and_restored": "bgm-tertiary",
+  "final_readback_pass": true
+}

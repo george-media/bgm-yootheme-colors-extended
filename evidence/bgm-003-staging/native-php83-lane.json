@@ -1,0 +1,15 @@
+{
+  "Joomla": "6.2.0",
+  "YOOtheme": "5.0.52",
+  "PHP": "8.3.30",
+  "native_install_package_sha256": "0785c6dd02056e4ed5ce674508ae637e24618efa58e0f419c4538d94aacfe6ea",
+  "native_installer": "upload-package HTTP200 successful native installer message, scripted multipart",
+  "native_style_save": "Actual browser BGMColours picker SAVE, waited compile, reload and native database readback",
+  "saved_value": "#245A83",
+  "frontend_http": 200,
+  "css_sha256": "09b0e65d7d344a187f050522f4849ed93932444b8a7f69f036349d3a2b3e841c",
+  "css_bytes": 746476,
+  "browser_computed_colour": "rgb(36, 90, 131)",
+  "runtime_errors": [],
+  "browser_console_warning_errors": []
+}

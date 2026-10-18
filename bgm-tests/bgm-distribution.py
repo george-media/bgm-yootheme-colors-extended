@@ -7,6 +7,7 @@ import io
 import json
 from pathlib import Path
 import shutil
+import stat
 import tempfile
 import unittest
 from unittest.mock import Mock, patch
@@ -75,6 +76,39 @@ class BgmDistributionTests(unittest.TestCase):
             bgm_build.bgm_build(self.root)
         self.assertFalse((self.root / 'dist').exists())
 
+    def test_dropped_folder_filename_and_language_declarations_are_refused(self):
+        path = self.root / 'bgm-plugin' / bgm_build.BGM_MANIFEST
+        original = path.read_bytes()
+        cases = [
+            ('files', 'services'), ('files', 'src'), ('files', 'bgm-assets'),
+            ('files', 'bgm-bootstrap.php'), ('files', 'bgm-styler.php'), ('files', 'bgm-licence.txt'),
+            ('languages', 'en-GB/plg_system_bgm-yootheme-colors-extended.ini'),
+            ('languages', 'en-GB/plg_system_bgm-yootheme-colors-extended.sys.ini'),
+        ]
+        for block, name in cases:
+            with self.subTest(declaration=name):
+                manifest = ET.fromstring(original)
+                parent = manifest.find(block)
+                parent.remove(next(node for node in parent if node.text == name))
+                path.write_bytes(ET.tostring(manifest))
+                with self.assertRaisesRegex(ValueError, 'install declarations'):
+                    bgm_build.bgm_build(self.root, self.version)
+                self.assertFalse((self.root / 'dist').exists())
+        path.write_bytes(original)
+
+    def test_existing_zip_receipt_also_rejects_undeclared_member(self):
+        self.build()
+        source = zipfile.ZipFile(io.BytesIO(self.package))
+        manifest = ET.fromstring(source.read(bgm_build.BGM_MANIFEST))
+        manifest.find('files').remove(manifest.find('files/filename'))
+        changed = io.BytesIO()
+        with source, zipfile.ZipFile(changed, 'w') as archive:
+            for member in source.infolist():
+                data = ET.tostring(manifest) if member.filename == bgm_build.BGM_MANIFEST else source.read(member)
+                archive.writestr(member, data)
+        with self.assertRaisesRegex(ValueError, 'install declarations'):
+            bgm_build.bgm_package_receipt(changed.getvalue(), self.receipt['archive'])
+
     def test_versions_cannot_supply_paths_or_ambiguous_stability(self):
         for version in ['../x', '0.1.1-BETA1', '0.1.1-beta0', '0.1.1-test1', '01.1.1', '', None, True]:
             with self.subTest(version=version), self.assertRaises(ValueError):
@@ -124,6 +158,7 @@ class BgmDistributionTests(unittest.TestCase):
         self.assertNotIn('Authorization', request.headers)
         self.assertNotIn('Cookie', request.headers)
         data = Path(result['feed']).read_bytes()
+        self.assertEqual(stat.S_IMODE(Path(result['feed']).stat().st_mode), 0o644)
         update = ET.fromstring(data).find('update')
         self.assertEqual(update.findtext('version'), self.version)
         self.assertEqual(update.findtext('tags/tag'), self.receipt['stability'])

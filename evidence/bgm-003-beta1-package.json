@@ -28,5 +28,9 @@
   "controllerLocalDistributionTests": 14,
   "applicationRuntimeChange": "Only manifest version and verified update-server registration differ from 0.1.0. Other thirteen runtime members unchanged.",
   "nativeUpdaterQualification": "pending",
-  "claudeDistributionReview": "running, authoritative result not yet available"
+  "claudeAtFixturePublication": "running, authoritative result not yet available",
+  "laterCompletedReviews": [
+    "review-mvdfhfdq-ru4guz",
+    "review-mvdfwmni-2pv5d4"
+  ]
 }

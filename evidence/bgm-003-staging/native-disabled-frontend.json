@@ -1,0 +1,8 @@
+{
+  "state": "disabled",
+  "frontend_http": 200,
+  "bgm_runtime_class_present": false,
+  "native_unknown_choice_fallback": true,
+  "schema_bgm_choices_absent": true,
+  "admin_customizer_loads": true
+}

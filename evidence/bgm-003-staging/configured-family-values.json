@@ -1,0 +1,16 @@
+{
+  "native_config_save_readback": true,
+  "values": {
+    "@bgm-tertiary-background": "#245A80",
+    "@bgm-tertiary-text-color": "#113355",
+    "@bgm-quaternary-background": "#803A24",
+    "@bgm-quaternary-text-color": "#663300",
+    "@bgm-quinary-background": "#2F6B45",
+    "@bgm-quinary-text-color": "#225522",
+    "@bgm-senary-background": "#65428B",
+    "@bgm-senary-text-color": "#552277"
+  },
+  "method": "Native YOOtheme customizer POST returned plain success, confirmed database readback",
+  "css_compile": "pending native browser SAVE",
+  "controller_phase_note": "Initial configured colour values, preceding the matrix, child, PHP8.3 and beta-update Style Saves. Later colours/CSS hashes are phase-specific, not contradictory values."
+}

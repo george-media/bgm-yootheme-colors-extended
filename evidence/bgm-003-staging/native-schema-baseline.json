@@ -1,0 +1,391 @@
+{
+  "route": "native administrator com_ajax customizer GET",
+  "template_style_id": 13,
+  "element_types": 59,
+  "registered_fields": 19,
+  "runtime_choices": 100,
+  "fields": {
+    "section.style": {
+      "stock_options": {
+        "None": "",
+        "Default": "default",
+        "Muted": "muted",
+        "Primary": "primary",
+        "Secondary": "secondary"
+      },
+      "bgm_options": {
+        "BGM Tertiary": "bgm-tertiary",
+        "BGM Quaternary": "bgm-quaternary",
+        "BGM Quinary": "bgm-quinary",
+        "BGM Senary": "bgm-senary"
+      }
+    },
+    "column.style": {
+      "stock_options": {
+        "None": "",
+        "Card Default": "card-default",
+        "Card Primary": "card-primary",
+        "Card Secondary": "card-secondary",
+        "Card Hover": "card-hover",
+        "Card Overlay": "card-overlay",
+        "Tile Default": "tile-default",
+        "Tile Muted": "tile-muted",
+        "Tile Primary": "tile-primary",
+        "Tile Secondary": "tile-secondary"
+      },
+      "bgm_options": {
+        "BGM Card Tertiary": "bgm-card-tertiary",
+        "BGM Tile Tertiary": "bgm-tile-tertiary",
+        "BGM Card Quaternary": "bgm-card-quaternary",
+        "BGM Tile Quaternary": "bgm-tile-quaternary",
+        "BGM Card Quinary": "bgm-card-quinary",
+        "BGM Tile Quinary": "bgm-tile-quinary",
+        "BGM Card Senary": "bgm-card-senary",
+        "BGM Tile Senary": "bgm-tile-senary"
+      }
+    },
+    "panel.panel_style": {
+      "stock_options": {
+        "None": "",
+        "Card Default": "card-default",
+        "Card Primary": "card-primary",
+        "Card Secondary": "card-secondary",
+        "Card Hover": "card-hover",
+        "Card Overlay": "card-overlay",
+        "Tile Default": "tile-default",
+        "Tile Muted": "tile-muted",
+        "Tile Primary": "tile-primary",
+        "Tile Secondary": "tile-secondary"
+      },
+      "bgm_options": {
+        "BGM Card Tertiary": "bgm-card-tertiary",
+        "BGM Tile Tertiary": "bgm-tile-tertiary",
+        "BGM Card Quaternary": "bgm-card-quaternary",
+        "BGM Tile Quaternary": "bgm-tile-quaternary",
+        "BGM Card Quinary": "bgm-card-quinary",
+        "BGM Tile Quinary": "bgm-tile-quinary",
+        "BGM Card Senary": "bgm-card-senary",
+        "BGM Tile Senary": "bgm-tile-senary"
+      }
+    },
+    "panel.title_color": {
+      "stock_options": {
+        "None": "",
+        "Muted": "muted",
+        "Emphasis": "emphasis",
+        "Primary": "primary",
+        "Secondary": "secondary",
+        "Success": "success",
+        "Warning": "warning",
+        "Danger": "danger",
+        "Background": "background"
+      },
+      "bgm_options": {
+        "BGM Tertiary": "bgm-tertiary",
+        "BGM Quaternary": "bgm-quaternary",
+        "BGM Quinary": "bgm-quinary",
+        "BGM Senary": "bgm-senary"
+      }
+    },
+    "grid.panel_style": {
+      "stock_options": {
+        "None": "",
+        "Card Default": "card-default",
+        "Card Primary": "card-primary",
+        "Card Secondary": "card-secondary",
+        "Card Hover": "card-hover",
+        "Card Overlay": "card-overlay",
+        "Tile Default": "tile-default",
+        "Tile Muted": "tile-muted",
+        "Tile Primary": "tile-primary",
+        "Tile Secondary": "tile-secondary",
+        "Tile Checked": "tile-checked"
+      },
+      "bgm_options": {
+        "BGM Card Tertiary": "bgm-card-tertiary",
+        "BGM Tile Tertiary": "bgm-tile-tertiary",
+        "BGM Card Quaternary": "bgm-card-quaternary",
+        "BGM Tile Quaternary": "bgm-tile-quaternary",
+        "BGM Card Quinary": "bgm-card-quinary",
+        "BGM Tile Quinary": "bgm-tile-quinary",
+        "BGM Card Senary": "bgm-card-senary",
+        "BGM Tile Senary": "bgm-tile-senary"
+      }
+    },
+    "grid.title_color": {
+      "stock_options": {
+        "None": "",
+        "Muted": "muted",
+        "Emphasis": "emphasis",
+        "Primary": "primary",
+        "Secondary": "secondary",
+        "Success": "success",
+        "Warning": "warning",
+        "Danger": "danger",
+        "Background": "background"
+      },
+      "bgm_options": {
+        "BGM Tertiary": "bgm-tertiary",
+        "BGM Quaternary": "bgm-quaternary",
+        "BGM Quinary": "bgm-quinary",
+        "BGM Senary": "bgm-senary"
+      }
+    },
+    "grid_item.panel_style": {
+      "stock_options": {
+        "None": "",
+        "Card Default": "card-default",
+        "Card Primary": "card-primary",
+        "Card Secondary": "card-secondary",
+        "Card Hover": "card-hover",
+        "Card Overlay": "card-overlay",
+        "Tile Default": "tile-default",
+        "Tile Muted": "tile-muted",
+        "Tile Primary": "tile-primary",
+        "Tile Secondary": "tile-secondary"
+      },
+      "bgm_options": {
+        "BGM Card Tertiary": "bgm-card-tertiary",
+        "BGM Tile Tertiary": "bgm-tile-tertiary",
+        "BGM Card Quaternary": "bgm-card-quaternary",
+        "BGM Tile Quaternary": "bgm-tile-quaternary",
+        "BGM Card Quinary": "bgm-card-quinary",
+        "BGM Tile Quinary": "bgm-tile-quinary",
+        "BGM Card Senary": "bgm-card-senary",
+        "BGM Tile Senary": "bgm-tile-senary"
+      }
+    },
+    "panel-slider.panel_style": {
+      "stock_options": {
+        "None": "",
+        "Card Default": "card-default",
+        "Card Primary": "card-primary",
+        "Card Secondary": "card-secondary",
+        "Card Hover": "card-hover",
+        "Card Overlay": "card-overlay",
+        "Tile Default": "tile-default",
+        "Tile Muted": "tile-muted",
+        "Tile Primary": "tile-primary",
+        "Tile Secondary": "tile-secondary"
+      },
+      "bgm_options": {
+        "BGM Card Tertiary": "bgm-card-tertiary",
+        "BGM Tile Tertiary": "bgm-tile-tertiary",
+        "BGM Card Quaternary": "bgm-card-quaternary",
+        "BGM Tile Quaternary": "bgm-tile-quaternary",
+        "BGM Card Quinary": "bgm-card-quinary",
+        "BGM Tile Quinary": "bgm-tile-quinary",
+        "BGM Card Senary": "bgm-card-senary",
+        "BGM Tile Senary": "bgm-tile-senary"
+      }
+    },
+    "panel-slider.title_color": {
+      "stock_options": {
+        "None": "",
+        "Muted": "muted",
+        "Emphasis": "emphasis",
+        "Primary": "primary",
+        "Secondary": "secondary",
+        "Success": "success",
+        "Warning": "warning",
+        "Danger": "danger",
+        "Background": "background"
+      },
+      "bgm_options": {
+        "BGM Tertiary": "bgm-tertiary",
+        "BGM Quaternary": "bgm-quaternary",
+        "BGM Quinary": "bgm-quinary",
+        "BGM Senary": "bgm-senary"
+      }
+    },
+    "panel-slider_item.panel_style": {
+      "stock_options": {
+        "None": "",
+        "Card Default": "card-default",
+        "Card Primary": "card-primary",
+        "Card Secondary": "card-secondary",
+        "Card Hover": "card-hover",
+        "Card Overlay": "card-overlay",
+        "Tile Default": "tile-default",
+        "Tile Muted": "tile-muted",
+        "Tile Primary": "tile-primary",
+        "Tile Secondary": "tile-secondary"
+      },
+      "bgm_options": {
+        "BGM Card Tertiary": "bgm-card-tertiary",
+        "BGM Tile Tertiary": "bgm-tile-tertiary",
+        "BGM Card Quaternary": "bgm-card-quaternary",
+        "BGM Tile Quaternary": "bgm-tile-quaternary",
+        "BGM Card Quinary": "bgm-card-quinary",
+        "BGM Tile Quinary": "bgm-tile-quinary",
+        "BGM Card Senary": "bgm-card-senary",
+        "BGM Tile Senary": "bgm-tile-senary"
+      }
+    },
+    "popover.card_style": {
+      "stock_options": {
+        "Default": "default",
+        "Primary": "primary",
+        "Secondary": "secondary",
+        "Overlay": "overlay"
+      },
+      "bgm_options": {
+        "BGM Tertiary": "bgm-tertiary",
+        "BGM Quaternary": "bgm-quaternary",
+        "BGM Quinary": "bgm-quinary",
+        "BGM Senary": "bgm-senary"
+      }
+    },
+    "popover.title_color": {
+      "stock_options": {
+        "None": "",
+        "Muted": "muted",
+        "Emphasis": "emphasis",
+        "Primary": "primary",
+        "Secondary": "secondary",
+        "Success": "success",
+        "Warning": "warning",
+        "Danger": "danger",
+        "Background": "background"
+      },
+      "bgm_options": {
+        "BGM Tertiary": "bgm-tertiary",
+        "BGM Quaternary": "bgm-quaternary",
+        "BGM Quinary": "bgm-quinary",
+        "BGM Senary": "bgm-senary"
+      }
+    },
+    "gallery.title_color": {
+      "stock_options": {
+        "None": "",
+        "Muted": "muted",
+        "Emphasis": "emphasis",
+        "Primary": "primary",
+        "Secondary": "secondary",
+        "Success": "success",
+        "Warning": "warning",
+        "Danger": "danger",
+        "Background": "background"
+      },
+      "bgm_options": {
+        "BGM Tertiary": "bgm-tertiary",
+        "BGM Quaternary": "bgm-quaternary",
+        "BGM Quinary": "bgm-quinary",
+        "BGM Senary": "bgm-senary"
+      }
+    },
+    "description_list.title_color": {
+      "stock_options": {
+        "None": "",
+        "Muted": "muted",
+        "Emphasis": "emphasis",
+        "Primary": "primary",
+        "Secondary": "secondary",
+        "Success": "success",
+        "Warning": "warning",
+        "Danger": "danger",
+        "Background": "background"
+      },
+      "bgm_options": {
+        "BGM Tertiary": "bgm-tertiary",
+        "BGM Quaternary": "bgm-quaternary",
+        "BGM Quinary": "bgm-quinary",
+        "BGM Senary": "bgm-senary"
+      }
+    },
+    "map.title_color": {
+      "stock_options": {
+        "None": "",
+        "Muted": "muted",
+        "Emphasis": "emphasis",
+        "Primary": "primary",
+        "Secondary": "secondary",
+        "Success": "success",
+        "Warning": "warning",
+        "Danger": "danger",
+        "Background": "background"
+      },
+      "bgm_options": {
+        "BGM Tertiary": "bgm-tertiary",
+        "BGM Quaternary": "bgm-quaternary",
+        "BGM Quinary": "bgm-quinary",
+        "BGM Senary": "bgm-senary"
+      }
+    },
+    "table.title_color": {
+      "stock_options": {
+        "None": "",
+        "Muted": "muted",
+        "Emphasis": "emphasis",
+        "Primary": "primary",
+        "Secondary": "secondary",
+        "Success": "success",
+        "Warning": "warning",
+        "Danger": "danger",
+        "Background": "background"
+      },
+      "bgm_options": {
+        "BGM Tertiary": "bgm-tertiary",
+        "BGM Quaternary": "bgm-quaternary",
+        "BGM Quinary": "bgm-quinary",
+        "BGM Senary": "bgm-senary"
+      }
+    },
+    "headline.title_color": {
+      "stock_options": {
+        "None": "",
+        "Muted": "muted",
+        "Emphasis": "emphasis",
+        "Primary": "primary",
+        "Secondary": "secondary",
+        "Success": "success",
+        "Warning": "warning",
+        "Danger": "danger",
+        "Background": "background"
+      },
+      "bgm_options": {
+        "BGM Tertiary": "bgm-tertiary",
+        "BGM Quaternary": "bgm-quaternary",
+        "BGM Quinary": "bgm-quinary",
+        "BGM Senary": "bgm-senary"
+      }
+    },
+    "text.text_color": {
+      "stock_options": {
+        "None": "",
+        "Muted": "muted",
+        "Emphasis": "emphasis",
+        "Primary": "primary",
+        "Secondary": "secondary",
+        "Success": "success",
+        "Warning": "warning",
+        "Danger": "danger"
+      },
+      "bgm_options": {
+        "BGM Tertiary": "bgm-tertiary",
+        "BGM Quaternary": "bgm-quaternary",
+        "BGM Quinary": "bgm-quinary",
+        "BGM Senary": "bgm-senary"
+      }
+    },
+    "button_item.button_style": {
+      "stock_options": {
+        "Default": "default",
+        "Primary": "primary",
+        "Secondary": "secondary",
+        "Danger": "danger",
+        "Text": "text",
+        "Link": "",
+        "Link Muted": "link-muted",
+        "Link Text": "link-text"
+      },
+      "bgm_options": {
+        "BGM Tertiary": "bgm-tertiary",
+        "BGM Quaternary": "bgm-quaternary",
+        "BGM Quinary": "bgm-quinary",
+        "BGM Senary": "bgm-senary"
+      }
+    }
+  },
+  "state": "read-only schema pass, rendering/save/reopen pending"
+}

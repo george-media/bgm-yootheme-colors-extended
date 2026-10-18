@@ -1,0 +1,40 @@
+{
+  "jobId": "review-mvdfwmni-2pv5d4",
+  "status": "completed",
+  "resultSource": "provider-json",
+  "canonicalSessionId": "d0136a52-80d7-4891-93bd-42b2c861ed18",
+  "supportedResultReadbackMatches": true,
+  "snapshotHead": "e20ca1b573300c5812258a12af29c771365b7c25",
+  "diffBytes": 11206,
+  "snapshotUnchanged": true,
+  "result": {
+    "findings": [
+      {
+        "severity": "MINOR",
+        "title": "New install-declaration tests only exercise node removal",
+        "fact": "test_dropped_folder_filename_and_language_declarations_are_refused and test_existing_zip_receipt_also_rejects_undeclared_member cover dropping/removing a declared folder, filename, or language entry, but no test exercises attribute tampering (e.g. altering the 'plugin' attribute on the services folder) or reordering the files/languages children. The strict ordered-list equality in bgm_validate_install_declarations would reject both by inspection, but this is unverified by the test suite.",
+        "recommendation": "Optional: add one subtest that mutates an attribute or swaps the order of two folder/filename entries to pin the exact-match behavior, since the current tests only prove the removal path."
+      },
+      {
+        "severity": "MINOR",
+        "title": "REPAIR-CONTEXT.txt commits review-session narrative into tracked source history",
+        "fact": "The new REPAIR-CONTEXT.txt file embeds free-text adjudication conclusions, a review-session identifier, and asset checksums as a permanent repository file rather than as a commit message or PR description; the text also has irregular word-spacing (e.g. 'dropped3folders/3filenames/2languages', 'now explicit0644 beforeatomicreplace') suggesting it was pasted from another tool without cleanup.",
+        "recommendation": "Treat the file's claims (checksums, 'already proven' statements) as unverified assertions rather than evidence, since they are independently unenforced; consider moving this narrative to the commit message/PR description instead of a tracked file if it is not meant to be permanent project documentation."
+      }
+    ]
+  },
+  "scope": "Narrow correction patch against previously reviewed complete distribution source. Review context existed only in private synthetic review fixture, not canonical project.",
+  "adjudication": [
+    {
+      "finding": 1,
+      "decision": "Optional additional test deferred",
+      "basis": "Strict attribute/order handling is enforced directly, independently inspected, and current native installs/package identity pass. Existing negative tests exercise the demonstrated missing-install-declaration failure boundary."
+    },
+    {
+      "finding": 2,
+      "decision": "Not a canonical product-source finding",
+      "basis": "REPAIR-CONTEXT.txt is review input in a private synthetic Git fixture only. It is not tracked in the canonical repository. All substantive assertions were separately checked; no narrative is treated as provider/runtime evidence."
+    }
+  ],
+  "controllerJudgement": "No remaining demonstrated release-tooling blocker; preserve the two minor observations without claiming a zero-findings review."
+}

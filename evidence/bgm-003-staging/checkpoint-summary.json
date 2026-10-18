@@ -1,0 +1,64 @@
+{
+  "checkpoint": "Goal003 native feature/lifecycle + beta updater qualified, final stable transition pending",
+  "versions": {
+    "Joomla": "6.2.0",
+    "PHP_primary": "8.4.17",
+    "PHP_native_secondary": "8.3.30",
+    "YOOtheme": "5.0.52",
+    "MySQL": "8.3.0"
+  },
+  "YOOtheme_provenance": "Manifest-reconstructed installed-source fallback; parent archive 3131files all match after child-workflow correction. Not pristine vendor distribution.",
+  "installed": {
+    "id": 258,
+    "enabled": true,
+    "version": "0.1.1-beta2"
+  },
+  "owned_processes": {
+    "PHP_pid": 80711,
+    "PHP_bind": "127.0.0.1:18762",
+    "MySQL_pid": 59962,
+    "MySQL_bind": "127.0.0.1:13317"
+  },
+  "minimum_stability": "Stable (4), restored natively",
+  "native_rows_passed": 100,
+  "native_field_mappings": 19,
+  "families": 4,
+  "native_builder_browser_save_reopen": true,
+  "child_nondefault_style_id": 14,
+  "native_disable_uninstall_reinstall": "pass, all14ownedmembers removed and saved settings/unrelated content retained",
+  "real_public_updater": "actual browser beta1 to beta2 Update pass; all14members and preservedsettings verified",
+  "latest_explicit_native_style_save": "#245A85, actual browser SAVE, compile awaited, reload/nativeDBreadback",
+  "latest_computed_tertiary_background": "rgb(36, 90, 133)",
+  "latest_computed_native_button_background": "rgb(36, 90, 133)",
+  "latest_computed_tertiary_text": "rgb(17, 51, 85)",
+  "served_parent_css": {
+    "bytes": 746476,
+    "sha256": "5117900410f76fe7d4418a0df8bba09861bc220ab68b5896b1f15cd40f80ed35"
+  },
+  "browser_warning_errors": [],
+  "PHP_error_logs": [
+    {
+      "PHP": "8.3.30",
+      "configured_log_exists": false,
+      "bytes": 0
+    },
+    {
+      "PHP": "8.4.17",
+      "configured_log_exists": false,
+      "bytes": 0
+    }
+  ],
+  "remaining": [
+    "Controller supplies exact final stable0.1.1 asset/feed identity",
+    "Native beta2 to finalstable updater through Stable minimum",
+    "Exact finalstable ZIP fresh plugin install/enable and explicitStyleSAVE recovery"
+  ],
+  "limits": [
+    "No Joomla5 or PHP8.2/8.5 native claim",
+    "PHPdevelopment server only",
+    "ExplicitStyleSAVE required after install/update, no automatic CSSregeneration claim",
+    "Joomla file cache clear tested with global caching disabled, no broad fullpagecache claim",
+    "Bulk matrix used actual native YOOtheme page route; representative section used browser native SAVE/reopen",
+    "State CSS controls are synthetic HTML buttons inside native Text element; native Builder button_item paths separately tested"
+  ]
+}

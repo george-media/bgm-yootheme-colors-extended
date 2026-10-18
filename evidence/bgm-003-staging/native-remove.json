@@ -1,0 +1,19 @@
+{
+  "http_status": 200,
+  "native_task": "manage.remove",
+  "response_file": "private only",
+  "before": {
+    "style_params_sha256": "bcd5b9e792c606638bda270526bb316ed6816fe242c0fb64ee1726ca80bc5f5d",
+    "article_fulltext_sha256": "e75e2286e7ca8ad0d8d26c3b929ade094ae564b73374dbe188e1cbc47cee24ad",
+    "child_style_params_sha256": "db58f8ddd21eb339e2da304913ea47b07a94283fab4fc0217444b034794035e3",
+    "synthetic_file_sha256": "455267337d4888154aaa6fee5da45a954a8889af204859b8eb9886209132cfad"
+  },
+  "after": {
+    "style_params_sha256": "bcd5b9e792c606638bda270526bb316ed6816fe242c0fb64ee1726ca80bc5f5d",
+    "article_fulltext_sha256": "e75e2286e7ca8ad0d8d26c3b929ade094ae564b73374dbe188e1cbc47cee24ad",
+    "child_style_params_sha256": "db58f8ddd21eb339e2da304913ea47b07a94283fab4fc0217444b034794035e3",
+    "synthetic_file_sha256": "455267337d4888154aaa6fee5da45a954a8889af204859b8eb9886209132cfad"
+  },
+  "installed": null,
+  "synthetic_data_unchanged": true
+}

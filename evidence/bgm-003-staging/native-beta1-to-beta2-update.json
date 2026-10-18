@@ -1,0 +1,93 @@
+{
+  "native_task": "Actual browser Extension Update checkbox + Update button, from native discovered update row57",
+  "discovery": "native update.find under explicit Beta minimum stability",
+  "from_version": "0.1.1-beta1",
+  "installed": {
+    "id": 258,
+    "enabled": true,
+    "version": "0.1.1-beta2"
+  },
+  "before": {
+    "style_params_sha256": "19d95a9e9f77f90fc9ef0d115397bbc6c51d154010220b2acecd1969b2597afa",
+    "article_fulltext_sha256": "e75e2286e7ca8ad0d8d26c3b929ade094ae564b73374dbe188e1cbc47cee24ad",
+    "child_style_params_sha256": "db58f8ddd21eb339e2da304913ea47b07a94283fab4fc0217444b034794035e3",
+    "synthetic_file_sha256": "455267337d4888154aaa6fee5da45a954a8889af204859b8eb9886209132cfad"
+  },
+  "after": {
+    "style_params_sha256": "19d95a9e9f77f90fc9ef0d115397bbc6c51d154010220b2acecd1969b2597afa",
+    "article_fulltext_sha256": "e75e2286e7ca8ad0d8d26c3b929ade094ae564b73374dbe188e1cbc47cee24ad",
+    "child_style_params_sha256": "db58f8ddd21eb339e2da304913ea47b07a94283fab4fc0217444b034794035e3",
+    "synthetic_file_sha256": "455267337d4888154aaa6fee5da45a954a8889af204859b8eb9886209132cfad"
+  },
+  "saved_settings_unchanged": true,
+  "anonymous_asset": {
+    "url": "https://github.com/george-media/bgm-yootheme-colors-extended/releases/download/v0.1.1-beta2/bgm-yootheme-colors-extended-0.1.1-beta2.zip",
+    "http_status": 200,
+    "bytes": 19587,
+    "sha256": "f30693f6b270a4c1c58255cb46225d78932e8793b3e5d84181a0ab5f03c368c4",
+    "anonymous": true
+  },
+  "installed_members": [
+    {
+      "member": "bgm-assets/bgm-less/bgm-colours.less",
+      "matches": true
+    },
+    {
+      "member": "bgm-bootstrap.php",
+      "matches": true
+    },
+    {
+      "member": "bgm-licence.txt",
+      "matches": true
+    },
+    {
+      "member": "bgm-styler.php",
+      "matches": true
+    },
+    {
+      "member": "bgm-yootheme-colors-extended.xml",
+      "matches": true
+    },
+    {
+      "member": "language/en-GB/plg_system_bgm-yootheme-colors-extended.ini",
+      "matches": true
+    },
+    {
+      "member": "language/en-GB/plg_system_bgm-yootheme-colors-extended.sys.ini",
+      "matches": true
+    },
+    {
+      "member": "services/provider.php",
+      "matches": true
+    },
+    {
+      "member": "src/Extension/BgmYoothemeColorsExtended.php",
+      "matches": true
+    },
+    {
+      "member": "src/Integration/BgmColourRegistry.php",
+      "matches": true
+    },
+    {
+      "member": "src/Integration/BgmModule.php",
+      "matches": true
+    },
+    {
+      "member": "src/Integration/BgmRenderAdapter.php",
+      "matches": true
+    },
+    {
+      "member": "src/Integration/BgmSchemaListener.php",
+      "matches": true
+    },
+    {
+      "member": "src/Integration/BgmView.php",
+      "matches": true
+    }
+  ],
+  "compiled_css_unchanged_at_native_update": true,
+  "compiled_css_sha256": "8fd31f460cd9bd7c30b6e455d8541b99f931e94cf6f15a78b9311792e3483f33",
+  "automatic_css_regeneration_claim": false,
+  "explicit_style_save": "Required, separately qualified before/after update",
+  "updater_credentials": "No GitHub credentials supplied to Joomla; public feed and asset"
+}

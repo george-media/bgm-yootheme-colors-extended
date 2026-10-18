@@ -99,6 +99,7 @@ def bgm_feed_xml(receipt, asset_url):
     ET.SubElement(downloads, 'downloadurl', {'type': 'full', 'format': 'zip'}).text = asset_url
     tags = ET.SubElement(update, 'tags')
     ET.SubElement(tags, 'tag').text = receipt['stability']
+    # Both pinned Joomla 6.2.0 XML adapters prepend /^ to this native regex fragment.
     ET.SubElement(update, 'targetplatform', {'name': 'joomla', 'version': r'6\.2\.0$'})
     ET.SubElement(update, 'php_minimum').text = '8.3.0'
     ET.SubElement(update, 'sha256').text = receipt['sha256']
@@ -119,6 +120,7 @@ def bgm_generate(receipt_path, asset_url, output_path=None):
         with tempfile.NamedTemporaryFile(dir=output_path.parent, prefix='bgm-feed-', delete=False) as temporary:
             temporary_path = Path(temporary.name)
             temporary.write(data)
+        temporary_path.chmod(0o644)
         temporary_path.replace(output_path)
     finally:
         if temporary_path is not None:

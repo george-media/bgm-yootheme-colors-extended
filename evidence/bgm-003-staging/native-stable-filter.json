@@ -1,0 +1,11 @@
+{
+  "http_status": 200,
+  "native_task": "update.find",
+  "response_file": "private only",
+  "bgm_update_rows": [],
+  "minimum_stability": {
+    "requested": 4,
+    "actual": 4,
+    "native_task": "component.apply"
+  }
+}

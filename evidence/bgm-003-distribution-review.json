@@ -1,0 +1,75 @@
+{
+  "jobId": "review-mvdfhfdq-ru4guz",
+  "status": "completed",
+  "resultSource": "provider-json",
+  "canonicalSessionId": "13ba681e-a9bd-4444-9cb3-9bf043c6f906",
+  "supportedResultReadbackMatches": true,
+  "snapshotHead": "9194e3f2683436d4c151395dd834b5d7fa3fde56",
+  "diffBytes": 29690,
+  "snapshotUnchanged": true,
+  "packageSha256": "8162523ff1d0583cec75e2c9a916b28c8a7988167e9e5c9b0c225aed2f06a76c",
+  "scope": "Complete distribution tooling and beta1 manifest; thirteen unchanged application runtime files were assessed in the earlier full review.",
+  "result": {
+    "findings": [
+      {
+        "severity": "MAJOR",
+        "title": "Manifest <files>/<languages> entries are never cross-checked against the packaged file allowlist",
+        "fact": "bgm_manifest_details() in bgm-scripts/bgm-build.py only inspects the FIRST <files><folder> element via manifest.find('files/folder') (the 'services' folder). It never inspects the other two <folder> entries (src, bgm-assets), the three <filename> entries (bgm-bootstrap.php, bgm-styler.php, bgm-licence.txt), or the <languages> block. BGM_ALLOWED_FILES in the same script is a separately hand-maintained Python set that is only compared against the on-disk/zip file list, never against what the XML manifest itself declares for installation. A future manifest edit that drops a <filename>/<folder>/<language> entry (so Joomla would silently skip installing that file) would still pass bgm_build() and bgm_package_receipt() unchanged.",
+        "recommendation": "Derive the expected file set by parsing the manifest's <files>/<languages> elements (expanding <folder> entries recursively) and compare it against BGM_ALLOWED_FILES, so a build fails the moment the manifest's declared install paths and the shipped files diverge."
+      },
+      {
+        "severity": "MAJOR",
+        "title": "Generated update-feed candidate XML is written with owner-only (0600) permissions",
+        "fact": "bgm-scripts/bgm-feed.py's bgm_generate() writes output via tempfile.NamedTemporaryFile(dir=output_path.parent, ...) then Path.replace(). CPython's NamedTemporaryFile hardcodes file mode 0600 on POSIX (tempfile._mkstemp_inner), unaffected by umask since 0600 has no group/other bits, and rename()/replace() preserves the source inode's permission bits rather than the destination's. The resulting bgm-update-<version>.xml therefore ends up owner-read/write-only, unlike the archive/receipt files bgm-build.py writes via Path.write_bytes()/write_text(), which get normal umask-based permissions.",
+        "recommendation": "Explicitly os.chmod(temporary_path, 0o644) before the atomic replace() so the published artifact is world-readable regardless of which user runs the build versus the publish/web-serving process."
+      },
+      {
+        "severity": "MINOR",
+        "title": "targetplatform version constraint is anchored at only one end",
+        "fact": "bgm-scripts/bgm-feed.py's bgm_feed_xml() emits <targetplatform name=\"joomla\" version=\"6\\.2\\.0$\"/> \u2014 the fragment has a trailing $ but no leading ^. Depending on exactly how Joomla's updater wraps this fragment in its own preg_match against JVERSION, an unanchored start would let the constraint match any version string ending in '6.2.0' (e.g. a hypothetical future '16.2.0'), not only '6.2.0' itself.",
+        "recommendation": "Anchor both ends explicitly (^6\\.2\\.0$) so the platform qualification doesn't rely on an assumption about how the installer wraps the supplied pattern."
+      },
+      {
+        "severity": "MINOR",
+        "title": "ZIP member timestamps use a literal hardcoded calendar date instead of a documented constant",
+        "fact": "bgm_build() in bgm-scripts/bgm-build.py stamps every ZipInfo with the literal tuple (2026, 10, 18, 0, 0, 0) \u2014 today's date at authoring time \u2014 rather than a fixed epoch (e.g. the zip default 1980-01-01) or a value derived from the release itself. Every future rebuild of any future version will keep embedding '2026-10-18' as the per-file timestamp, which is reproducible but factually incorrect metadata for later releases.",
+        "recommendation": "Use an explicit epoch constant, or derive the stamp from the manifest's <creationDate> or another release-specific input, instead of a literal date that will go stale."
+      },
+      {
+        "severity": "MINOR",
+        "title": "Frozen 0.1.0 compatibility special-case is permanently embedded in the forward build path",
+        "fact": "bgm_manifest_details() in bgm-scripts/bgm-build.py special-cases version == '0.1.0' to forbid an <updateservers> block, solely to keep validating the already-frozen, previously-shipped 0.1.0 prototype referenced in REVIEW-SCOPE.txt. This historical-only branch runs inside the same validator every future 0.1.x/1.x build will execute.",
+        "recommendation": "Move the one-off validation of the frozen 0.1.0 artifact into a separate historical-compatibility check/test outside the primary build path, so the production validator only encodes rules for versions that can still be built going forward."
+      }
+    ]
+  },
+  "adjudicationStatus": "Narrow repairs passed independent adversarial review and authoritative correction review. No remaining demonstrated release-tooling blocker.",
+  "adjudication": [
+    {
+      "finding": 1,
+      "decision": "Repaired future build-validation gap",
+      "basis": "Exact native files/languages declarations and complete allowlist coverage are required for build and ZIP receipt. Eight missing declarations plus altered ZIP regression pass."
+    },
+    {
+      "finding": 2,
+      "decision": "Repaired local public-artifact mode; GitHub access already passed",
+      "basis": "Mode0644 applied before atomic replace and verified by actual stat. GitHub raw output does not inherit POSIX0600 and was anonymously200 before repair."
+    },
+    {
+      "finding": 3,
+      "decision": "Rejected for qualified Joomla6.2.0",
+      "basis": "Both native XML adapters prepend a start anchor; native discovery confirms the exact qualified version selection. XML fragment retained."
+    },
+    {
+      "finding": 4,
+      "decision": "Clarified fixed reproducibility epoch",
+      "basis": "Named documented constant retains identical ZIP bytes; timestamp is not a claim about future file creation dates."
+    },
+    {
+      "finding": 5,
+      "decision": "Intentional historical validation retained",
+      "basis": "Frozen0.1.0 receipt can be validated without retroactive feed registration. Feed generator still rejects its no-feed installer."
+    }
+  ],
+  "correctionReviewEvidence": "bgm-003-repair-review.json"
+}
