@@ -5,7 +5,7 @@
     <creationDate>2026-10</creationDate>
     <copyright>Copyright (C) 2026 By George Media</copyright>
     <license>GNU General Public License version 2 or later</license>
-    <version>0.1.0</version>
+    <version>0.1.1-beta1</version>
     <description>PLG_SYSTEM_BGM_YOOTHEME_COLORS_EXTENDED_DESCRIPTION</description>
     <namespace path="src">Bgm\Plugin\System\BgmYoothemeColorsExtended</namespace>
     <files>
@@ -20,5 +20,8 @@
         <language tag="en-GB">en-GB/plg_system_bgm-yootheme-colors-extended.ini</language>
         <language tag="en-GB">en-GB/plg_system_bgm-yootheme-colors-extended.sys.ini</language>
     </languages>
+    <updateservers>
+        <server type="extension" priority="1" name="BGM YOOTheme Colors Extended updates">https://raw.githubusercontent.com/george-media/bgm-yootheme-colors-extended/main/bgm-updates/bgm-update.xml</server>
+    </updateservers>
     <config><fields name="params"><fieldset name="basic"><field name="bgm-status" type="note" label="PLG_SYSTEM_BGM_YOOTHEME_COLORS_EXTENDED_STATUS" description="PLG_SYSTEM_BGM_YOOTHEME_COLORS_EXTENDED_STATUS_DESCRIPTION" /></fieldset></fields></config>
 </extension>

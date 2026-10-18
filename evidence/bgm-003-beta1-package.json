@@ -1,0 +1,32 @@
+{
+  "receipt": {
+    "archive": "bgm-yootheme-colors-extended-0.1.1-beta1.zip",
+    "bytes": 19587,
+    "member_sha256": {
+      "bgm-assets/bgm-less/bgm-colours.less": "40099de2e853ca315ab18abe8c4f892ff541d16ed99a5058b5ff41ec1c968248",
+      "bgm-bootstrap.php": "3049511ec5e434a21194b2d277c0d385562a683d11c5aab4d458bd81e73b5124",
+      "bgm-licence.txt": "e08de5470e132fe7d7fe0a639589a0bb8805d1676bb6b780b554509c31106211",
+      "bgm-styler.php": "61c50da839a30ca9d596b140bf5aebd44118578d1e57d51dd0f2a97e6143cd9a",
+      "bgm-yootheme-colors-extended.xml": "6379d1e0c48f2f0e2046cc04ebe7d2aa500e818bac04de90eaa9ffec8dc5bb32",
+      "language/en-GB/plg_system_bgm-yootheme-colors-extended.ini": "3030e00c2e2788892a1fb33fefb9b64b378a1ec39fbf2e2ead4a753f1c6cec9d",
+      "language/en-GB/plg_system_bgm-yootheme-colors-extended.sys.ini": "5aae8d70025f3d0f34d81c7dee19e98b6f4361f71a845000e91516a45c5150dd",
+      "services/provider.php": "509ffd34d56bcb7ad5992eab00bfbafa163287151247a24803c4b504c28704b9",
+      "src/Extension/BgmYoothemeColorsExtended.php": "7fd9b09bbeb421c1f2c962c75eef1559749873d72deb957eaceb25e5c4e036be",
+      "src/Integration/BgmColourRegistry.php": "ccd1beffa029bf49a8333a96e6dd3f2574126aa8f55e12b70ba5a373cc2a9f68",
+      "src/Integration/BgmModule.php": "613ab862527edd1edfa059d518a4baac8ba8e332cbfe4868ed29e6e4c4450667",
+      "src/Integration/BgmRenderAdapter.php": "fe0c1d42459b4a457b2634ed47e7f15e08cf43f70a2c026778fcaf42d73ce705",
+      "src/Integration/BgmSchemaListener.php": "af08f81192acca3a59d8fd3e27e3f1663ebc7b49347d2ed04830f229ff8af202",
+      "src/Integration/BgmView.php": "c9d6273ddb5800c1fa5b6d93c5a1e18cb90af5692f8e0717c836f70e3e39f817"
+    },
+    "schema": 1,
+    "sha256": "8162523ff1d0583cec75e2c9a916b28c8a7988167e9e5c9b0c225aed2f06a76c",
+    "stability": "beta",
+    "update_server": "https://raw.githubusercontent.com/george-media/bgm-yootheme-colors-extended/main/bgm-updates/bgm-update.xml",
+    "version": "0.1.1-beta1"
+  },
+  "independentAdversarialReview": "pass for prerelease qualification tooling",
+  "controllerLocalDistributionTests": 14,
+  "applicationRuntimeChange": "Only manifest version and verified update-server registration differ from 0.1.0. Other thirteen runtime members unchanged.",
+  "nativeUpdaterQualification": "pending",
+  "claudeDistributionReview": "running, authoritative result not yet available"
+}

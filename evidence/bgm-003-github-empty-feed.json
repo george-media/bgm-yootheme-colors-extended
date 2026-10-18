@@ -1,0 +1,12 @@
+{
+  "url": "https://raw.githubusercontent.com/george-media/bgm-yootheme-colors-extended/main/bgm-updates/bgm-update.xml",
+  "status": 200,
+  "anonymous": true,
+  "authorizationHeaderSent": false,
+  "xmlRoot": "updates",
+  "updateEntries": 0,
+  "bytes": 152,
+  "sha256": "d4e13b8c328bf5fcea8291a2c9a8c7c64d2f4b17bdf01aed99a8915e9ffe9644",
+  "localFileMatches": true,
+  "verifiedCommit": "42055330a18dff2f1a6e0875e4b882d43e40d296"
+}
