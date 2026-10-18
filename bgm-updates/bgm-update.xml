@@ -6,15 +6,15 @@
         <type>plugin</type>
         <folder>system</folder>
         <client>site</client>
-        <version>0.1.1-beta2</version>
+        <version>0.1.1</version>
         <downloads>
-            <downloadurl type="full" format="zip">https://github.com/george-media/bgm-yootheme-colors-extended/releases/download/v0.1.1-beta2/bgm-yootheme-colors-extended-0.1.1-beta2.zip</downloadurl>
+            <downloadurl type="full" format="zip">https://github.com/george-media/bgm-yootheme-colors-extended/releases/download/v0.1.1/bgm-yootheme-colors-extended-0.1.1.zip</downloadurl>
         </downloads>
         <tags>
-            <tag>beta</tag>
+            <tag>stable</tag>
         </tags>
         <targetplatform name="joomla" version="6\.2\.0$" />
         <php_minimum>8.3.0</php_minimum>
-        <sha256>f30693f6b270a4c1c58255cb46225d78932e8793b3e5d84181a0ab5f03c368c4</sha256>
+        <sha256>14e8924d5f5137d2823bc062fa1ccb166457d058aa69816f26df42ef0b2e9f98</sha256>
     </update>
 </updates>
