@@ -1,0 +1,77 @@
+{
+  "qualification_result": "PASS final native update and exact final package fresh install recovery",
+  "package": {
+    "version": "0.1.1",
+    "bytes": 19592,
+    "sha256": "14e8924d5f5137d2823bc062fa1ccb166457d058aa69816f26df42ef0b2e9f98",
+    "members": 14
+  },
+  "installed": {
+    "id": 259,
+    "enabled": true,
+    "version": "0.1.1"
+  },
+  "native_final_update": "Actual browser Beta2 to0.1.1 under Stable minimum4, all14members and settings/CSS readback passed",
+  "native_final_fresh_install": "Native uninstall removed all14files/record, actual browser Install from URL of exact final GitHub asset, defaultdisabled then nativeenable, all14members match",
+  "native_final_style_save": "Actual browser native BGMColours SAVE #245A86, compile awaited, persistedreadback and frontend200",
+  "browser_computed": {
+    "section_tertiary": "rgb(36, 90, 134)",
+    "button_tertiary": "rgb(36, 90, 134)",
+    "text_tertiary": "rgb(17, 51, 85)",
+    "section_quaternary": "rgb(128, 58, 36)",
+    "section_quinary": "rgb(47, 107, 69)",
+    "section_senary": "rgb(101, 66, 139)",
+    "forced_light_heading": "rgb(255, 255, 255)",
+    "forced_dark_heading": "rgb(45, 46, 51)",
+    "card_media_colour": "rgb(108, 109, 116)",
+    "card_body_title_colour": "rgb(255, 255, 255)",
+    "native_card_hover_retained": true,
+    "sentinel_absent": true,
+    "matrix_cases_retained": 100
+  },
+  "child_nondefault_style": {
+    "id": 14,
+    "computed_tertiary": "rgb(36, 90, 130)",
+    "custom_marker": "bgm-native-child",
+    "compiled_css_bytes": 746752,
+    "compiled_css_sha256": "005e9c1192261903da2ef21414eefc194dc306e7220f7e49b8aca4c1ad04d04f"
+  },
+  "parent_css": {
+    "bytes": 746476,
+    "sha256": "106e80b350ee0a091a9f639db602acda647c37037d30cb482b90e96de8118112"
+  },
+  "plugin_status_description_verified": {
+    "updater_configured": true,
+    "style_save_after_install_or_update": true
+  },
+  "native_no_updates_readback": {
+    "installed_version": "0.1.1",
+    "minimum_stability": "Stable (4)",
+    "bgm_rows": []
+  },
+  "browser_warning_errors": [],
+  "PHP_logging": {
+    "version": "8.4.17",
+    "native_framework_error_reporting": 30719,
+    "native_framework_E_ALL": 30719,
+    "log_errors": true,
+    "new_error_log_bytes": 0,
+    "runtime_probe_removed": true
+  },
+  "runtime_versions": {
+    "Joomla": "6.2.0",
+    "YOOtheme": "5.0.52",
+    "PHP_primary": "8.4.17",
+    "PHP_secondary_native_lane": "8.3.30",
+    "MySQL": "8.3.0"
+  },
+  "limits": [
+    "YOOtheme reconstructed installed-source provenance, not pristine distribution",
+    "PHPdevelopment server on loopback",
+    "No Joomla5 or PHP8.2/8.5 native qualification",
+    "Explicit native StyleSAVE required after install/update, no automatic CSSregeneration claim",
+    "Full100choice feature matrix used frozen0.1.0 runtime and was inherited because final PHP/LESS unchanged; final package independently matched and representative paths rechecked",
+    "Global Joomla caching disabled, native filecache clear qualified only"
+  ],
+  "next_step": "Controller independent final readback and safe evidence copy, then authorised release promotion. Keep owned servers until explicit cleanup instruction."
+}

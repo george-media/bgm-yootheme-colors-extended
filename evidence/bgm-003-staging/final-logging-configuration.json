@@ -1,0 +1,17 @@
+{
+  "native_framework_runtime": {
+    "PHP": "8.4.17",
+    "error_reporting": 30719,
+    "E_ALL": 30719,
+    "log_errors": "1",
+    "display_errors": "1",
+    "configured_error_log": "/private/tmp/bgm-yootheme-staging.r25m9e5t/private/goal003-php8.4.17-errors.log"
+  },
+  "error_reporting_is_E_ALL": true,
+  "configured_error_log_bytes": 0,
+  "server_access_log_output": "discarded to avoid storing authentication/session query strings",
+  "temporary_runtime_probe_removed": true,
+  "Joomla_error_reporting_setting": "default, verified actual native framework leaves full E_ALL active",
+  "display_errors": "enabled on loopback disposable QA only",
+  "owned_server_pid": 80711
+}

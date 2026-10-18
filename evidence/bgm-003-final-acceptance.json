@@ -1,0 +1,42 @@
+{
+  "reviewer": "Independent read-only /root/adversarial worker",
+  "finalNativeAcceptance": "PASS before release promotion",
+  "nativeIndependentReadback": {
+    "installedVersion": "0.1.1",
+    "all14InstalledMembersMatchFinalZip": true,
+    "anonymousFrontendHttp": 200,
+    "retainedMatrixCaseIds": 100,
+    "sentinelAbsent": true,
+    "servedCssBytes": 746476,
+    "servedCssSha256": "106e80b350ee0a091a9f639db602acda647c37037d30cb482b90e96de8118112"
+  },
+  "finalHandoffAudit": "PASS after promotion and before completion commit",
+  "publicIndependentReadback": {
+    "releaseId": 416278413,
+    "stableLatest": true,
+    "tagCommit": "926f587daf56b6874f6e9cbc82c601ed1567ef1c",
+    "anonymousInstallerChecksumFeedMatch": true
+  },
+  "evidenceIndependentReadback": {
+    "finalFilesAtAudit": 14,
+    "sourceAndImportHashesMatch": true,
+    "jsonFilesAtAudit": 57,
+    "relativeLinksResolve": true,
+    "newTextPrivacyFinding": false
+  },
+  "claimsChecked": [
+    "Exact final fresh method is browser Install from URL",
+    "Explicit native Style Save required",
+    "PHP8.3 native smoke is narrower than full PHP8.4 matrix",
+    "Reconstructed installed-source YOOtheme provenance",
+    "Global caching disabled, native file-cache clear proof only",
+    "Claude findings independently adjudicated, not a zero-findings verdict",
+    "Handoff next steps and process IDs are historical; absent log means zero emitted bytes"
+  ],
+  "controllerCleanupReadback": {
+    "ports18762And13317Closed": true,
+    "retainedStageRootMode": "0700",
+    "safeCleanupReport": "bgm-003-staging/final-cleanup-report.json",
+    "retentionDecision": "Retain protected stopped synthetic root and rollback locally as reproducibility/rollback evidence; no running staging service or further cleanup action required for delivery."
+  }
+}

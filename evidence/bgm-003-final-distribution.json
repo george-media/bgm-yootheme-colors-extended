@@ -1,0 +1,57 @@
+{
+  "installer": {
+    "url": "https://github.com/george-media/bgm-yootheme-colors-extended/releases/download/v0.1.1/bgm-yootheme-colors-extended-0.1.1.zip",
+    "httpStatus": 200,
+    "bytes": 19592,
+    "sha256": "14e8924d5f5137d2823bc062fa1ccb166457d058aa69816f26df42ef0b2e9f98",
+    "matchesLocal": true,
+    "anonymous": true,
+    "authorizationHeaderSent": false
+  },
+  "checksum": {
+    "url": "https://github.com/george-media/bgm-yootheme-colors-extended/releases/download/v0.1.1/bgm-yootheme-colors-extended-0.1.1.zip.sha256",
+    "httpStatus": 200,
+    "bytes": 105,
+    "sha256": "3f31fd6496c3fe13c5d6e3ea01ae2867f8491051d9acc19b148d6c50c8d686d5",
+    "matchesLocal": true,
+    "anonymous": true,
+    "authorizationHeaderSent": false
+  },
+  "feed": {
+    "url": "https://raw.githubusercontent.com/george-media/bgm-yootheme-colors-extended/main/bgm-updates/bgm-update.xml",
+    "httpStatus": 200,
+    "bytes": 798,
+    "sha256": "46816f034f0c1014415400691c8cf6f96153fa373f00dd40fef13b69e8738d50",
+    "matchesLocal": true,
+    "anonymous": true,
+    "authorizationHeaderSent": false
+  },
+  "verifiedAtUtc": "2026-10-18T06:51:09.754347+00:00",
+  "release": {
+    "id": 416278413,
+    "tag_name": "v0.1.1",
+    "name": "0.1.1",
+    "draft": false,
+    "prerelease": false,
+    "html_url": "https://github.com/george-media/bgm-yootheme-colors-extended/releases/tag/v0.1.1",
+    "target_commitish": "926f587daf56b6874f6e9cbc82c601ed1567ef1c"
+  },
+  "isLatest": true,
+  "tagCommit": "926f587daf56b6874f6e9cbc82c601ed1567ef1c",
+  "assets": [
+    {
+      "name": "bgm-yootheme-colors-extended-0.1.1.zip",
+      "size": 19592,
+      "digest": "sha256:14e8924d5f5137d2823bc062fa1ccb166457d058aa69816f26df42ef0b2e9f98",
+      "url": "https://github.com/george-media/bgm-yootheme-colors-extended/releases/download/v0.1.1/bgm-yootheme-colors-extended-0.1.1.zip"
+    },
+    {
+      "name": "bgm-yootheme-colors-extended-0.1.1.zip.sha256",
+      "size": 105,
+      "digest": "sha256:3f31fd6496c3fe13c5d6e3ea01ae2867f8491051d9acc19b148d6c50c8d686d5",
+      "url": "https://github.com/george-media/bgm-yootheme-colors-extended/releases/download/v0.1.1/bgm-yootheme-colors-extended-0.1.1.zip.sha256"
+    }
+  ],
+  "nativeAcceptance": "Independent adversarial PASS for actual Stable browser update, exact final native Install from URL, all14member hashes, explicit Style Save/frontend and no pending BGM update",
+  "promotion": "Changed release metadata only; tag and asset bytes unchanged"
+}

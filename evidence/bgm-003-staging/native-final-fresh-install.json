@@ -1,0 +1,84 @@
+{
+  "installation_method": "Actual browser Joomla Install from URL using exact public final installer URL after native uninstall and absence of all14ownedfiles/record",
+  "installed_before_explicit_enable": {
+    "id": 259,
+    "enabled": false,
+    "version": "0.1.1"
+  },
+  "installed_after_native_enable": {
+    "id": 259,
+    "enabled": true,
+    "version": "0.1.1"
+  },
+  "fresh_install_did_not_enable_silently": true,
+  "downloaded_zip_sha256": "14e8924d5f5137d2823bc062fa1ccb166457d058aa69816f26df42ef0b2e9f98",
+  "installed_members": [
+    {
+      "member": "bgm-assets/bgm-less/bgm-colours.less",
+      "matches": true
+    },
+    {
+      "member": "bgm-bootstrap.php",
+      "matches": true
+    },
+    {
+      "member": "bgm-licence.txt",
+      "matches": true
+    },
+    {
+      "member": "bgm-styler.php",
+      "matches": true
+    },
+    {
+      "member": "bgm-yootheme-colors-extended.xml",
+      "matches": true
+    },
+    {
+      "member": "language/en-GB/plg_system_bgm-yootheme-colors-extended.ini",
+      "matches": true
+    },
+    {
+      "member": "language/en-GB/plg_system_bgm-yootheme-colors-extended.sys.ini",
+      "matches": true
+    },
+    {
+      "member": "services/provider.php",
+      "matches": true
+    },
+    {
+      "member": "src/Extension/BgmYoothemeColorsExtended.php",
+      "matches": true
+    },
+    {
+      "member": "src/Integration/BgmColourRegistry.php",
+      "matches": true
+    },
+    {
+      "member": "src/Integration/BgmModule.php",
+      "matches": true
+    },
+    {
+      "member": "src/Integration/BgmRenderAdapter.php",
+      "matches": true
+    },
+    {
+      "member": "src/Integration/BgmSchemaListener.php",
+      "matches": true
+    },
+    {
+      "member": "src/Integration/BgmView.php",
+      "matches": true
+    }
+  ],
+  "saved_settings_and_unrelated_data_retained": true,
+  "style_save": "Actual browser Style > BGM Colours > first colour picker #245A86 > Save, awaited compilation; reload and independent database/CSS readback",
+  "saved_background": "#245A86",
+  "served_css": {
+    "bytes": 746476,
+    "sha256": "106e80b350ee0a091a9f639db602acda647c37037d30cb482b90e96de8118112"
+  },
+  "frontend_http": 200,
+  "synthetic_sections": 112,
+  "unknown_thirdparty_prop_retained": true,
+  "sentinel_absent": true
+}

@@ -42,3 +42,11 @@ If a further publication decision is required, complete the locally testable wor
 ## Iteration limit
 
 For each blocker use at most three meaningfully different repair attempts before recording the confirmed failure, evidence and next needed input. A new observation can justify a new bounded investigation; unchanged retries cannot. Reviewers remain read-only. Only the staging operator mutates the disposable environment and only the engineer owns plugin source. The controller owns Git/release state and the final handoff.
+
+## Goal 003 completed checkpoint
+
+Goal 003 passes the [recorded native feature/lifecycle matrix](003-qualification.md), both real anonymous GitHub updater transitions, exact final Install from URL/enable/Style Save and independent final acceptance. Version 0.1.1 is stable/latest with unchanged qualified assets and an anonymously verified live feed. All 191 vendor API checks on both PHP lanes, 62 LESS checks and 16 distribution regressions pass within their recorded scopes. Claude execution recovery, findings/adjudication and independent reviews are complete.
+
+## Next steps
+
+Finish commit/push readback and requested hindsight. Owned disposable processes are stopped, transient authentication files removed and protected rollback/evidence retained locally. No further numbered chat is required. Installing on a real site remains a separate authorised action, with a native Style Save after installation or update.

@@ -30,8 +30,8 @@
   ],
   "allMembersMatchSource": true,
   "applicationPhpAndLessUnchanged": true,
-  "candidateStatus": "Local only; final native transition and exact fresh install pending",
-  "nativeFeatureQualification": "100 native choices on PHP8.4.17; separate PHP8.3.30 native install/save/render; real beta1 to beta2 update passed",
+  "candidateStatus": "Qualified final0.1.1; native Stable update and exact final Install from URL passed; same assets promoted stable/latest",
+  "nativeFeatureQualification": "100 native choices on unchanged PHP/LESS runtime, PHP8.4.17; separate PHP8.3.30 native install/save/render; real beta1 to beta2 and beta2 to final0.1.1 updates; exact final fresh Install from URL/enable/Style Save passed",
   "automaticCssRegenerationClaim": false,
   "postInstallUpdateStep": "Explicit native YOOtheme Style Save required"
 }

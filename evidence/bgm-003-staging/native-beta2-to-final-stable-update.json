@@ -1,0 +1,90 @@
+{
+  "from_version": "0.1.1-beta2",
+  "installed": {
+    "id": 258,
+    "enabled": true,
+    "version": "0.1.1"
+  },
+  "native_task": "Actual browser Extension Update checkbox and Update button, under Stable minimum4",
+  "asset_url": "https://github.com/george-media/bgm-yootheme-colors-extended/releases/download/v0.1.1/bgm-yootheme-colors-extended-0.1.1.zip",
+  "asset_sha256": "14e8924d5f5137d2823bc062fa1ccb166457d058aa69816f26df42ef0b2e9f98",
+  "installed_members": [
+    {
+      "member": "bgm-assets/bgm-less/bgm-colours.less",
+      "matches": true
+    },
+    {
+      "member": "bgm-bootstrap.php",
+      "matches": true
+    },
+    {
+      "member": "bgm-licence.txt",
+      "matches": true
+    },
+    {
+      "member": "bgm-styler.php",
+      "matches": true
+    },
+    {
+      "member": "bgm-yootheme-colors-extended.xml",
+      "matches": true
+    },
+    {
+      "member": "language/en-GB/plg_system_bgm-yootheme-colors-extended.ini",
+      "matches": true
+    },
+    {
+      "member": "language/en-GB/plg_system_bgm-yootheme-colors-extended.sys.ini",
+      "matches": true
+    },
+    {
+      "member": "services/provider.php",
+      "matches": true
+    },
+    {
+      "member": "src/Extension/BgmYoothemeColorsExtended.php",
+      "matches": true
+    },
+    {
+      "member": "src/Integration/BgmColourRegistry.php",
+      "matches": true
+    },
+    {
+      "member": "src/Integration/BgmModule.php",
+      "matches": true
+    },
+    {
+      "member": "src/Integration/BgmRenderAdapter.php",
+      "matches": true
+    },
+    {
+      "member": "src/Integration/BgmSchemaListener.php",
+      "matches": true
+    },
+    {
+      "member": "src/Integration/BgmView.php",
+      "matches": true
+    }
+  ],
+  "before": {
+    "style_params_sha256": "03d5953cf5a023ff705776f3c5ad8e1ef56e08eb90d8d7a4f2cb8d6c9aa709ef",
+    "article_fulltext_sha256": "e75e2286e7ca8ad0d8d26c3b929ade094ae564b73374dbe188e1cbc47cee24ad",
+    "child_style_params_sha256": "db58f8ddd21eb339e2da304913ea47b07a94283fab4fc0217444b034794035e3",
+    "synthetic_file_sha256": "455267337d4888154aaa6fee5da45a954a8889af204859b8eb9886209132cfad"
+  },
+  "after": {
+    "style_params_sha256": "03d5953cf5a023ff705776f3c5ad8e1ef56e08eb90d8d7a4f2cb8d6c9aa709ef",
+    "article_fulltext_sha256": "e75e2286e7ca8ad0d8d26c3b929ade094ae564b73374dbe188e1cbc47cee24ad",
+    "child_style_params_sha256": "db58f8ddd21eb339e2da304913ea47b07a94283fab4fc0217444b034794035e3",
+    "synthetic_file_sha256": "455267337d4888154aaa6fee5da45a954a8889af204859b8eb9886209132cfad"
+  },
+  "settings_and_unrelated_data_unchanged": true,
+  "compiled_css_unchanged_at_update": true,
+  "compiled_css_sha256": "5117900410f76fe7d4418a0df8bba09861bc220ab68b5896b1f15cd40f80ed35",
+  "automatic_css_regeneration_claim": false,
+  "native_status_description": {
+    "updater_configured": true,
+    "explicit_style_save_after_install_or_update": true
+  },
+  "public_access": "Anonymous public feed and asset; no account authentication supplied to Joomla"
+}

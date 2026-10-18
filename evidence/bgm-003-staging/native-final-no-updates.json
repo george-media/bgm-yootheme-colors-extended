@@ -1,0 +1,13 @@
+{
+  "http_status": 200,
+  "native_task": "update.find",
+  "response_file": "private only",
+  "bgm_update_rows": [],
+  "installed": {
+    "id": 259,
+    "enabled": true,
+    "version": "0.1.1"
+  },
+  "minimum_stability": "Stable (4)",
+  "native_registered_feed": "https://raw.githubusercontent.com/george-media/bgm-yootheme-colors-extended/main/bgm-updates/bgm-update.xml\t1"
+}

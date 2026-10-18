@@ -1,6 +1,6 @@
 # Goal 003 qualification and GitHub delivery
 
-Controller: `01a14d8d-a919-7453-9486-a8eeb30c5274`. Date: 18 October 2026, Australia/Sydney. Status: feature/lifecycle qualification and real beta updating pass. Final 0.1.1 public-version update and exact-package fresh installation remain pending at this candidate checkpoint.
+Controller: `01a14d8d-a919-7453-9486-a8eeb30c5274`. Date: 18 October 2026, Australia/Sydney. Status: **complete**. Native feature/lifecycle qualification, both real updater transitions, exact final-package fresh installation and independent final acceptance pass. Version 0.1.1 is promoted to GitHub stable/latest with unchanged assets.
 
 ## Reviews
 
@@ -14,7 +14,7 @@ Independent native-source adjudication rejected the original parameter-inheritan
 
 | Lane | Actual acceptance |
 | --- | --- |
-| Joomla 6.2.0, YOOtheme 5.0.52, PHP 8.4.17, MySQL 8.3.0 | Full native feature/state/placement/persistence/lifecycle matrix and real GitHub beta update. |
+| Joomla 6.2.0, YOOtheme 5.0.52, PHP 8.4.17, MySQL 8.3.0 | Full native feature/state/placement/persistence/lifecycle matrix, both real GitHub updater transitions and exact final Install from URL. |
 | Same disposable Joomla/YOOtheme/database, PHP 8.3.30 | Native installer, browser Style Save/reopen, changed compiled CSS and frontend smoke. |
 
 The site uses synthetic data and isolated loopback processes. YOOtheme is the authorised manifest-reconstructed installed-source fallback, **not a pristine vendor-distribution comparison**.
@@ -37,11 +37,17 @@ The public source commits match local Git, `ls-remote` and GitHub API. A real em
 | --- | --- | --- |
 | 0.1.1-beta1 | `8162523ff1d0583cec75e2c9a916b28c8a7988167e9e5c9b0c225aed2f06a76c` | Public asset installed as native baseline, all fourteen members matched. |
 | 0.1.1-beta2 | `f30693f6b270a4c1c58255cb46225d78932e8793b3e5d84181a0ab5f03c368c4` | Native discovery and browser Update passed, all members matched, enabled state and saved/unrelated data retained. |
-| 0.1.1 candidate | `14e8924d5f5137d2823bc062fa1ccb166457d058aa69816f26df42ef0b2e9f98` | Local deterministic fourteen-member ZIP, **19,592 bytes**. Final public-version acceptance pending. |
+| 0.1.1 | `14e8924d5f5137d2823bc062fa1ccb166457d058aa69816f26df42ef0b2e9f98` | **19,592 bytes**, fourteen members. Native Stable-filter update and exact fresh Install from URL/enable/Style Save pass. Same assets promoted stable/latest. |
 
-Joomla's Stable minimum excludes beta2; Beta discovers it. Stable is restored natively afterwards. XML matches `plugin`/`system`/`site`, actual ZIP/version/SHA-256, explicit stability, Joomla **6.2.0** and PHP minimum **8.3.0**. PHP minimum is not upper-bound enforcement. All PHP/LESS code is unchanged from the fully qualified prototype. The final candidate changes the manifest version and one updater-status language string from beta2; the other twelve members match.
+Joomla's Stable minimum excludes beta2; Beta discovers it. Stable is restored natively afterwards. XML matches `plugin`/`system`/`site`, actual ZIP/version/SHA-256, explicit stability, Joomla **6.2.0** and PHP minimum **8.3.0**. PHP minimum is not upper-bound enforcement. All PHP/LESS code is unchanged from the fully qualified prototype. The final package changes the manifest version and one updater-status language string from beta2; the other twelve members match.
 
-[Native beta update](../evidence/bgm-003-staging/native-beta1-to-beta2-update.json), [public assets](../evidence/bgm-003-beta2-public-assets.json), [anonymous feed](../evidence/bgm-003-beta2-public-feed.json) and [candidate receipt](../evidence/bgm-003-final-package.json) bind the workflow to actual bytes.
+[Native beta update](../evidence/bgm-003-staging/native-beta1-to-beta2-update.json), [Stable-filter final update](../evidence/bgm-003-staging/native-beta2-to-final-stable-update.json), [exact final fresh install](../evidence/bgm-003-staging/native-final-fresh-install.json), [package receipt](../evidence/bgm-003-final-package.json) and [promoted public distribution readback](../evidence/bgm-003-final-distribution.json) bind the workflow to actual bytes.
+
+The final browser Update retained enabled state, both styles/layout and unrelated synthetic hashes. Native uninstall then removed all fourteen owned files and the record. Browser **Install from URL** fetched the exact final public asset, installed disabled and was explicitly enabled. Every installed member matched. Browser Style Save/reopen of **#245A86** produced section/button **rgb(36, 90, 134)** and text **rgb(17, 51, 85)**. Served CSS is **746,476 bytes**, SHA-256 `106e80b350ee0a091a9f639db602acda647c37037d30cb482b90e96de8118112`. The child style retained its independent colour and custom marker. [The final handoff](../evidence/bgm-003-staging/final-native-handoff.json) preserves these readbacks.
+
+Native Check For Updates reports no BGM row at installed 0.1.1 with Stable minimum retained. Browser diagnostics are clean. The actual Joomla framework confirmed PHP 8.4.17 `error_reporting = E_ALL = 30719` and `log_errors = 1`, with zero emitted error-log bytes. The configured log was absent at independent readback and the temporary probe was removed. The independent read-only reviewer checked installed hashes, anonymous frontend/served CSS and final records before promotion. Public installer/checksum/feed bytes, immutable tag and actual stable/latest release flags were rechecked afterwards.
+
+[Independent final acceptance](../evidence/bgm-003-final-acceptance.json) and [cleanup readback](../evidence/bgm-003-staging/final-cleanup-report.json) close the handoff. Owned PHP/MySQL processes and loopback listeners are stopped. Transient authentication files are removed. The protected synthetic root and rollback remain outside Git for reproducibility.
 
 ## Installation contract and limits
 
@@ -51,4 +57,4 @@ Qualification covers the exact lanes above, a PHP development server, inherited 
 
 ## Next steps
 
-Publish 0.1.1 as a marked qualification prerelease, verify anonymous assets/feed, then prove native beta2-to-0.1.1 updating under Stable filtering and exact-ZIP fresh install/enable/Style Save. Promote unchanged assets after those gates, finish evidence/docs, verify commit/push and record hindsight.
+Install on the intended site when authorised, enable the plugin and perform the explicit native Style Save. No further qualification or release action is required for this version. Requalify the documented contracts before supporting another vendor/runtime version.

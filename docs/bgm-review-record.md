@@ -1,6 +1,6 @@
 # Review record
 
-The opening sections record goal 001 discovery/design reviews only. Goal 002 implementation and native staging results are recorded separately below. Neither section certifies the unfinished full qualification matrix.
+The opening sections record goal 001 discovery/design reviews only. Goal 002 implementation and native staging results are recorded separately below. These historical sections do not themselves certify the full matrix. Goal 003 acceptance is recorded at the end.
 
 ## Independent Codex adversarial review
 
@@ -81,3 +81,17 @@ The resulting judgement is **no unresolved source blocker for goal 002 after ind
 ## Next steps
 
 Close the reviewed goal 002 checkpoint with commit/push readback and hindsight, then complete goal 003's native matrix and real GitHub updater qualification in this chat.
+
+## Goal 003 qualification and distribution review
+
+Claude native distribution review `review-mvdfhfdq-ru4guz`, session `13ba681e-a9bd-4444-9cb3-9bf043c6f906`, returned two MAJOR and three MINOR findings. The engineer added exact manifest installation-declaration coverage checks and public-readable local feed output. A fixed build epoch was named/documented. The proposed leading regex anchor was rejected because actual Joomla adapters prepend it. The frozen no-feed 0.1.0 validation exception remains deliberate and cannot generate a new feed. [Findings and dispositions](../evidence/bgm-003-distribution-review.json) distinguish source risks from observed public access.
+
+Repair verification `review-mvdfwmni-2pv5d4`, session `d0136a52-80d7-4891-93bd-42b2c861ed18`, returned two MINOR observations and no MAJOR. Optional attribute/reordering mirror tests were deferred after independent mutation probes verified rejection. The `REPAIR-CONTEXT` concern applied to a private synthetic review fixture, not tracked product source. Authoritative result/readback and clean immutable snapshots agree. [Repair review](../evidence/bgm-003-repair-review.json) records the bounded adjudication. No unresolved demonstrated source blocker remains.
+
+The independent adversarial reviewer checked the distribution guards, immutable package/source identities, imported evidence privacy/hashes and actual Joomla regex semantics. It independently accepted the complete native matrix/lifecycle evidence, then checked current final installed members against all fourteen ZIP members, anonymous frontend/served CSS, final Stable update and fresh **Install from URL** records before promotion. Its final native verdict is **PASS within the documented scope**. This does not broaden the PHP 8.3 smoke lane, reconstructed YOOtheme provenance, manual Style Save contract or file-cache-only proof.
+
+Version 0.1.1's manifest version and updater-status language string are the only final member changes from beta2. All application PHP/LESS is unchanged. Native update and exact final fresh-install hashes match `14e8924d5f5137d2823bc062fa1ccb166457d058aa69816f26df42ef0b2e9f98`. Stable/latest metadata and anonymous ZIP/checksum/feed bytes were verified after unchanged-asset promotion. [Qualification](003-qualification.md), [final native handoff](../evidence/bgm-003-staging/final-native-handoff.json) and [public readback](../evidence/bgm-003-final-distribution.json) preserve the evidence and limits.
+
+## Next steps
+
+No further review or release action is required for 0.1.1. Installation on an intended site requires its own authorised action and the explicit native YOOtheme Style Save.

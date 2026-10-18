@@ -1,0 +1,98 @@
+{
+  "safeFiles": 15,
+  "bytes": 471142,
+  "allCopiedBytesMatch": true,
+  "phaseNote": "Final handoff is preserved exactly as received before promotion and cleanup. Its next-step/process statements describe that handoff checkpoint. Logging reports zero emitted bytes, with the configured log absent at independent readback.",
+  "files": [
+    {
+      "file": "final-candidate-identities.json",
+      "bytes": 800,
+      "sourceSha256": "975699fc34e549f0a87cd6e659241ca90dd82beb7ff773931591a6dcef99a853",
+      "committedSha256": "975699fc34e549f0a87cd6e659241ca90dd82beb7ff773931591a6dcef99a853"
+    },
+    {
+      "file": "final-logging-configuration.json",
+      "bytes": 679,
+      "sourceSha256": "cc5a4f40e62053de1383280b0c773667ff6a9b2a8cc1a814aeaf14745b751c80",
+      "committedSha256": "cc5a4f40e62053de1383280b0c773667ff6a9b2a8cc1a814aeaf14745b751c80"
+    },
+    {
+      "file": "final-native-handoff.json",
+      "bytes": 3180,
+      "sourceSha256": "d77a695493449bc5180035ab202eda5fec1b582907c7611b4f0ab455236540b9",
+      "committedSha256": "d77a695493449bc5180035ab202eda5fec1b582907c7611b4f0ab455236540b9"
+    },
+    {
+      "file": "final-native-handoff.md",
+      "bytes": 2351,
+      "sourceSha256": "6d8a6190596405b7c931744ac04e21f8f7ce5d0f1124541a852e80b1e83df50d",
+      "committedSha256": "6d8a6190596405b7c931744ac04e21f8f7ce5d0f1124541a852e80b1e83df50d"
+    },
+    {
+      "file": "native-beta2-to-final-stable-update.json",
+      "bytes": 2987,
+      "sourceSha256": "d942e112f23f07ca9defafb92685d92d5d6d3b3742ef2b0b3093a5a4b410b9d2",
+      "committedSha256": "d942e112f23f07ca9defafb92685d92d5d6d3b3742ef2b0b3093a5a4b410b9d2"
+    },
+    {
+      "file": "native-final-fresh-install.json",
+      "bytes": 2277,
+      "sourceSha256": "a3dfa809e8880f6aea405b7d177e693228a174bfb5c75c3293f7eb9ac68eff8f",
+      "committedSha256": "a3dfa809e8880f6aea405b7d177e693228a174bfb5c75c3293f7eb9ac68eff8f"
+    },
+    {
+      "file": "native-final-fresh-installed.png",
+      "bytes": 196271,
+      "sourceSha256": "d135bbad5c523c6929e60ec426df1e62948e87b87e8869146ce7402bebf8ef6f",
+      "committedSha256": "d135bbad5c523c6929e60ec426df1e62948e87b87e8869146ce7402bebf8ef6f"
+    },
+    {
+      "file": "native-final-fresh-style-saved-frontend.png",
+      "bytes": 36960,
+      "sourceSha256": "c34f462dc7b7ac199b445cc39ee141a4f8466ef830c8c5ca9051a5f059d95f24",
+      "committedSha256": "c34f462dc7b7ac199b445cc39ee141a4f8466ef830c8c5ca9051a5f059d95f24"
+    },
+    {
+      "file": "native-final-no-updates.json",
+      "bytes": 377,
+      "sourceSha256": "46186089d60866ba160fdc90d6559f972a2c1329cbc1e034f2a8a683542750ec",
+      "committedSha256": "46186089d60866ba160fdc90d6559f972a2c1329cbc1e034f2a8a683542750ec"
+    },
+    {
+      "file": "native-final-no-updates.png",
+      "bytes": 87805,
+      "sourceSha256": "fa04ad7b05c423b3418be8b4c2c00ba1cf04cfee4f1631839e1a6daf867ab4c1",
+      "committedSha256": "fa04ad7b05c423b3418be8b4c2c00ba1cf04cfee4f1631839e1a6daf867ab4c1"
+    },
+    {
+      "file": "native-final-plugin-status.png",
+      "bytes": 94994,
+      "sourceSha256": "40f15ff3123a058198338a3a610e2458326fc07d4363a00239c18934673e6651",
+      "committedSha256": "40f15ff3123a058198338a3a610e2458326fc07d4363a00239c18934673e6651"
+    },
+    {
+      "file": "native-final-stable-discovery.json",
+      "bytes": 212,
+      "sourceSha256": "b02ca451b0e2d3965747f53f4eb128aa2f9a7eaf009403ae584a1ad6da12b970",
+      "committedSha256": "b02ca451b0e2d3965747f53f4eb128aa2f9a7eaf009403ae584a1ad6da12b970"
+    },
+    {
+      "file": "native-final-stable-updated-frontend.png",
+      "bytes": 36951,
+      "sourceSha256": "d1adc998ee34db32abea312bab7de07024aa8fbdbc63d0b34497232b37209b59",
+      "committedSha256": "d1adc998ee34db32abea312bab7de07024aa8fbdbc63d0b34497232b37209b59"
+    },
+    {
+      "file": "native-final-uninstall-before-fresh.json",
+      "bytes": 1003,
+      "sourceSha256": "ea853bac652d8b597cb76a589371e34bace4dd8976a2f842167b80dc39615689",
+      "committedSha256": "ea853bac652d8b597cb76a589371e34bace4dd8976a2f842167b80dc39615689"
+    },
+    {
+      "file": "final-cleanup-report.json",
+      "bytes": 4295,
+      "sourceSha256": "f9f865b57cc9d19731da9aab19e30f06489c9da1caeeb1a7a72a348818ae222f",
+      "committedSha256": "f9f865b57cc9d19731da9aab19e30f06489c9da1caeeb1a7a72a348818ae222f"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # Original implementation design
 
-Decision date: 18 October 2026. Status: original 0.1.0 implementation, with bounded source and native staging evidence recorded in [goal 002](002-implementation.md). Full qualification remains goal 003. The initial loader-only candidate was rejected after actual API tests exposed its scope gap.
+Decision date: 18 October 2026. Status: released 0.1.1, with original implementation evidence in [goal 002](002-implementation.md) and completed native qualification/distribution in [goal 003](003-qualification.md). The initial loader-only candidate was rejected after actual API tests exposed its scope gap.
 
 ## Behaviour and scope
 
@@ -12,7 +12,7 @@ The feature set is based on observed behaviour, not on the original file structu
 
 Use element `bgm-yootheme-colors-extended` in system group `system`, with a matching root manifest `bgm-yootheme-colors-extended.xml`. Use a current `services/provider.php` provider that registers Joomla's native `PluginInterface` and returns the namespaced extension class through dependency injection. Register namespaced source through the manifest. The provider path and API identifiers are Joomla conventions.
 
-Proposed namespace: `Bgm\Plugin\System\BgmYoothemeColorsExtended`. Our concrete PHP classes start with `Bgm`, for example `BgmYoothemeColorsExtended`, `BgmColourRegistry`, `BgmBuilderAdapter` and `BgmStyleListener`. Use PSR-matching filenames and native interface method signatures. PHP cannot parse kebab-case class or variable names. Joomla language constants use `PLG_SYSTEM_BGM_...` and framework-defined entry points retain their native spelling. These are explicit syntax/convention exceptions. Custom assets, custom settings, custom colour values, CSS classes and LESS variables use a `bgm-` prefix and kebab case.
+Implemented namespace: `Bgm\Plugin\System\BgmYoothemeColorsExtended`. Our concrete PHP classes start with `Bgm`, for example `BgmYoothemeColorsExtended`, `BgmColourRegistry`, `BgmRenderAdapter` and `BgmSchemaListener`. Use PSR-matching filenames and native interface method signatures. PHP cannot parse kebab-case class or variable names. Joomla language constants use `PLG_SYSTEM_BGM_...` and framework-defined entry points retain their native spelling. These are explicit syntax/convention exceptions. Custom assets, custom settings, custom colour values, CSS classes and LESS variables use a `bgm-` prefix and kebab case.
 
 Use Joomla's current installer-script interface/service-provider mechanism if a preflight script is necessary. Do not use the legacy convention which constructs a global installer class from a hyphenated element name. Prove the element, namespace registration and language resolution through the native installer early.
 
@@ -48,9 +48,9 @@ Register original `bgm-*` LESS components and style-editor configuration through
 
 Cover component background/text colours, buttons' hover/active/focus states, card hover, links, borders and inverse contexts where the legacy feature supported them. Accessible focus must survive. Do not set stock primary/secondary variables globally to implement the extra families. Follow the native compilation/import path, including frontend use after saving and reopening the customizer.
 
-Version 0.1.0 requires an explicit native style save after installation or update to compile BGM styles into existing CSS. It does not claim automatic cache invalidation or regeneration. BGM components are queued through the top-level native theme loader with a BGM-owned associative key, preserving native theme initialisation and numeric component entries from other extensions. Writing `config.theme` early was a confirmed prototype defect because it skipped native defaults, including consent configuration.
+Versions 0.1.0 and 0.1.1 require an explicit native style save after installation or update to compile BGM styles into existing CSS. Automatic cache invalidation or regeneration is not provided. BGM components are queued through the top-level native theme loader with a BGM-owned associative key, preserving native theme initialisation and numeric component entries from other extensions. Writing `config.theme` early was a confirmed prototype defect because it skipped native defaults, including consent configuration.
 
-Do not recursively delete template caches, purge unrelated content or force a rebuild on every request. Complete automatic cache-lifecycle, disable/uninstall and saved-data fallback qualification in goal 003 before stable delivery.
+Do not recursively delete template caches, purge unrelated content or force a rebuild on every request. Goal 003 verified disable/uninstall, saved-data fallback, reinstall/enable/Style Save recovery and native file-cache clearing with global caching disabled. Existing CSS survives updating until an explicit Style Save. General full-page-cache configurations remain outside that proof.
 
 ## Packaging and release
 
@@ -60,6 +60,10 @@ Use a GPL-compatible licence for original Joomla plugin code, with BGM attributi
 
 ## Acceptance boundary
 
-The initial source target is YOOtheme Pro 5.0.52. The local reference site reports Joomla 6.2.0, which is an installed snapshot rather than proof of the latest supported Joomla release. PHP CLI is 8.3.11. Do not equate those source versions with a tested compatibility matrix. Determine the supported minimums and actual executable matrix in the staging goal before writing manifest/update claims.
+The qualified full native lane is YOOtheme Pro 5.0.52, Joomla 6.2.0, PHP 8.4.17 and MySQL 8.3.0. A separate PHP 8.3.30 native lane covers installation, Style Save/reopen and frontend smoke. These are tested snapshots, not latest-version assertions. YOOtheme uses manifest-reconstructed installed source. Other versions and arbitrary Builder-template overrides require separate qualification.
 
-Release readiness requires the [staging acceptance gates](bgm-staging-plan.md), an independent adversarial pass, Claude review, bounded fixes and verified commit/push. Source-contract discovery alone satisfies none of those runtime gates.
+The [staging acceptance gates](bgm-staging-plan.md), independent adversarial review, adjudicated Claude findings and public native updater/fresh-install checks are complete within [the recorded scope](003-qualification.md). No customer deployment was part of qualification.
+
+## Next steps
+
+No further architecture work is required for 0.1.1. Requalify native tags, View and HtmlHelper contracts, compilation and updater behaviour before supporting another vendor/runtime version.

@@ -1,0 +1,105 @@
+{
+  "cleanup_result": "PASS",
+  "root": "/private/tmp/bgm-yootheme-staging.r25m9e5t",
+  "verified_ownership_before_stop": {
+    "PHP": {
+      "pid": 80711,
+      "bind": "127.0.0.1:18762",
+      "site": "/private/tmp/bgm-yootheme-staging.r25m9e5t/site"
+    },
+    "MySQL": {
+      "pid": 59962,
+      "bind": "127.0.0.1:13317",
+      "datadir": "/private/tmp/bgm-yootheme-staging.r25m9e5t/mysql",
+      "socket": "/private/tmp/bgm-yootheme-staging.r25m9e5t/mysql.sock"
+    }
+  },
+  "shutdown": {
+    "PHP": "SIGTERM to exact verified PID",
+    "MySQL": "Native mysqladmin shutdown through exact isolated socket and protected option file"
+  },
+  "readback": {
+    "PHP_pid_stopped": true,
+    "MySQL_pid_stopped": true,
+    "port18762_listeners": [],
+    "port13317_listeners": [],
+    "isolated_mysql_socket_exists": false,
+    "unrelated_MySQL_listener_PIDs_before": [
+      "960"
+    ],
+    "unrelated_MySQL_listener_PIDs_after": [
+      "960"
+    ],
+    "unrelated_listener_inventory_unchanged": true
+  },
+  "transient_private_authentication_files_removed": [
+    "private/admin-login.html",
+    "private/admin-password",
+    "private/admin-storage.json",
+    "private/article-steps.json",
+    "private/candidate-customizer-debug.html",
+    "private/candidate-customizer-debug.txt",
+    "private/credentials.json",
+    "private/customizer-without-bgm.html",
+    "private/db-password",
+    "private/final-admin-storage.json",
+    "private/final-style-proof-steps.json",
+    "private/goal003-admin-storage.json",
+    "private/goal003-baseline-customizer.html",
+    "private/goal003-beta-find-updates.html",
+    "private/goal003-beta2-style-steps.json",
+    "private/goal003-builder-restore-steps.json",
+    "private/goal003-builder-save-steps.json",
+    "private/goal003-child-style-steps.json",
+    "private/goal003-create-child.html",
+    "private/goal003-current-customizer.html",
+    "private/goal003-final-admin-storage.json",
+    "private/goal003-final-fresh-install-steps.json",
+    "private/goal003-final-fresh-style-steps.json",
+    "private/goal003-final-installed-no-updates.html",
+    "private/goal003-final-native-enable.html",
+    "private/goal003-final-native-update-steps.json",
+    "private/goal003-final-plugin-status-close.html",
+    "private/goal003-final-stable-find-updates.html",
+    "private/goal003-final-stable-native-remove.html",
+    "private/goal003-installer-stability-2.html",
+    "private/goal003-installer-stability-4.html",
+    "private/goal003-native-cache-clear.html",
+    "private/goal003-native-updater-steps.json",
+    "private/goal003-php83-style-steps.json",
+    "private/goal003-plugin-publish.html",
+    "private/goal003-plugin-remove.html",
+    "private/goal003-plugin-unpublish.html",
+    "private/goal003-reinstall-style-steps.json",
+    "private/goal003-stable-find-updates.html",
+    "private/goal003-style-picker-steps.json",
+    "private/goal003-style-save-steps.json",
+    "private/http-cookies.txt",
+    "private/http-result.html",
+    "private/installer-goal003-beta1-baseline.html",
+    "private/installer-goal003-child-fixture.html",
+    "private/installer-goal003-native-reinstall-after-uninstall.html",
+    "private/installer-goal003-parent-restore.html",
+    "private/installer-goal003-php83-native-reinstall.html",
+    "private/installer-yootheme-framework.html",
+    "private/login-steps.json",
+    "private/mysql-root.cnf",
+    "private/yoo-account.html",
+    "private/yoo-home.html",
+    "private/yoo-login-page.html"
+  ],
+  "removed_count": 54,
+  "safe_evidence_preserved_unchanged_files": 69,
+  "retained": {
+    "root": true,
+    "evidence_directory": true,
+    "site_directory": true,
+    "isolated_database_datadir": true,
+    "downloads_directory": true,
+    "private_initial_rollback": true,
+    "private_final_update_rollback": true
+  },
+  "retention_limit": "Site configuration, stopped isolated database and protected rollback snapshots remain retained as instructed. They are disposable synthetic environment material and must stay outside Git. No claim that every retained rollback/database authentication record has been erased.",
+  "source_or_Git_mutations": false,
+  "next_step": "Controller copies this cleanup report and decides retained disposable root/rollback retention. No further process cleanup required."
+}

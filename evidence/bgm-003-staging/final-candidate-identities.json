@@ -1,0 +1,25 @@
+{
+  "feed": {
+    "url": "https://raw.githubusercontent.com/george-media/bgm-yootheme-colors-extended/main/bgm-updates/bgm-update.xml",
+    "http": 200,
+    "bytes": 798,
+    "sha256": "46816f034f0c1014415400691c8cf6f96153fa373f00dd40fef13b69e8738d50",
+    "version": "0.1.1",
+    "stability": "stable"
+  },
+  "asset": {
+    "url": "https://github.com/george-media/bgm-yootheme-colors-extended/releases/download/v0.1.1/bgm-yootheme-colors-extended-0.1.1.zip",
+    "http_status": 200,
+    "bytes": 19592,
+    "sha256": "14e8924d5f5137d2823bc062fa1ccb166457d058aa69816f26df42ef0b2e9f98",
+    "anonymous": true
+  },
+  "sidecar_matches": true,
+  "baseline_installed": {
+    "id": 258,
+    "enabled": true,
+    "version": "0.1.1-beta2"
+  },
+  "minimum_stability": "Stable (4)",
+  "owned_PHP_pid": 80711
+}

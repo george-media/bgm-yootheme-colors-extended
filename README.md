@@ -1,38 +1,51 @@
 # BGM YOOTheme Colors Extended
 
-An original Joomla system plugin adding **Tertiary, Quaternary, Quinary and Senary** colour families to YOOtheme Pro's native style editor and applicable Builder controls.
+An original Joomla system plugin adding **Tertiary, Quaternary, Quinary and Senary** colour families to YOOtheme Pro's style editor and applicable native Builder controls.
 
-**Status: goal 002 implementation and final review complete. The 0.1.0 prototype has native installation and a minimal save/reopen/compiled-frontend slice verified. Full qualification and stable GitHub delivery remain goal 003, active in chat 003.**
+**0.1.1 is released.** Native feature/lifecycle qualification, anonymous GitHub downloads, Stable-filter updating and exact-package fresh installation pass within the tested scope below.
 
-The plugin uses BGM-prefixed options/classes/LESS, a finite native schema map, Joomla dependency injection and an original scoped rendering adapter. It preserves native structural classes, inverse modes and card hover. It includes no legacy plugin implementation, vendor templates, registration API or telemetry.
+[Installer ZIP](https://github.com/george-media/bgm-yootheme-colors-extended/releases/download/v0.1.1/bgm-yootheme-colors-extended-0.1.1.zip) · [SHA-256 checksum](https://github.com/george-media/bgm-yootheme-colors-extended/releases/download/v0.1.1/bgm-yootheme-colors-extended-0.1.1.zip.sha256) · [Qualification record](docs/003-qualification.md)
+
+The native installer is **19,592 bytes**, with fourteen allowlisted files. GitHub's source archive is not the installer.
+
+## Install
+
+1. Upload the installer ZIP through Joomla **System → Install → Extensions**.
+2. Enable **BGM YOOTheme Colors Extended** in the plugin manager.
+3. In YOOtheme's style editor, configure **BGM Colours** and save the style.
+4. Select the BGM colours in the applicable native Builder controls, save and reopen.
+
+**Use a native YOOtheme Style Save after installation or update to compile styles.** Automatic regeneration of existing compiled CSS is not provided. Joomla's extension updater uses the real public feed and versioned installer assets without a GitHub credential.
 
 ## Verified scope
 
-- Native Joomla **6.2.0**, PHP **8.4.17**, YOOtheme **5.0.52** staging, with synthetic content and a new isolated database.
-- Exact deterministic installer ZIP passed native browser upload/enable and all 14 installed member hashes matched.
-- Native style saving/reopening and a saved Builder section produced the configured frontend background through actual generated CSS.
-- **191** focused vendor API/lifecycle checks pass on PHP **8.3.30** and **8.4.17**. These do not substitute for the pending native PHP 8.3 lane.
-- **62** actual UIkit LESS checks pass, covering families, states, inverse selectors and overrides.
+- Joomla **6.2.0**, YOOtheme Pro **5.0.52**, PHP **8.4.17**, MySQL **8.3.0**: all **100** colour choices across **19** fields, native saved data/classes and browser colours, nested controls, inverse/preserve modes, states, responsive widths, inherited child/non-default style and removal/recovery.
+- PHP **8.3.30**: separate native install, browser Style Save/reopen, compiled CSS and frontend smoke on the same disposable Joomla/YOOtheme lane.
+- Real anonymous GitHub downloads, native beta1 → beta2 → 0.1.1 updating, Stable filtering, exact final Install from URL, installed member hashes and settings persistence.
+- **191** vendor API/lifecycle checks on both PHP versions, **62** actual UIkit LESS checks and **16** distribution regressions. These are separate from native browser acceptance.
 
-YOOtheme staging used reconstructed manifest-listed installed source, with generated/customer assets excluded. It was not compared to a pristine vendor distribution. Full component/state, responsive, child-theme, cache, version-upgrade and removal qualification remains open. See [goal 002 evidence](docs/002-implementation.md) and [the review record](docs/bgm-review-record.md).
+Bulk matrix layouts used the native YOOtheme page endpoint. Representative Builder saves/reopening and installer/update actions used the browser. CSS state controls include synthetic buttons inside a native Text element, with native button-item placement tested separately.
 
-## Build and install
+YOOtheme staging used reconstructed manifest-listed installed source, rather than a pristine vendor distribution. Joomla 5, other PHP versions, arbitrary Builder-template overrides and general full-page-cache configurations have not been qualified. File-cache clearing was tested with global Joomla caching disabled. See [the complete evidence and limits](docs/003-qualification.md).
+
+## Implementation and builds
+
+The plugin uses Joomla dependency injection, a finite native schema map, a scoped rendering adapter and original LESS. Custom options/classes/assets use `bgm-` names. Native structural/behaviour classes remain intact. No legacy implementation, vendor templates, registration API or telemetry is packaged.
 
 ```bash
-python3 bgm-scripts/bgm-build.py
+python3 -B bgm-scripts/bgm-build.py --expect-version 0.1.1
+python3 -B bgm-tests/bgm-distribution.py
 ```
 
-This writes the root-manifest native installer ZIP and SHA-256 sidecar into ignored `dist/`. GitHub's source archive is not the installer package. Follow [the installation guide](docs/bgm-installation.md). Version 0.1.0 requires an explicit YOOtheme Style SAVE after installation or update to compile existing styles.
+The deterministic builder writes the ZIP, checksum and member-hash receipt into ignored `dist/`. The manifest supplies the version. The feed generator verifies the actual anonymous versioned GitHub download before writing XML.
 
-The [source repository](https://github.com/george-media/bgm-yootheme-colors-extended) is now public following the user's change during goal 002. A real GitHub release-asset/update-feed workflow is planned in goal 003. **Automatic updates are not active in 0.1.0.**
-
-- [Legacy behaviour](docs/bgm-legacy-behaviour.md)
-- [Integration evidence](docs/bgm-integration-contract.md)
-- [Selected architecture and compatibility limits](docs/bgm-architecture.md)
-- [Staging and qualification gates](docs/bgm-staging-plan.md)
-- [GitHub distribution and updates](docs/bgm-release-plan.md)
+- [Installation and removal](docs/bgm-installation.md)
+- [Distribution and updates](docs/bgm-release-plan.md)
+- [Architecture and integration limits](docs/bgm-architecture.md)
+- [Native field contract](docs/bgm-integration-contract.md)
+- [Review findings and dispositions](docs/bgm-review-record.md)
 - [Goals and acceptance gates](docs/bgm-work-plan.md)
 
 ## Next steps
 
-Complete goal 003 qualification, publish the qualified installer/checksum, and verify a real anonymous native Joomla update before stable delivery. The final Claude assessment was recovered through the supported native review route and independently adjudicated against actual vendor source.
+Install on the intended site when authorised, enable the plugin and save the YOOtheme style. No further engineering or release action is required for 0.1.1.

@@ -1,0 +1,13 @@
+{
+  "http_status": 200,
+  "native_task": "update.find",
+  "response_file": "private only",
+  "bgm_update_rows": [
+    [
+      "57",
+      "0.1.1",
+      "bgm-yootheme-colors-extended",
+      "system"
+    ]
+  ]
+}
