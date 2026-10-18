@@ -47,7 +47,7 @@ The final browser Update retained enabled state, both styles/layout and unrelate
 
 Native Check For Updates reports no BGM row at installed 0.1.1 with Stable minimum retained. Browser diagnostics are clean. The actual Joomla framework confirmed PHP 8.4.17 `error_reporting = E_ALL = 30719` and `log_errors = 1`, with zero emitted error-log bytes. The configured log was absent at independent readback and the temporary probe was removed. The independent read-only reviewer checked installed hashes, anonymous frontend/served CSS and final records before promotion. Public installer/checksum/feed bytes, immutable tag and actual stable/latest release flags were rechecked afterwards.
 
-[Independent final acceptance](../evidence/bgm-003-final-acceptance.json) and [cleanup readback](../evidence/bgm-003-staging/final-cleanup-report.json) close the handoff. Owned PHP/MySQL processes and loopback listeners are stopped. Transient authentication files are removed. The protected synthetic root and rollback remain outside Git for reproducibility.
+[Independent final acceptance](../evidence/bgm-003-final-acceptance.json) and [cleanup readback](../evidence/bgm-003-staging/final-cleanup-report.json) close the handoff. [Post-completion hindsight](003-hindsight.md) records the independently reviewed lessons after verified commit/push. Owned PHP/MySQL processes and loopback listeners are stopped. Transient authentication files are removed. The protected synthetic root and rollback remain outside Git for reproducibility.
 
 ## Installation contract and limits
 

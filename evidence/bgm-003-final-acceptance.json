@@ -38,5 +38,21 @@
     "retainedStageRootMode": "0700",
     "safeCleanupReport": "bgm-003-staging/final-cleanup-report.json",
     "retentionDecision": "Retain protected stopped synthetic root and rollback locally as reproducibility/rollback evidence; no running staging service or further cleanup action required for delivery."
+  },
+  "postCompletionHindsight": {
+    "completionCommit": "855ca68988c5b68b73b251b93e5e793c788632f8",
+    "localRemoteGitHubApiMatch": true,
+    "publicQualificationDocumentMatches": true,
+    "independentReviewer": "/root/adversarial",
+    "verdict": "No remaining release blocker; cleanup independently passes; no cleanup-record contradiction",
+    "cleanupChecked": [
+      "Owned PIDs stopped",
+      "Ports18762/13317 closed",
+      "Isolated socket absent",
+      "All54 listed transient authentication files removed",
+      "Retained root mode0700",
+      "ServBayPID960 unchanged"
+    ],
+    "record": "docs/003-hindsight.md"
   }
 }

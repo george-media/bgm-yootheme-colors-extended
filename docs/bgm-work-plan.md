@@ -49,4 +49,4 @@ Goal 003 passes the [recorded native feature/lifecycle matrix](003-qualification
 
 ## Next steps
 
-Finish commit/push readback and requested hindsight. Owned disposable processes are stopped, transient authentication files removed and protected rollback/evidence retained locally. No further numbered chat is required. Installing on a real site remains a separate authorised action, with a native Style Save after installation or update.
+Commit/push readback and [independent hindsight](003-hindsight.md) are complete. Owned disposable processes are stopped, transient authentication files removed and protected rollback/evidence retained locally. No further engineering or release action, or numbered chat, is required. Install on an intended site when authorised and perform the native Style Save after installation or update.
