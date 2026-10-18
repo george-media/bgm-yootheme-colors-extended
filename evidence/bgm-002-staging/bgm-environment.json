@@ -1,0 +1,20 @@
+{
+  "stage_root": "/private/tmp/bgm-yootheme-staging.r25m9e5t",
+  "base_url": "http://127.0.0.1:18762",
+  "joomla": "6.2.0",
+  "php": "8.4.17",
+  "mysql": "8.3.0",
+  "mysql_pid": 59962,
+  "php_pid": 60322,
+  "mysql_port": 13317,
+  "mysql_socket": "/private/tmp/bgm-yootheme-staging.r25m9e5t/mysql.sock",
+  "database": "bgm_yootheme_goal002",
+  "table_prefix": "bgm002_",
+  "data": "Clean native Joomla install with synthetic users and test content only.",
+  "mail_enabled": false,
+  "sef_enabled": false,
+  "server_note": "PHP development server requires explicit live_site for Joomla 6.2 cli-server URI detection. Configuration points solely to loopback stage.",
+  "scheduled_runner_enabled": false,
+  "joomla_statistics_enabled": false,
+  "synthetic_article_id": 1
+}

@@ -1,0 +1,97 @@
+{
+  "status": "pass",
+  "version": "0.1.0",
+  "sha256": "0785c6dd02056e4ed5ce674508ae637e24618efa58e0f419c4538d94aacfe6ea",
+  "packageBytes": 19481,
+  "files": [
+    {
+      "path": "bgm-assets/bgm-less/bgm-colours.less",
+      "bytes": 15610,
+      "sha256": "40099de2e853ca315ab18abe8c4f892ff541d16ed99a5058b5ff41ec1c968248"
+    },
+    {
+      "path": "bgm-bootstrap.php",
+      "bytes": 1684,
+      "sha256": "3049511ec5e434a21194b2d277c0d385562a683d11c5aab4d458bd81e73b5124"
+    },
+    {
+      "path": "bgm-licence.txt",
+      "bytes": 18905,
+      "sha256": "e08de5470e132fe7d7fe0a639589a0bb8805d1676bb6b780b554509c31106211"
+    },
+    {
+      "path": "bgm-styler.php",
+      "bytes": 704,
+      "sha256": "61c50da839a30ca9d596b140bf5aebd44118578d1e57d51dd0f2a97e6143cd9a"
+    },
+    {
+      "path": "bgm-yootheme-colors-extended.xml",
+      "bytes": 1359,
+      "sha256": "0eb0428f1728fcdec095c8cdde0b6813652bc826b5f43301a0bb72ff3d9cbfb2"
+    },
+    {
+      "path": "language/en-GB/plg_system_bgm-yootheme-colors-extended.ini",
+      "bytes": 825,
+      "sha256": "3030e00c2e2788892a1fb33fefb9b64b378a1ec39fbf2e2ead4a753f1c6cec9d"
+    },
+    {
+      "path": "language/en-GB/plg_system_bgm-yootheme-colors-extended.sys.ini",
+      "bytes": 218,
+      "sha256": "5aae8d70025f3d0f34d81c7dee19e98b6f4361f71a845000e91516a45c5150dd"
+    },
+    {
+      "path": "services/provider.php",
+      "bytes": 904,
+      "sha256": "509ffd34d56bcb7ad5992eab00bfbafa163287151247a24803c4b504c28704b9"
+    },
+    {
+      "path": "src/Extension/BgmYoothemeColorsExtended.php",
+      "bytes": 1278,
+      "sha256": "7fd9b09bbeb421c1f2c962c75eef1559749873d72deb957eaceb25e5c4e036be"
+    },
+    {
+      "path": "src/Integration/BgmColourRegistry.php",
+      "bytes": 2255,
+      "sha256": "ccd1beffa029bf49a8333a96e6dd3f2574126aa8f55e12b70ba5a373cc2a9f68"
+    },
+    {
+      "path": "src/Integration/BgmModule.php",
+      "bytes": 1549,
+      "sha256": "613ab862527edd1edfa059d518a4baac8ba8e332cbfe4868ed29e6e4c4450667"
+    },
+    {
+      "path": "src/Integration/BgmRenderAdapter.php",
+      "bytes": 8112,
+      "sha256": "fe0c1d42459b4a457b2634ed47e7f15e08cf43f70a2c026778fcaf42d73ce705"
+    },
+    {
+      "path": "src/Integration/BgmSchemaListener.php",
+      "bytes": 2053,
+      "sha256": "af08f81192acca3a59d8fd3e27e3f1663ebc7b49347d2ed04830f229ff8af202"
+    },
+    {
+      "path": "src/Integration/BgmView.php",
+      "bytes": 2123,
+      "sha256": "c9d6273ddb5800c1fa5b6d93c5a1e18cb90af5692f8e0717c836f70e3e39f817"
+    }
+  ],
+  "deterministicBuilds": 2,
+  "nativeApi": {
+    "php8.4.17": {
+      "checks": 189,
+      "status": "pass"
+    },
+    "php8.3.30": {
+      "checks": 189,
+      "status": "pass"
+    }
+  },
+  "less": {
+    "compiler": "4.4.2",
+    "checks": 62,
+    "compiledBytes": 625764,
+    "status": "pass",
+    "note": "LESS source unchanged since independently passing compile."
+  },
+  "evidenceBoundary": "Isolated actual vendor API/native theme lifecycle and UIkit LESS checks, deterministic packaging and inventory. Separate native staging record is required for installer/browser proof."
+}

@@ -1,6 +1,6 @@
-# Goal 001 review record
+# Review record
 
-Review scope: discovery, original design and delivery gates. No implementation, native installation or browser compatibility has been approved by these reviews.
+The opening sections record goal 001 discovery/design reviews only. Goal 002 implementation and native staging results are recorded separately below. Neither section certifies the unfinished full qualification matrix.
 
 ## Independent Codex adversarial review
 
@@ -35,3 +35,29 @@ Validated archive SHA-256 and 27 documented source/member digests against actual
 ## Next steps
 
 Commit/push the reviewed foundation. Goal 002 begins with the scoped structured adapter and native-installer prototype before broader feature implementation.
+
+## Goal 002 implementation review
+
+The engineer owned source, a separate reviewer remained read-only, and the staging operator owned all disposable state. The controller integrated evidence and owns the package/Git decision.
+
+### Independent adversarial findings and repairs
+
+The reviewer identified and verified repairs for missing nested title templates, an incorrect native hover enable-condition comparison, missing `hgroup`, third-party option-label collisions and ancestor sentinel leakage into unrelated nested views. Actual filtered-loader short-circuit tests then disproved the loader-only scope boundary, including filters registered after BGM. The implemented `BgmView` render/evaluate subclass boundary passed those tests, plus later unfiltered redirects, postprocessing and real native exception cleanup.
+
+A native staging consent 500 exposed the early root-theme configuration error. Moving to the top-level native theme queue preserved defaults. Further native lifecycle tests exposed numeric component merging, repaired with a BGM-owned associative key. Actual native ThemeLoader initialisation and LoadStylerImports checks now cover native identity/consent, prior/later numeric imports and repeat registration. Capability/timing tests also cover an already initialised theme and already resolved View/StylerConfig services. Existing service extenders are preserved, and a competing View factory fails closed.
+
+The final reviewer verdict is **PASS for source/package `0785c6dd02056e4ed5ce674508ae637e24618efa58e0f419c4538d94aacfe6ea`**, superseding earlier candidate verdicts. The reviewer independently ran **189** native API/lifecycle checks on both PHP **8.3.30** and **8.4.17**, the **62** LESS checks, and verified all **14** archive entries against source. Its verdict explicitly excludes native browser/full-matrix certification. Persisted original-element mutations, callback-list changes during dispatch and arbitrary competing factories are not represented as universally compatible.
+
+### Claude evidence and execution limit
+
+Architecture job `advise-mvddbwwt-uwfxxo` completed with authoritative provider JSON, verified cleanup and canonical session `6a6b28df-9b0c-48bd-9641-ffe489b12d8f`. It found the reachable `hgroup` gap and flattening of class-array shape before downstream callbacks. Both are repaired and covered by focused tests. Its references to production effects were source-based predictions, not observed customer/production failures.
+
+Final-review job `do-mvddq8ri-iecbat` was cancelled when staging invalidated that source candidate. Two later file-reading jobs, `do-mvddub7u-vxhrd5` and `advise-mvde2kta-h3zfkk`, exited non-zero with no authoritative result. Readiness checks passed, but were not treated as completed reviews. The controller changed to a single-turn inline review of the exact frozen runtime bytes, without tool-reading ambiguity. The final changed approach, foreground single-turn inline job `advise-mvdeba0z-jum5zp`, also failed before returning a supported result. Its structured status is failed, with no available authoritative assessment. The controller stopped after these three materially changed final-review attempts. The earlier architecture review remains valid evidence of its findings, but is not being relabelled as a final-source approval. No root cause is claimed from the opaque failure classification.
+
+### Native staging readback
+
+The separate staging operator accepted the exact final ZIP through native browser upload, verified the unchanged checksum before/after and all fourteen installed members, then used native Style SAVE/reopen and a saved native Builder section. The configured final colour **#245A7E** appeared as **rgb(36, 90, 126)** on the frontend through actual generated/served CSS. There were no final frontend console errors or new stage-root PHP warnings/fatals/deprecations. The [implementation record](002-implementation.md) links hashes, readbacks and screenshots and explicitly limits the result to one section on Joomla 6.2.0/PHP 8.4.17/installed-source YOOtheme 5.0.52.
+
+## Next steps
+
+Goal 002 remains open at the final Claude review gate. Preserve the verified work, resolve reviewer-result execution, then complete the review before starting goal 003. Full component/state/lifecycle qualification and real public GitHub update delivery belong to goal 003.

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" group="system" method="upgrade">
+    <name>PLG_SYSTEM_BGM_YOOTHEME_COLORS_EXTENDED</name>
+    <author>By George Media</author>
+    <creationDate>2026-10</creationDate>
+    <copyright>Copyright (C) 2026 By George Media</copyright>
+    <license>GNU General Public License version 2 or later</license>
+    <version>0.1.0</version>
+    <description>PLG_SYSTEM_BGM_YOOTHEME_COLORS_EXTENDED_DESCRIPTION</description>
+    <namespace path="src">Bgm\Plugin\System\BgmYoothemeColorsExtended</namespace>
+    <files>
+        <folder plugin="bgm-yootheme-colors-extended">services</folder>
+        <folder>src</folder>
+        <folder>bgm-assets</folder>
+        <filename>bgm-bootstrap.php</filename>
+        <filename>bgm-styler.php</filename>
+        <filename>bgm-licence.txt</filename>
+    </files>
+    <languages folder="language">
+        <language tag="en-GB">en-GB/plg_system_bgm-yootheme-colors-extended.ini</language>
+        <language tag="en-GB">en-GB/plg_system_bgm-yootheme-colors-extended.sys.ini</language>
+    </languages>
+    <config><fields name="params"><fieldset name="basic"><field name="bgm-status" type="note" label="PLG_SYSTEM_BGM_YOOTHEME_COLORS_EXTENDED_STATUS" description="PLG_SYSTEM_BGM_YOOTHEME_COLORS_EXTENDED_STATUS_DESCRIPTION" /></fieldset></fields></config>
+</extension>

@@ -1,0 +1,17 @@
+{
+  "php_error_log_source": "MAMP PHP8.4.17 configured shared php_error.log, read-only filter restricted to exact disposable staging root",
+  "acceptance_start_utc": "2026-10-18T05:31:36.647576+00:00",
+  "acceptance_start_basis": "Installed final0785c6dd bgm-bootstrap.php mtime, before final style recompile/save/browser/frontend gates",
+  "inspection_end_utc": "2026-10-18T05:36:10.094610+00:00",
+  "new_staging_php_diagnostics_since_acceptance": [],
+  "historical_pre_acceptance_staging_diagnostic_count": 61,
+  "last_historical_staging_diagnostic_utc": "2026-10-18T05:25:22+00:00",
+  "historical_note": "Includes rejected intermediate/candidate consent warnings. These are not final-package acceptance results.",
+  "joomla_log_files_present": [
+    {
+      "file": "jcontroller.log.php",
+      "bytes": 493
+    }
+  ],
+  "shared_log_mutated": false
+}

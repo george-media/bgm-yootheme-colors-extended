@@ -2,6 +2,10 @@
 
 Goal 001 discovery, 18 October 2026. Proposed original design, grounded in static local YOOtheme source. No compatibility certification or runtime acceptance is implied by this document.
 
+## Goal 002 implementation decision
+
+The loader-only candidate below was tested and rejected because filtered loaders can bypass it. The implemented boundary is a supported `BgmView` service subclass with unconditional render scoping and exact-final-file evaluate scoping, without copying native method bodies. See [the selected architecture](bgm-architecture.md) and [goal 002 evidence](002-implementation.md) for actual checks and limits. The source observations and original proposal below remain discovery evidence, not the final algorithm.
+
 ## Observed target
 
 Inspected source root: `/Users/damian/Sites/localhost/edengateway.com.au/templates/yootheme`.

@@ -6,19 +6,23 @@ On 18 October 2026, `gh repo view` and the repository API identified `george-med
 
 Joomla's standard updater fetches an extension XML feed and a downloadable package. A signed-in developer's ability to download a GitHub asset does not establish access from a Joomla server. Private GitHub content needs authentication. Do not put a GitHub token into extension source, a public URL, update metadata, logs or package settings as a shortcut.
 
+## Public repository confirmed in goal 002
+
+During implementation on 18 October 2026 the user stated that the GitHub repository was now public. A fresh repository API read confirmed `private:false`, `visibility:public`, default branch `main` and `archived:false`. The private-repository blocker is resolved. The requested GitHub installer/update workflow can proceed after qualification. This does not make the prototype a stable release or prove any package/feed endpoint exists.
+
+Use versioned GitHub release assets for installer ZIPs and checksums, with an HTTPS XML feed committed to the public repository and fetched through its raw URL. Test anonymous reads and a real native Joomla version upgrade before announcing updates as active. Never substitute GitHub source archives for installer packages.
+
 ## Build first
 
-Create `dist/bgm-yootheme-colors-extended-<version>.zip`, a SHA-256 checksum and a validated XML update manifest generated from the same release metadata. Keep `dist/` ignored locally. Attach a built ZIP as a release asset when publication is authorised. GitHub's automatically generated source ZIP is not the native Joomla installer package.
+Create `dist/bgm-yootheme-colors-extended-<version>.zip`, a SHA-256 checksum and an XML update manifest generated from the same release metadata only when its real package endpoint exists. Keep `dist/` ignored locally. Publish the qualified built ZIP as a versioned release asset for the requested GitHub delivery. Clearly label any updater-test fixtures as prereleases. GitHub's automatically generated source ZIP is not the native Joomla installer package.
 
 An XML schema/parse check is necessary but insufficient. Test actual native Joomla extension installation and an upgrade from the previous fixture version, then read back installed version/state/files and saved settings.
 
-## Feasible distribution choices
+## Distribution boundary
 
-1. Keep source private and make a separate approved distribution repository or host public update XML and release ZIPs. This is the simplest anonymous Joomla path, once the public destination is explicitly selected.
-2. Keep source and distribution private and use a deliberately designed authenticated distribution service. This adds infrastructure and credential lifecycle work outside the first plugin build.
-3. Deliver an installer ZIP manually while the optional automatic-update destination remains unresolved. Clearly state that automatic updates are not active.
+Public GitHub delivery is now the selected feasible route. Complete local qualification first, then publish the actual installer asset and a matching feed. Keep the source repository public as the user selected. No GitHub credential belongs in Joomla or its package.
 
-Do not change repository visibility or publish a public feed to resolve the question implicitly. Continue plugin engineering and local staging independently. If public distribution is later authorised, prefer GitHub versioned release assets plus a stable feed URL. Verify both with an unauthenticated request from outside the developer's logged-in session. Publishing a feed without accessible ZIPs is not a completed updater.
+The goal 002 prototype has no update server. Goal 003 must add and test the public feed and release assets with two distinct versions, saved settings readback, SHA-256 verification and a native update result. An accessible feed without an accessible installer ZIP does not satisfy the updater gate.
 
 ## Update metadata contract
 

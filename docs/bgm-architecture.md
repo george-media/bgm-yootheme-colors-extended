@@ -1,6 +1,6 @@
 # Original implementation design
 
-Decision date: 18 October 2026. Status: design for goal 002, not implemented or runtime-qualified.
+Decision date: 18 October 2026. Status: original 0.1.0 implementation, with bounded source and native staging evidence recorded in [goal 002](002-implementation.md). Full qualification remains goal 003. The initial loader-only candidate was rejected after actual API tests exposed its scope gap.
 
 ## Behaviour and scope
 
@@ -26,11 +26,17 @@ Never walk and rewrite every arbitrary field which happens to contain the word `
 
 Native templates construct `uk-*` colour class names. Simply passing a custom value through produces a custom class that does not begin with `bgm-`. The selected implementation must preserve native structure while emitting BGM-owned custom classes such as `bgm-section-tertiary`, `bgm-card-quaternary`, `bgm-button-tertiary` and `bgm-text-quaternary`.
 
-The current source exposes `HtmlHelper::addTransform` and `HtmlElement` attributes as a structured class boundary, but its tag registration is global and is not inherently narrower than a View loader. The prototype candidate combines it with a path-scoped `View::addLoader` wrapper. Every View call pushes a context entry: an exact allowlisted native template plus finite BGM values, or an explicit inactive entry for every other template. Use `try/finally` to pop the context on success or failure. A structured callback must return without changing anything unless the top context is active and an exact BGM sentinel token from that invocation is present. Nested unrelated templates must push an inactive entry, rather than inherit the parent's active scope.
+The selected implementation uses YOOtheme's supported `services` loader to supply a `BgmView` subclass. It inherits the native render/evaluate implementation and preserves the standard View service extenders. `BgmModule` checks capability and timing before registration. It declines integration if the theme has already initialised or the View/StylerConfig service was already resolved, retaining the existing service and issuing a bounded administrator diagnostic. A later competing View factory suspends schema additions. Arbitrary replacement factories are outside the compatibility guarantee.
 
-The scoped wrapper adapts only verified BGM values in render-local parameters where native card/tile branches need native-shaped sentinels. The structured hook may then remap their exact generated colour class tokens before HTML serialisation. Register callbacks before elements are constructed and verify every actual native tag, including dynamic headings and linked containers. Never perform global string replacements over HTML, user text, URLs or script/style bodies. Preserve every native structural class and every stock nested primary/secondary control. Do not mutate saved nodes during rendering or copy vendor element templates. Prove out-of-scope byte equality, inactive nested context, exception cleanup, repeated rendering and transform coexistence before selecting this candidate.
+`BgmView::render` provides an unconditional inactive frame around every invocation, including filtered loaders which short-circuit, redirect, throw or postprocess. It merges inherited/native global parameters and restores only exact owned ancestor sentinels in the direct known `props`/`element` fields. `BgmView::evaluate` then activates only exact verified native Builder files after all loaders have selected the final path. Both frames use `try/finally`. On a native evaluation exception, the wrapper restores the entry template/parameter stacks and only buffers opened within that evaluation, then rethrows.
 
-Goal 002 must first prove this adapter on section, panel/card, button and a nested multi-item control. Explicitly handle native linked-card hover conditions, which whitelist stock colour values, and inverse LESS extensions at the actual surface. Add/preserve native `uk-card-hover` as the behaviour trigger alongside the custom BGM colour class; do not rename or replace this native trigger. The structured adapter remains a prototype requiring adversarial and runtime proof. If the hooks cannot meet all invariants safely, record the specific conflict rather than quietly relaxing the prefix requirement.
+This boundary replaced the proposed `View::addLoader` wrapper. Actual `View::render` wraps unfiltered loaders with its filtered loaders, and later registered filters can bypass an outer wildcard as well. A loader alone could not satisfy the every-invocation gate. No vendor render method or template body is copied into the subclass.
+
+The active evaluator adapts only finite registry choices into invocation-specific native-shaped sentinels. The structured HtmlHelper callback acts only when the top context is active and an exact generated class token matches. It clones the element, evaluates/maps the class while preserving its array/string shape, executes the remaining ordinary callbacks in order with native truthy short-circuit semantics, then serialises through native `HtmlElement::tag`. The original reusable expression remains intact. Other attributes/content and native structural classes keep their native rendering. Unrelated output is checked against native byte-for-byte controls.
+
+Configurable native tags, including `hgroup`, are registered before element creation. Unknown selected tags suppress adaptation rather than leak internal sentinels. Native linked-card behaviour remains `uk-card-hover` beside the BGM colour class. Item inheritance, nested title subtemplates, repeated renders, later filtered/unfiltered loaders and actual evaluation exceptions have focused tests against 5.0.52.
+
+The transform compatibility claim is bounded to ordinary per-render callbacks. Callbacks expecting their mutations to persist on the original reusable HtmlElement, changing the callback list during dispatch, or substituting a custom View factory are not advertised as transparently compatible. No raw HTML search/replace, saved-node mutation or vendor-template copy is used.
 
 ## Styling and cache lifecycle
 
@@ -38,7 +44,9 @@ Register original `bgm-*` LESS components and style-editor configuration through
 
 Cover component background/text colours, buttons' hover/active/focus states, card hover, links, borders and inverse contexts where the legacy feature supported them. Accessible focus must survive. Do not set stock primary/secondary variables globally to implement the extra families. Follow the native compilation/import path, including frontend use after saving and reopening the customizer.
 
-Use a version/config fingerprint to request recompilation only when needed through supported style configuration. Do not recursively delete template caches, purge unrelated content or force a rebuild on every request. Disable/uninstall must leave stock pages functional and remove only BGM's registered integration/assets. Saved BGM choices must be preserved rather than destructively rewritten, with their post-disable fallback documented from actual behaviour.
+Version 0.1.0 requires an explicit native style save after installation or update to compile BGM styles into existing CSS. It does not claim automatic cache invalidation or regeneration. BGM components are queued through the top-level native theme loader with a BGM-owned associative key, preserving native theme initialisation and numeric component entries from other extensions. Writing `config.theme` early was a confirmed prototype defect because it skipped native defaults, including consent configuration.
+
+Do not recursively delete template caches, purge unrelated content or force a rebuild on every request. Complete automatic cache-lifecycle, disable/uninstall and saved-data fallback qualification in goal 003 before stable delivery.
 
 ## Packaging and release
 

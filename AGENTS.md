@@ -32,7 +32,7 @@ Use current Joomla dependency injection, service providers, event subscribers, m
 
 The user authorised access/use of required logins in 1Password and upload/download of required files. Do not expose secrets in chat, shell arguments, logs, commits or evidence. Use secure injection or private file inputs. Authority to access credentials is not authority for unrelated production mutations. Use new disposable local staging and synthetic data. Existing customer sites are read-only reference sources. Do not change repository visibility, publish a public release or deploy to a customer site without explicit scope for that action.
 
-The repository was private at goal 001 discovery. Anonymous Joomla updates cannot be assumed to work from private GitHub asset URLs. Keep distribution status explicit and do not ship dead update URLs or embedded GitHub credentials.
+The repository was private at goal 001 discovery. During goal 002 the user confirmed making it public, and the controller verified GitHub API `private:false` and `visibility:public`. Continue the requested GitHub distribution/update workflow after qualification. Keep distribution status explicit, verify feed and installer access anonymously, and do not ship dead update URLs or embedded GitHub credentials. Do not change repository visibility again.
 
 ## Browser QA
 

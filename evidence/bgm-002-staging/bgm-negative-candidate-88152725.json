@@ -1,0 +1,10 @@
+{
+  "zip_sha256": "881527253bcd60dbc0adc322453bdbe937d2a939752519a076f3c9e631ba08f3",
+  "native_browser_upload": "success",
+  "native_plugin_enable": "success",
+  "customizer": "HTTP500",
+  "native_plugin_disable_restored_customizer": "HTTP200",
+  "failure": "Early config.theme root caused native ThemeLoader to skip native defaults. Corrected by engineer in later ZIP.",
+  "exception": "YOOtheme\\View\\HtmlHelper::el Argument1 name string expected, null from templates/consent.php151",
+  "accepted": false
+}

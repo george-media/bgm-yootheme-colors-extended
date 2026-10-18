@@ -1,0 +1,48 @@
+{
+  "accepted_zip_sha256": "0785c6dd02056e4ed5ce674508ae637e24618efa58e0f419c4538d94aacfe6ea",
+  "template_style_id": 13,
+  "style_save_route": "Actual native browser Style > BGM Colours colour picker > Save",
+  "saved_less_value": {
+    "@bgm-tertiary-background": "#245A7E"
+  },
+  "browser_reload_reopened_value": "#245A7E",
+  "native_builder_saved_article_id": 1,
+  "native_builder_save_route": "Actual native browser Pages > BGM Synthetic Palette Fixture > New Layout > section style BGM Tertiary > Save Layout",
+  "persisted_section_style": "bgm-tertiary",
+  "sentinel_persisted": false,
+  "frontend_url": "http://127.0.0.1:18762/index.php?option=com_content&view=article&id=1",
+  "frontend_http_status": 200,
+  "rendered_bgm_elements": [
+    {
+      "tag": "div",
+      "class": "bgm-section-tertiary uk-section"
+    }
+  ],
+  "served_stylesheet_url": "http://127.0.0.1:18762/templates/yootheme/css/theme.13.css?1792301566",
+  "served_stylesheet_http_status": 200,
+  "served_stylesheet_bytes": 746464,
+  "served_stylesheet_sha256": "7b3c82ee22d7194d51bf78adfb137fa046bf10366a31873cca602375c8730a20",
+  "stylesheet_contains_custom_colour": true,
+  "stylesheet_contains_custom_section_selector": true,
+  "computed_style": {
+    "tag": "DIV",
+    "classes": "bgm-section-tertiary uk-section",
+    "backgroundColor": "rgb(36, 90, 126)",
+    "--uk-inverse": "dark",
+    "height_px": 180
+  },
+  "computed_style_method": "CUA browser read-only DOM getComputedStyle after native save and frontend reload",
+  "runtime_errors": [],
+  "limits": [
+    "Single native section is the minimal vertical prototype. Full element/state/component matrix remains goal003.",
+    "Vendor source is reconstructed installed-source fallback, not a pristine vendor package.",
+    "PHP development server, Joomla6.2.0/PHP8.4.17/YOOtheme5.0.52 only."
+  ],
+  "final_frontend_browser_console_errors": [],
+  "browser_console_method": "CUA fixtureTab.dev.logs error/warn after final frontend reload",
+  "screenshots": [
+    "final-bgm-style-saved-reopened.png",
+    "final-frontend-tertiary.png",
+    "final-plugin-enabled.png"
+  ]
+}

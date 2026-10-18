@@ -9,14 +9,14 @@
       "threadId": "01a14d5e-189a-7d22-ae0f-202b04966c6d",
       "title": "001 Discover and design BGM YOOTheme Colors Extended",
       "goal": "Legacy behaviour, current integration contracts, original architecture and reviewed project foundation",
-      "status": "reviewed-foundation"
+      "status": "complete"
     },
     {
       "number": "002",
-      "threadId": null,
+      "threadId": "01a14d69-a15d-72b2-8577-08e3bc2a6c93",
       "title": "002 Build the original BGM colour extension",
       "goal": "Original plugin implementation, installer ZIP and early native staging prototype",
-      "status": "reserved-for-authorised-successor"
+      "status": "implementation-native-slice-verified-final-claude-review-blocked"
     }
   ],
   "nextNumber": "003"

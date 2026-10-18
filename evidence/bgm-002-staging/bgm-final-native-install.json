@@ -1,0 +1,104 @@
+{
+  "zip_sha256_before_upload": "0785c6dd02056e4ed5ce674508ae637e24618efa58e0f419c4538d94aacfe6ea",
+  "zip_sha256_after_upload": "0785c6dd02056e4ed5ce674508ae637e24618efa58e0f419c4538d94aacfe6ea",
+  "zip_bytes": 19481,
+  "native_browser_upload_message": "Installation of the plugin was successful.",
+  "extension_record": {
+    "name": "PLG_SYSTEM_BGM_YOOTHEME_COLORS_EXTENDED",
+    "type": "plugin",
+    "folder": "system",
+    "element": "bgm-yootheme-colors-extended",
+    "enabled": 1,
+    "manifest": {
+      "name": "PLG_SYSTEM_BGM_YOOTHEME_COLORS_EXTENDED",
+      "type": "plugin",
+      "group": "",
+      "author": "By George Media",
+      "version": "0.1.0",
+      "filename": "bgm-yootheme-colors-extended",
+      "authorUrl": "",
+      "copyright": "Copyright (C) 2026 By George Media",
+      "namespace": "Bgm\\Plugin\\System\\BgmYoothemeColorsExtended",
+      "authorEmail": "",
+      "description": "PLG_SYSTEM_BGM_YOOTHEME_COLORS_EXTENDED_DESCRIPTION",
+      "changelogurl": "",
+      "creationDate": "2026-10"
+    },
+    "extension_id": 256
+  },
+  "members": [
+    {
+      "member": "bgm-assets/bgm-less/bgm-colours.less",
+      "installed_path": "plugins/system/bgm-yootheme-colors-extended/bgm-assets/bgm-less/bgm-colours.less",
+      "sha256": "40099de2e853ca315ab18abe8c4f892ff541d16ed99a5058b5ff41ec1c968248"
+    },
+    {
+      "member": "bgm-bootstrap.php",
+      "installed_path": "plugins/system/bgm-yootheme-colors-extended/bgm-bootstrap.php",
+      "sha256": "3049511ec5e434a21194b2d277c0d385562a683d11c5aab4d458bd81e73b5124"
+    },
+    {
+      "member": "bgm-licence.txt",
+      "installed_path": "plugins/system/bgm-yootheme-colors-extended/bgm-licence.txt",
+      "sha256": "e08de5470e132fe7d7fe0a639589a0bb8805d1676bb6b780b554509c31106211"
+    },
+    {
+      "member": "bgm-styler.php",
+      "installed_path": "plugins/system/bgm-yootheme-colors-extended/bgm-styler.php",
+      "sha256": "61c50da839a30ca9d596b140bf5aebd44118578d1e57d51dd0f2a97e6143cd9a"
+    },
+    {
+      "member": "bgm-yootheme-colors-extended.xml",
+      "installed_path": "plugins/system/bgm-yootheme-colors-extended/bgm-yootheme-colors-extended.xml",
+      "sha256": "0eb0428f1728fcdec095c8cdde0b6813652bc826b5f43301a0bb72ff3d9cbfb2"
+    },
+    {
+      "member": "language/en-GB/plg_system_bgm-yootheme-colors-extended.ini",
+      "installed_path": "administrator/language/en-GB/plg_system_bgm-yootheme-colors-extended.ini",
+      "sha256": "3030e00c2e2788892a1fb33fefb9b64b378a1ec39fbf2e2ead4a753f1c6cec9d"
+    },
+    {
+      "member": "language/en-GB/plg_system_bgm-yootheme-colors-extended.sys.ini",
+      "installed_path": "administrator/language/en-GB/plg_system_bgm-yootheme-colors-extended.sys.ini",
+      "sha256": "5aae8d70025f3d0f34d81c7dee19e98b6f4361f71a845000e91516a45c5150dd"
+    },
+    {
+      "member": "services/provider.php",
+      "installed_path": "plugins/system/bgm-yootheme-colors-extended/services/provider.php",
+      "sha256": "509ffd34d56bcb7ad5992eab00bfbafa163287151247a24803c4b504c28704b9"
+    },
+    {
+      "member": "src/Extension/BgmYoothemeColorsExtended.php",
+      "installed_path": "plugins/system/bgm-yootheme-colors-extended/src/Extension/BgmYoothemeColorsExtended.php",
+      "sha256": "7fd9b09bbeb421c1f2c962c75eef1559749873d72deb957eaceb25e5c4e036be"
+    },
+    {
+      "member": "src/Integration/BgmColourRegistry.php",
+      "installed_path": "plugins/system/bgm-yootheme-colors-extended/src/Integration/BgmColourRegistry.php",
+      "sha256": "ccd1beffa029bf49a8333a96e6dd3f2574126aa8f55e12b70ba5a373cc2a9f68"
+    },
+    {
+      "member": "src/Integration/BgmModule.php",
+      "installed_path": "plugins/system/bgm-yootheme-colors-extended/src/Integration/BgmModule.php",
+      "sha256": "613ab862527edd1edfa059d518a4baac8ba8e332cbfe4868ed29e6e4c4450667"
+    },
+    {
+      "member": "src/Integration/BgmRenderAdapter.php",
+      "installed_path": "plugins/system/bgm-yootheme-colors-extended/src/Integration/BgmRenderAdapter.php",
+      "sha256": "fe0c1d42459b4a457b2634ed47e7f15e08cf43f70a2c026778fcaf42d73ce705"
+    },
+    {
+      "member": "src/Integration/BgmSchemaListener.php",
+      "installed_path": "plugins/system/bgm-yootheme-colors-extended/src/Integration/BgmSchemaListener.php",
+      "sha256": "af08f81192acca3a59d8fd3e27e3f1663ebc7b49347d2ed04830f229ff8af202"
+    },
+    {
+      "member": "src/Integration/BgmView.php",
+      "installed_path": "plugins/system/bgm-yootheme-colors-extended/src/Integration/BgmView.php",
+      "sha256": "c9d6273ddb5800c1fa5b6d93c5a1e18cb90af5692f8e0717c836f70e3e39f817"
+    }
+  ],
+  "installed_plugin_file_count": 12,
+  "language_install_note": "Joomla installs manifest language files into administrator/language, not plugin root.",
+  "qualification": "Native upload, registration, enable retained through same-version replacement. Not a two-version update lifecycle qualification."
+}

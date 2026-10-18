@@ -1,0 +1,250 @@
+// Original BGM colours. GPL-2.0-or-later.
+// Native UIkit variables, classes and hooks remain external API identifiers.
+
+@bgm-tertiary-background: #f8f8f8;
+@bgm-tertiary-text-color: @global-muted-color;
+@bgm-tertiary-section-background: @bgm-tertiary-background;
+@bgm-tertiary-section-color-mode: dark;
+@bgm-tertiary-tile-background: @bgm-tertiary-background;
+@bgm-tertiary-tile-hover-background: darken(@bgm-tertiary-tile-background, 5%);
+@bgm-tertiary-tile-color-mode: dark;
+@bgm-tertiary-card-background: @bgm-tertiary-background;
+@bgm-tertiary-card-color: @global-color;
+@bgm-tertiary-card-title-color: @global-color;
+@bgm-tertiary-card-hover-background: darken(@bgm-tertiary-card-background, 5%);
+@bgm-tertiary-card-color-mode: dark;
+@bgm-tertiary-button-background: @bgm-tertiary-background;
+@bgm-tertiary-button-color: @global-color;
+@bgm-tertiary-button-hover-background: darken(@bgm-tertiary-button-background, 5%);
+@bgm-tertiary-button-hover-color: @bgm-tertiary-button-color;
+@bgm-tertiary-button-active-background: darken(@bgm-tertiary-button-background, 10%);
+@bgm-tertiary-button-active-color: @bgm-tertiary-button-color;
+@bgm-tertiary-button-border: transparent;
+@bgm-tertiary-button-disabled-background: @button-disabled-background;
+@bgm-tertiary-button-disabled-color: @button-disabled-color;
+@bgm-tertiary-inverse-button-background: @inverse-button-primary-background;
+@bgm-tertiary-inverse-button-color: @inverse-button-primary-color;
+@bgm-tertiary-inverse-button-hover-background: @inverse-button-primary-hover-background;
+@bgm-tertiary-inverse-button-hover-color: @inverse-button-primary-hover-color;
+@bgm-tertiary-inverse-button-active-background: @inverse-button-primary-active-background;
+@bgm-tertiary-inverse-button-active-color: @inverse-button-primary-active-color;
+@bgm-tertiary-inverse-button-disabled-background: @button-disabled-background;
+@bgm-tertiary-inverse-button-disabled-color: @button-disabled-color;
+
+@bgm-quaternary-background: #1e87f0;
+@bgm-quaternary-text-color: @global-muted-color;
+@bgm-quaternary-section-background: @bgm-quaternary-background;
+@bgm-quaternary-section-color-mode: light;
+@bgm-quaternary-tile-background: @bgm-quaternary-background;
+@bgm-quaternary-tile-hover-background: darken(@bgm-quaternary-tile-background, 5%);
+@bgm-quaternary-tile-color-mode: light;
+@bgm-quaternary-card-background: @bgm-quaternary-background;
+@bgm-quaternary-card-color: @global-inverse-color;
+@bgm-quaternary-card-title-color: @global-inverse-color;
+@bgm-quaternary-card-hover-background: darken(@bgm-quaternary-card-background, 5%);
+@bgm-quaternary-card-color-mode: light;
+@bgm-quaternary-button-background: @bgm-quaternary-background;
+@bgm-quaternary-button-color: @global-inverse-color;
+@bgm-quaternary-button-hover-background: darken(@bgm-quaternary-button-background, 5%);
+@bgm-quaternary-button-hover-color: @bgm-quaternary-button-color;
+@bgm-quaternary-button-active-background: darken(@bgm-quaternary-button-background, 10%);
+@bgm-quaternary-button-active-color: @bgm-quaternary-button-color;
+@bgm-quaternary-button-border: transparent;
+@bgm-quaternary-button-disabled-background: @button-disabled-background;
+@bgm-quaternary-button-disabled-color: @button-disabled-color;
+@bgm-quaternary-inverse-button-background: @inverse-button-primary-background;
+@bgm-quaternary-inverse-button-color: @inverse-button-primary-color;
+@bgm-quaternary-inverse-button-hover-background: @inverse-button-primary-hover-background;
+@bgm-quaternary-inverse-button-hover-color: @inverse-button-primary-hover-color;
+@bgm-quaternary-inverse-button-active-background: @inverse-button-primary-active-background;
+@bgm-quaternary-inverse-button-active-color: @inverse-button-primary-active-color;
+@bgm-quaternary-inverse-button-disabled-background: @button-disabled-background;
+@bgm-quaternary-inverse-button-disabled-color: @button-disabled-color;
+
+@bgm-quinary-background: #222;
+@bgm-quinary-text-color: @global-muted-color;
+@bgm-quinary-section-background: @bgm-quinary-background;
+@bgm-quinary-section-color-mode: light;
+@bgm-quinary-tile-background: @bgm-quinary-background;
+@bgm-quinary-tile-hover-background: darken(@bgm-quinary-tile-background, 5%);
+@bgm-quinary-tile-color-mode: light;
+@bgm-quinary-card-background: @bgm-quinary-background;
+@bgm-quinary-card-color: @global-inverse-color;
+@bgm-quinary-card-title-color: @global-inverse-color;
+@bgm-quinary-card-hover-background: darken(@bgm-quinary-card-background, 5%);
+@bgm-quinary-card-color-mode: light;
+@bgm-quinary-button-background: @bgm-quinary-background;
+@bgm-quinary-button-color: @global-inverse-color;
+@bgm-quinary-button-hover-background: darken(@bgm-quinary-button-background, 5%);
+@bgm-quinary-button-hover-color: @bgm-quinary-button-color;
+@bgm-quinary-button-active-background: darken(@bgm-quinary-button-background, 10%);
+@bgm-quinary-button-active-color: @bgm-quinary-button-color;
+@bgm-quinary-button-border: transparent;
+@bgm-quinary-button-disabled-background: @button-disabled-background;
+@bgm-quinary-button-disabled-color: @button-disabled-color;
+@bgm-quinary-inverse-button-background: @inverse-button-primary-background;
+@bgm-quinary-inverse-button-color: @inverse-button-primary-color;
+@bgm-quinary-inverse-button-hover-background: @inverse-button-primary-hover-background;
+@bgm-quinary-inverse-button-hover-color: @inverse-button-primary-hover-color;
+@bgm-quinary-inverse-button-active-background: @inverse-button-primary-active-background;
+@bgm-quinary-inverse-button-active-color: @inverse-button-primary-active-color;
+@bgm-quinary-inverse-button-disabled-background: @button-disabled-background;
+@bgm-quinary-inverse-button-disabled-color: @button-disabled-color;
+
+@bgm-senary-background: #222;
+@bgm-senary-text-color: @global-muted-color;
+@bgm-senary-section-background: @bgm-senary-background;
+@bgm-senary-section-color-mode: light;
+@bgm-senary-tile-background: @bgm-senary-background;
+@bgm-senary-tile-hover-background: darken(@bgm-senary-tile-background, 5%);
+@bgm-senary-tile-color-mode: light;
+@bgm-senary-card-background: @bgm-senary-background;
+@bgm-senary-card-color: @global-inverse-color;
+@bgm-senary-card-title-color: @global-inverse-color;
+@bgm-senary-card-hover-background: darken(@bgm-senary-card-background, 5%);
+@bgm-senary-card-color-mode: light;
+@bgm-senary-button-background: @bgm-senary-background;
+@bgm-senary-button-color: @global-inverse-color;
+@bgm-senary-button-hover-background: darken(@bgm-senary-button-background, 5%);
+@bgm-senary-button-hover-color: @bgm-senary-button-color;
+@bgm-senary-button-active-background: darken(@bgm-senary-button-background, 10%);
+@bgm-senary-button-active-color: @bgm-senary-button-color;
+@bgm-senary-button-border: transparent;
+@bgm-senary-button-disabled-background: @button-disabled-background;
+@bgm-senary-button-disabled-color: @button-disabled-color;
+@bgm-senary-inverse-button-background: @inverse-button-primary-background;
+@bgm-senary-inverse-button-color: @inverse-button-primary-color;
+@bgm-senary-inverse-button-hover-background: @inverse-button-primary-hover-background;
+@bgm-senary-inverse-button-hover-color: @inverse-button-primary-hover-color;
+@bgm-senary-inverse-button-active-background: @inverse-button-primary-active-background;
+@bgm-senary-inverse-button-active-color: @inverse-button-primary-active-color;
+@bgm-senary-inverse-button-disabled-background: @button-disabled-background;
+@bgm-senary-inverse-button-disabled-color: @button-disabled-color;
+
+
+.bgm-slot(@bgm-family) {
+    @bgm-section-background-key: ~"bgm-@{bgm-family}-section-background";
+    @bgm-section-mode-key: ~"bgm-@{bgm-family}-section-color-mode";
+    @bgm-card-background-key: ~"bgm-@{bgm-family}-card-background";
+    @bgm-card-color-key: ~"bgm-@{bgm-family}-card-color";
+    @bgm-card-title-key: ~"bgm-@{bgm-family}-card-title-color";
+    @bgm-card-hover-key: ~"bgm-@{bgm-family}-card-hover-background";
+    @bgm-card-mode-key: ~"bgm-@{bgm-family}-card-color-mode";
+    @bgm-tile-background-key: ~"bgm-@{bgm-family}-tile-background";
+    @bgm-tile-hover-key: ~"bgm-@{bgm-family}-tile-hover-background";
+    @bgm-tile-mode-key: ~"bgm-@{bgm-family}-tile-color-mode";
+    @bgm-text-key: ~"bgm-@{bgm-family}-text-color";
+    @bgm-button-background-key: ~"bgm-@{bgm-family}-button-background";
+    @bgm-button-color-key: ~"bgm-@{bgm-family}-button-color";
+    @bgm-button-hover-background-key: ~"bgm-@{bgm-family}-button-hover-background";
+    @bgm-button-hover-color-key: ~"bgm-@{bgm-family}-button-hover-color";
+    @bgm-button-active-background-key: ~"bgm-@{bgm-family}-button-active-background";
+    @bgm-button-active-color-key: ~"bgm-@{bgm-family}-button-active-color";
+    @bgm-button-border-key: ~"bgm-@{bgm-family}-button-border";
+    @bgm-button-disabled-background-key: ~"bgm-@{bgm-family}-button-disabled-background";
+    @bgm-button-disabled-color-key: ~"bgm-@{bgm-family}-button-disabled-color";
+
+    .bgm-section-@{bgm-family} {
+        --uk-inverse: @@bgm-section-mode-key;
+        background: @@bgm-section-background-key;
+    }
+
+    .bgm-card-@{bgm-family} {
+        --uk-inverse: @@bgm-card-mode-key;
+        background: @@bgm-card-background-key;
+        color: @@bgm-card-color-key;
+    }
+    .bgm-card-@{bgm-family} .uk-card-title { color: @@bgm-card-title-key; }
+    .bgm-card-@{bgm-family}.uk-card-hover:hover { background-color: @@bgm-card-hover-key; }
+
+    .bgm-tile-@{bgm-family} {
+        --uk-inverse: @@bgm-tile-mode-key;
+        background: @@bgm-tile-background-key;
+    }
+    .bgm-tile-@{bgm-family}.uk-tile-hover:hover { background-color: @@bgm-tile-hover-key; }
+
+    .bgm-text-@{bgm-family} { color: @@bgm-text-key !important; }
+    .bgm-button-@{bgm-family} {
+        background-color: @@bgm-button-background-key;
+        color: @@bgm-button-color-key;
+        border-color: @@bgm-button-border-key;
+    }
+    .bgm-button-@{bgm-family}:hover,
+    .bgm-button-@{bgm-family}:focus-visible {
+        background-color: @@bgm-button-hover-background-key;
+        color: @@bgm-button-hover-color-key;
+    }
+    .bgm-button-@{bgm-family}:active,
+    .bgm-button-@{bgm-family}.uk-active {
+        background-color: @@bgm-button-active-background-key;
+        color: @@bgm-button-active-color-key;
+    }
+    .bgm-button-@{bgm-family}:disabled,
+    .bgm-button-@{bgm-family}[aria-disabled="true"] {
+        background-color: @@bgm-button-disabled-background-key;
+        color: @@bgm-button-disabled-color-key;
+    }
+}
+
+.bgm-inverse-button(@bgm-family) {
+    @bgm-background-key: ~"bgm-@{bgm-family}-inverse-button-background";
+    @bgm-color-key: ~"bgm-@{bgm-family}-inverse-button-color";
+    @bgm-hover-background-key: ~"bgm-@{bgm-family}-inverse-button-hover-background";
+    @bgm-hover-color-key: ~"bgm-@{bgm-family}-inverse-button-hover-color";
+    @bgm-active-background-key: ~"bgm-@{bgm-family}-inverse-button-active-background";
+    @bgm-active-color-key: ~"bgm-@{bgm-family}-inverse-button-active-color";
+    @bgm-disabled-background-key: ~"bgm-@{bgm-family}-inverse-button-disabled-background";
+    @bgm-disabled-color-key: ~"bgm-@{bgm-family}-inverse-button-disabled-color";
+    .bgm-button-@{bgm-family} { background-color: @@bgm-background-key; color: @@bgm-color-key; }
+    .bgm-button-@{bgm-family}:hover,
+    .bgm-button-@{bgm-family}:focus-visible { background-color: @@bgm-hover-background-key; color: @@bgm-hover-color-key; }
+    .bgm-button-@{bgm-family}:active,
+    .bgm-button-@{bgm-family}.uk-active { background-color: @@bgm-active-background-key; color: @@bgm-active-color-key; }
+    .bgm-button-@{bgm-family}:disabled,
+    .bgm-button-@{bgm-family}[aria-disabled="true"] { background-color: @@bgm-disabled-background-key; color: @@bgm-disabled-color-key; }
+}
+
+.bgm-slot(tertiary);
+.bgm-slot(quaternary);
+.bgm-slot(quinary);
+.bgm-slot(senary);
+.hook-inverse() {
+    .bgm-inverse-button(tertiary);
+    .bgm-inverse-button(quaternary);
+    .bgm-inverse-button(quinary);
+    .bgm-inverse-button(senary);
+}
+
+// Explicit selectors keep LESS extension discovery independent of parameterised mixins.
+.bgm-section-tertiary:not(.uk-preserve-color):extend(.uk-light all) when (@bgm-tertiary-section-color-mode = light) {}
+.bgm-tile-tertiary:not(.uk-preserve-color):extend(.uk-light all) when (@bgm-tertiary-tile-color-mode = light) {}
+.bgm-card-tertiary.uk-card-body:extend(.uk-light all) when (@bgm-tertiary-card-color-mode = light) {}
+.bgm-card-tertiary > :not([class*="uk-card-media"]):extend(.uk-light all) when (@bgm-tertiary-card-color-mode = light) {}
+.bgm-section-tertiary:not(.uk-preserve-color):extend(.uk-dark all) when (@bgm-tertiary-section-color-mode = dark) {}
+.bgm-tile-tertiary:not(.uk-preserve-color):extend(.uk-dark all) when (@bgm-tertiary-tile-color-mode = dark) {}
+.bgm-card-tertiary.uk-card-body:extend(.uk-dark all) when (@bgm-tertiary-card-color-mode = dark) {}
+.bgm-card-tertiary > :not([class*="uk-card-media"]):extend(.uk-dark all) when (@bgm-tertiary-card-color-mode = dark) {}
+.bgm-section-quaternary:not(.uk-preserve-color):extend(.uk-light all) when (@bgm-quaternary-section-color-mode = light) {}
+.bgm-tile-quaternary:not(.uk-preserve-color):extend(.uk-light all) when (@bgm-quaternary-tile-color-mode = light) {}
+.bgm-card-quaternary.uk-card-body:extend(.uk-light all) when (@bgm-quaternary-card-color-mode = light) {}
+.bgm-card-quaternary > :not([class*="uk-card-media"]):extend(.uk-light all) when (@bgm-quaternary-card-color-mode = light) {}
+.bgm-section-quaternary:not(.uk-preserve-color):extend(.uk-dark all) when (@bgm-quaternary-section-color-mode = dark) {}
+.bgm-tile-quaternary:not(.uk-preserve-color):extend(.uk-dark all) when (@bgm-quaternary-tile-color-mode = dark) {}
+.bgm-card-quaternary.uk-card-body:extend(.uk-dark all) when (@bgm-quaternary-card-color-mode = dark) {}
+.bgm-card-quaternary > :not([class*="uk-card-media"]):extend(.uk-dark all) when (@bgm-quaternary-card-color-mode = dark) {}
+.bgm-section-quinary:not(.uk-preserve-color):extend(.uk-light all) when (@bgm-quinary-section-color-mode = light) {}
+.bgm-tile-quinary:not(.uk-preserve-color):extend(.uk-light all) when (@bgm-quinary-tile-color-mode = light) {}
+.bgm-card-quinary.uk-card-body:extend(.uk-light all) when (@bgm-quinary-card-color-mode = light) {}
+.bgm-card-quinary > :not([class*="uk-card-media"]):extend(.uk-light all) when (@bgm-quinary-card-color-mode = light) {}
+.bgm-section-quinary:not(.uk-preserve-color):extend(.uk-dark all) when (@bgm-quinary-section-color-mode = dark) {}
+.bgm-tile-quinary:not(.uk-preserve-color):extend(.uk-dark all) when (@bgm-quinary-tile-color-mode = dark) {}
+.bgm-card-quinary.uk-card-body:extend(.uk-dark all) when (@bgm-quinary-card-color-mode = dark) {}
+.bgm-card-quinary > :not([class*="uk-card-media"]):extend(.uk-dark all) when (@bgm-quinary-card-color-mode = dark) {}
+.bgm-section-senary:not(.uk-preserve-color):extend(.uk-light all) when (@bgm-senary-section-color-mode = light) {}
+.bgm-tile-senary:not(.uk-preserve-color):extend(.uk-light all) when (@bgm-senary-tile-color-mode = light) {}
+.bgm-card-senary.uk-card-body:extend(.uk-light all) when (@bgm-senary-card-color-mode = light) {}
+.bgm-card-senary > :not([class*="uk-card-media"]):extend(.uk-light all) when (@bgm-senary-card-color-mode = light) {}
+.bgm-section-senary:not(.uk-preserve-color):extend(.uk-dark all) when (@bgm-senary-section-color-mode = dark) {}
+.bgm-tile-senary:not(.uk-preserve-color):extend(.uk-dark all) when (@bgm-senary-tile-color-mode = dark) {}
+.bgm-card-senary.uk-card-body:extend(.uk-dark all) when (@bgm-senary-card-color-mode = dark) {}
+.bgm-card-senary > :not([class*="uk-card-media"]):extend(.uk-dark all) when (@bgm-senary-card-color-mode = dark) {}

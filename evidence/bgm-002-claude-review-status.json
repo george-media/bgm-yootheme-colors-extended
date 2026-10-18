@@ -1,0 +1,49 @@
+{
+  "finalPackageSha256": "0785c6dd02056e4ed5ce674508ae637e24618efa58e0f419c4538d94aacfe6ea",
+  "initialReview": {
+    "jobId": "advise-mvddbwwt-uwfxxo",
+    "status": "completed",
+    "resultSource": "provider-json",
+    "cleanupStatus": "verified",
+    "canonicalSessionId": "6a6b28df-9b0c-48bd-9641-ffe489b12d8f",
+    "scope": "Earlier candidate architecture/source, not final package approval",
+    "findings": [
+      "Reachable hgroup missing from tag coverage",
+      "Class array flattened before downstream callbacks"
+    ],
+    "disposition": "Repaired and independently verified in final source"
+  },
+  "cancelledSupersededReview": {
+    "jobId": "do-mvddq8ri-iecbat",
+    "status": "cancelled",
+    "reason": "Source candidate invalidated by native staging bootstrap failure"
+  },
+  "finalReviewAttempts": [
+    {
+      "jobId": "do-mvddub7u-vxhrd5",
+      "approach": "Background prepared file-reading review",
+      "status": "failed",
+      "failureClassification": "non-zero-exit",
+      "resultState": "unavailable",
+      "cleanupStatus": "verified"
+    },
+    {
+      "jobId": "advise-mvde2kta-h3zfkk",
+      "approach": "Narrower background checker against immutable snapshot",
+      "status": "failed",
+      "failureClassification": "non-zero-exit",
+      "resultState": "unavailable",
+      "cleanupStatus": "verified"
+    },
+    {
+      "jobId": "advise-mvdeba0z-jum5zp",
+      "approach": "Foreground single-turn inline exact runtime code, no tool reads, no automatic fallback",
+      "status": "failed",
+      "failureDiagnostic": "Claude command failed before returning a supported result.",
+      "resultState": "unavailable",
+      "companionExitCode": 1
+    }
+  ],
+  "readiness": "Two setup probes reported ready/auth available/print passed. Those probes are not completed source reviews.",
+  "decision": "Stopped after three materially changed final-review attempts. Goal002 remains open at final Claude review; no root cause inferred and no stable release/update feed published."
+}

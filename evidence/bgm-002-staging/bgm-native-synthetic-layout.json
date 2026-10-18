@@ -1,0 +1,45 @@
+{
+  "type": "layout",
+  "children": [
+    {
+      "type": "section",
+      "props": {
+        "image_position": "center-center",
+        "style": "bgm-tertiary",
+        "title": "BGM tertiary native fixture",
+        "title_breakpoint": "xl",
+        "title_position": "top-left",
+        "title_rotation": "left",
+        "vertical_align": "middle",
+        "width": "default"
+      },
+      "children": [
+        {
+          "type": "row",
+          "children": [
+            {
+              "type": "column",
+              "props": {
+                "image_position": "center-center",
+                "position_sticky_breakpoint": "m"
+              }
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "children": [
+            {
+              "type": "column",
+              "props": {
+                "image_position": "center-center",
+                "position_sticky_breakpoint": "m"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "version": "5.0.52"
+}

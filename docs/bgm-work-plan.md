@@ -29,9 +29,13 @@ Acceptance:
 - Adversarial and Claude reviews, bounded fixes, detailed commit/push with remote readback and hindsight.
 - Start goal 003 for full staging/release qualification unless that entire gate was already completed in goal 002.
 
+### Goal 002 checkpoint
+
+The 0.1.0 source/package and minimal native staging path pass their recorded checks. The independent adversarial final review passed. The required final Claude assessment is unavailable after three changed execution attempts, despite readiness probes passing. Goal 002 remains open at that gate. A progress commit preserves the tested work without claiming goal completion or starting goal 003 prematurely.
+
 ## 003 Qualification and delivery
 
-Prove all declared support targets and feature/states through Joomla and browser QA. Test save/reopen, responsive and inverse contexts, nested items, stock primary/secondary controls, cache invalidation, upgrade persistence, disable and uninstall. Deliver an actual downloadable installer ZIP with checksum and honest tested-version notes. Do not claim automatic updates until a real feed and package download are verified from an anonymous Joomla session.
+Prove all declared support targets and feature/states through Joomla and browser QA. Test save/reopen, responsive and inverse contexts, nested items, stock primary/secondary controls, cache invalidation, upgrade persistence, disable and uninstall. The user made the GitHub source repository public during goal 002, so complete the requested real GitHub release-asset/feed workflow and prove an anonymous native Joomla update between distinct versions. Deliver an actual downloadable installer ZIP with checksum and honest tested-version notes. Do not claim automatic updates until a real feed and package download are verified from an anonymous Joomla session. Version 0.1.0 has no active update server.
 
 If a further publication decision is required, complete the locally testable work first and present the concrete package and viable destination choices. Ask only for the missing decision. Do not create endless successor goals after the requested feature and accepted distribution scope are satisfied.
 
